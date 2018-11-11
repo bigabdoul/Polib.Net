@@ -18,14 +18,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Bootstrap.Themes\src\Bootstrap.Themes.csproj" />
     <ProjectReference Include="..\..\..\src\Polib.NetCore.Mvc\Polib.NetCore.Mvc.csproj" />
     <ProjectReference Include="..\..\..\src\Polib.NetStandard.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="Bootstrap.Themes">
-      <HintPath>..\..\..\..\Bootstrap.Themes\Bootstrap.Themes\bin\Debug\netstandard2.0\Bootstrap.Themes.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.AspNetCore.Mvc.Abstractions">
       <HintPath>Microsoft.AspNetCore.Mvc.Abstractions.dll</HintPath>
     </Reference>

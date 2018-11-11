@@ -22,9 +22,12 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4F58B48C-9060-4AA7-AAFF-9372E45A4C27}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
+		demos\Polib.NetCore.Web\genpot.bat = demos\Polib.NetCore.Web\genpot.bat
 		LICENSE = LICENSE
 		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bootstrap.Themes", "..\Bootstrap.Themes\src\Bootstrap.Themes.csproj", "{8313BEDE-E857-4BD2-A980-5B659D7827B7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -52,6 +55,10 @@ Global
 		{072C83C9-A8C2-4E2E-B14B-5089065D2DBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{072C83C9-A8C2-4E2E-B14B-5089065D2DBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{072C83C9-A8C2-4E2E-B14B-5089065D2DBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8313BEDE-E857-4BD2-A980-5B659D7827B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8313BEDE-E857-4BD2-A980-5B659D7827B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8313BEDE-E857-4BD2-A980-5B659D7827B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8313BEDE-E857-4BD2-A980-5B659D7827B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -62,6 +69,7 @@ Global
 		{4C9711C0-AFEC-4F5B-B1C1-5B1A30B2F57A} = {D80B0393-105A-4629-8583-09C5AA25A0AB}
 		{66B50C57-1E30-45F3-9F9A-D57556590277} = {CE8BE982-BCD3-4689-98D8-5F5D65AF4BE4}
 		{072C83C9-A8C2-4E2E-B14B-5089065D2DBE} = {A40ECB76-A486-4A17-A805-848FA219D13E}
+		{8313BEDE-E857-4BD2-A980-5B659D7827B7} = {A40ECB76-A486-4A17-A805-848FA219D13E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B7B7BDAA-E62F-4700-B088-98E47AE06288}
