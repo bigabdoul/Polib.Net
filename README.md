@@ -80,7 +80,7 @@ non-vital items that are part of the Solution.
 
 ## Examples
 After you managed to run the demo app, let's look at how you can integrate the 
-libraries into a new project. For example, to build a multi-langual console app:
+libraries into a new project. For example, to build a multi-lingual console app:
 1. In Visual Studio or Visual Studio Code, create a new console project.
 2. Add a reference to the *Polib.NetStandard* project, or the *Polib.Net.dll* file.
 3. In your console app, add the following *using* statements at the top of the 
