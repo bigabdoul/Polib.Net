@@ -1,0 +1,1846 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Polib.Net</name>
+    </assembly>
+    <members>
+        <member name="T:Polib.Net.CachedTranslation">
+            <summary>
+            Represents a wrapper around an instance of a class that implements the <see cref="T:Polib.Net.ITranslation"/> class.
+            This is useful when caching previously translated items.
+            </summary>
+        </member>
+        <member name="M:Polib.Net.CachedTranslation.#ctor(System.String,System.String,Polib.Net.ITranslation)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Polib.Net.CachedTranslation"/> class using the specified parameters.
+            </summary>
+            <param name="culture">The culture of the <paramref name="translation"/>.</param>
+            <param name="key">The unique key of the translation.</param>
+            <param name="translation">The translation referenced by this <see cref="T:Polib.Net.CachedTranslation"/>.</param>
+        </member>
+        <member name="P:Polib.Net.CachedTranslation.Key">
+            <summary>
+            Gets the key of this wrapper.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.CachedTranslation.Translation">
+            <summary>
+            Gets the translation of this wrapper.
+            </summary>
+        </member>
+        <member name="T:Polib.Net.Catalog">
+            <summary>
+            Represents a catalog of translated items.
+            </summary>
+        </member>
+        <member name="M:Polib.Net.Catalog.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Polib.Net.Catalog"/> class.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.Catalog.HeaderComments">
+            <summary>
+            Gets or sets the first comments before the <see cref="P:Polib.Net.Catalog.Headers"/> collection.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.Catalog.Headers">
+            <summary>
+            Gets the headers of this reader.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.Catalog.Entries">
+            <summary>
+            Gets the list of translation entries.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.Catalog.Culture">
+            <summary>
+            Gets the culture of the elements contained in <see cref="P:Polib.Net.Catalog.Entries"/>.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.Catalog.FileName">
+            <summary>
+            Gets or sets the name of the file used during the read operation.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.Catalog.FileId">
+            <summary>
+            Gets the unique file identifier of the current catalog.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.Catalog.LastAccessTime">
+            <summary>
+            Gets or sets the date the file was last read.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.Catalog.PluralCount">
+            <summary>
+            Gets or sets the number of plural forms.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.Catalog.PluralEvaluator">
+            <summary>
+            Gets or sets the plural forms evaluator.
+            </summary>
+        </member>
+        <member name="M:Polib.Net.Catalog.GetCharset(System.String@)">
+            <summary>
+            Attempts to determine the character set defined in the 'Content-Type' header.
+            </summary>
+            <param name="value">Returns the character set, if present.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.Net.Catalog.GetHeader(System.String,System.String@)">
+            <summary>
+            Attempts to return the value of the specified header name.
+            </summary>
+            <param name="name">The name of the header to return.</param>
+            <param name="value">Returns the value of the header, if found.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.Net.Catalog.GetEncoding">
+            <summary>
+            Finds the character set and returns a new instance of the corresponding <see cref="T:System.Text.Encoding"/> class.
+            </summary>
+            <returns>An initialized instance of the <see cref="T:System.Text.Encoding"/> class, or null.</returns>
+        </member>
+        <member name="T:Polib.Net.Collections.CatalogDictionary">
+            <summary>
+            Represents a dictionary of <see cref="T:Polib.Net.ICatalog"/> collections grouped by culture.
+            </summary>
+        </member>
+        <member name="M:Polib.Net.Collections.CatalogDictionary.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Polib.Net.Collections.CatalogDictionary"/> class.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.Collections.CatalogDictionary.Item(System.String)">
+            <summary>
+            Gets or sets the value associated with the specified key.
+            </summary>
+            <param name="key">The key of the value to get or set.</param>
+            <returns></returns>
+        </member>
+        <member name="P:Polib.Net.Collections.CatalogDictionary.Keys">
+            <summary>
+            Gets a collection containing the keys in the catalog.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.Collections.CatalogDictionary.Values">
+            <summary>
+             Gets a collection containing the values in the catalog.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.Collections.CatalogDictionary.Count">
+            <summary>
+            Gets the number of key/value pairs contained in the catalog.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.Collections.CatalogDictionary.IsReadOnly">
+            <summary>
+            Returns false.
+            </summary>
+        </member>
+        <member name="M:Polib.Net.Collections.CatalogDictionary.Add(System.String,System.Collections.Generic.IList{Polib.Net.ICatalog})">
+            <summary>
+            Attempts to add the specified key and value to the catalog.
+            </summary>
+            <param name="key">The key of the element to add.</param>
+            <param name="value">The value of the element to add.</param>
+        </member>
+        <member name="M:Polib.Net.Collections.CatalogDictionary.Clear">
+            <summary>
+            Removes all keys and values from the current catalog.
+            </summary>
+        </member>
+        <member name="M:Polib.Net.Collections.CatalogDictionary.ContainsKey(System.String)">
+            <summary>
+            Determines whether the catalog contains the specified key.
+            </summary>
+            <param name="culture">The culture to locate in the catalog.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.Net.Collections.CatalogDictionary.GetEnumerator">
+            <summary>
+            Returns an enumerator that iterates through the dictionary.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.Net.Collections.CatalogDictionary.Remove(System.String)">
+            <summary>
+            Removes the element with the specified key from the catalog.
+            </summary>
+            <param name="culture">The culture of the catalogs to remove.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.Net.Collections.CatalogDictionary.TryGetValue(System.String,System.Collections.Generic.IList{Polib.Net.ICatalog}@)">
+            <summary>
+            Attempts to get the value associated with the specified key from the catalog.
+            </summary>
+            <param name="culture">The culture whose catalogs to get.</param>
+            <param name="value">
+            The value associated with the specified culture, if the culture is found; 
+            otherwise, the default value for the type of the value parameter.
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.Net.Collections.CatalogDictionary.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String,System#Collections#Generic#IList{Polib#Net#ICatalog}}}#Add(System.Collections.Generic.KeyValuePair{System.String,System.Collections.Generic.IList{Polib.Net.ICatalog}})">
+            <summary>
+            Attempts to add the specified item to the catalog.
+            </summary>
+            <param name="item">The item to add.</param>
+        </member>
+        <member name="M:Polib.Net.Collections.CatalogDictionary.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String,System#Collections#Generic#IList{Polib#Net#ICatalog}}}#Remove(System.Collections.Generic.KeyValuePair{System.String,System.Collections.Generic.IList{Polib.Net.ICatalog}})">
+            <summary>
+            Removes the item with the specified key from the catalog.
+            </summary>
+            <param name="item">The item to remove.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.Net.Collections.CatalogDictionary.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String,System#Collections#Generic#IList{Polib#Net#ICatalog}}}#CopyTo(System.Collections.Generic.KeyValuePair{System.String,System.Collections.Generic.IList{Polib.Net.ICatalog}}[],System.Int32)">
+            <summary>
+            Copies all the elements of the current one-dimensional array to the specified
+            one-dimensional array starting at the specified destination array index. 
+            The index is specified as a 32-bit integer.
+            </summary>
+            <param name="array">The one-dimensional array that is the destination of the elements copied from the current array.</param>
+            <param name="arrayIndex"> A 32-bit integer that represents the index in array at which copying begins.</param>
+        </member>
+        <member name="M:Polib.Net.Collections.CatalogDictionary.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String,System#Collections#Generic#IList{Polib#Net#ICatalog}}}#Contains(System.Collections.Generic.KeyValuePair{System.String,System.Collections.Generic.IList{Polib.Net.ICatalog}})">
+            <summary>
+            Determines whether the catalog contains a key that matches the <paramref name="item"/>'s 
+            <see cref="P:System.Collections.Generic.KeyValuePair`2.Key"/> property.
+            </summary>
+            <param name="item">The item's key property to check.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.Net.Collections.CatalogDictionary.System#Collections#IEnumerable#GetEnumerator">
+            <summary>
+            Returns an enumerator that iterates through the dictionary.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Polib.Net.Collections.WritableStack`1">
+            <summary>
+            Represents a stack whose top item can be changed.
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:Polib.Net.Collections.WritableStack`1.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Polib.Net.Collections.WritableStack`1"/>.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.Collections.WritableStack`1.Count">
+            <summary>
+            Gets the number of items contained in the internal list.
+            </summary>
+        </member>
+        <member name="M:Polib.Net.Collections.WritableStack`1.Push(`0)">
+            <summary>
+            Inserts the specified item at the top of the stack.
+            </summary>
+            <param name="item">The item to insert.</param>
+        </member>
+        <member name="M:Polib.Net.Collections.WritableStack`1.Peek">
+            <summary>
+            Returns the top item from the stack without removing it.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.Net.Collections.WritableStack`1.Pop">
+            <summary>
+            Removes the top item from the stack and returns it.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.Net.Collections.WritableStack`1.Set(`0)">
+            <summary>
+            Changes the top item on the stack.
+            </summary>
+            <param name="item">The item to set.</param>
+        </member>
+        <member name="T:Polib.Net.ICatalog">
+            <summary>
+            Specifies the data contract required by classes that represent a catalog of translated items.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.ICatalog.HeaderComments">
+            <summary>
+            Gets or sets the first comments before the <see cref="P:Polib.Net.ICatalog.Headers"/> collection.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.ICatalog.Headers">
+            <summary>
+            Gets the headers of this reader.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.ICatalog.Culture">
+            <summary>
+            Gets the culture of the elements contained in <see cref="P:Polib.Net.ICatalog.Entries"/>.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.ICatalog.Entries">
+            <summary>
+             Gets the list of translation entries.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.ICatalog.FileId">
+            <summary>
+            Gets the unique file identifier of the current catalog.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.ICatalog.FileName">
+            <summary>
+            Gets or sets the name of the file used during the read operation.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.ICatalog.LastAccessTime">
+            <summary>
+            Gets or sets the date the file was last read.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.ICatalog.PluralCount">
+            <summary>
+            Gets or sets the number of plural forms.
+            </summary>
+        </member>
+        <member name="M:Polib.Net.ICatalog.GetHeader(System.String,System.String@)">
+            <summary>
+            Attempts to return the value of the specified header name.
+            </summary>
+            <param name="name">The name of the header to return.</param>
+            <param name="value">Returns the value of the header, if found.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.Net.ICatalog.GetCharset(System.String@)">
+            <summary>
+            Attempts to determine the character set defined in the 'Content-Type' header.
+            </summary>
+            <param name="value">Returns the character set, if present.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.Net.ICatalog.GetEncoding">
+            <summary>
+            Finds the character set and returns a new instance of the corresponding <see cref="T:System.Text.Encoding"/> class.
+            </summary>
+            <returns>An initialized instance of the <see cref="T:System.Text.Encoding"/> class, or null.</returns>
+        </member>
+        <member name="T:Polib.Net.IO.IPoFileWriter">
+            <summary>
+            Specifies the data contract required by classes that write catalog changes to a media.
+            </summary>
+        </member>
+        <member name="M:Polib.Net.IO.IPoFileWriter.SaveChanges(System.Boolean,System.Text.Encoding)">
+            <summary>
+            Writes the changes back to a temporary file and returns the path pointing at it.
+            </summary>
+            <param name="excludeHeaders">Whether to exclude the headers during the operation.</param>
+            <param name="encoding">The text encoding to use. If null, the catalog's encoding is used.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.Net.IO.IPoFileWriter.SaveChanges(System.String,System.Boolean,System.Text.Encoding)">
+            <summary>
+            Writes the changes back to the specified file <paramref name="path"/>.
+            </summary>
+            <param name="path">The fully-qualified name, including the path, of the file changes are written to.</param>
+            <param name="excludeHeaders">Whether to exclude the headers during the operation.</param>
+            <param name="encoding">The text encoding to use. If null, the catalog's encoding is used.</param>
+        </member>
+        <member name="M:Polib.Net.IO.IPoFileWriter.SaveChanges(System.IO.TextWriter,System.Boolean)">
+            <summary>
+            Writes the changes back to the specified <paramref name="writer"/>, optionally excluding the headers.
+            </summary>
+            <param name="writer">An object used to write the changes in the catalog.</param>
+            <param name="excludeHeaders">Whether to exclude the headers during the operation.</param>
+        </member>
+        <member name="M:Polib.Net.IO.IPoFileWriter.SaveChanges(System.IO.Stream,System.Boolean,System.Text.Encoding)">
+            <summary>
+            Writes back the changes in this catalog to the specified <paramref name="stream"/>.
+            </summary>
+            <param name="stream">An object used to write the changes in the catalog.</param>
+            <param name="excludeHeaders">Whether to exclude the headers during the operation.</param>
+            <param name="encoding">The text encoding to use. If null, the catalog's encoding is used.</param>
+        </member>
+        <member name="T:Polib.Net.IO.ITranslationFileWatcher">
+            <summary>
+            Specifies the contract required for classes that watch the file system for changes occuring in translation files.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.IO.ITranslationFileWatcher.Catalogs">
+            <summary>
+            Gets or sets the dictionary of catalogs grouped by culture.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.IO.ITranslationFileWatcher.CurrentCulture">
+            <summary>
+            Gets or sets the current culture.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.IO.ITranslationFileWatcher.Directory">
+            <summary>
+            Gets or sets the directory path to watch.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.IO.ITranslationFileWatcher.IncludeSubdirectories">
+            <summary>
+            Determines whether to include subdirectories when searching for .po files. The default value is true.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.IO.ITranslationFileWatcher.MonitorFileChanges">
+            <summary>
+            Determines whether to watch for translation file changes in <see cref="P:Polib.Net.IO.ITranslationFileWatcher.Directory"/>. The default value is false.
+            <para>
+            If directory change monitoring is enabled, translations are synchronized immediately as soon as the 
+            <see cref="E:System.IO.FileSystemWatcher.Changed"/>, and <see cref="E:System.IO.FileSystemWatcher.Created"/> events are fired.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Polib.Net.IO.ITranslationFileWatcher.SkipComments">
+            <summary>
+            Determines whether to skip comments when reading changed translation files.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.IO.ITranslationFileWatcher.TimerPeriodInSeconds">
+            <summary>
+            Gets or sets the time interval (seconds) between invocations of the callback method that watches for translation file changes.
+            To disable the timer, set this value to <see cref="F:System.Threading.Timeout.Infinite"/>. The default value is 600 seconds (10 minutes).
+            </summary>
+        </member>
+        <member name="E:Polib.Net.IO.ITranslationFileWatcher.TranslationFilesSynchronized">
+            <summary>
+            Event fired after a <see cref="T:System.IO.FileSystemWatcher"/> event occured and translations files were synchronized.
+            </summary>
+        </member>
+        <member name="T:Polib.Net.IO.PoFileReader">
+            <summary>
+            Represents an object that provides capabilities to read the contents of a .po translation file.
+            </summary>
+        </member>
+        <member name="M:Polib.Net.IO.PoFileReader.Parse(System.String,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            Parses a .po file content and returns a new instance of the <see cref="T:Polib.Net.Catalog"/> class.
+            </summary>
+            <param name="content">The content to parse.</param>
+            <param name="culture">The culture of the content to parse.</param>
+            <param name="skipComments">true to exclude metadata such as comments; otherwise, false.</param>
+            <param name="enforceCultureInfo">
+            true to make sure that the <paramref name="culture"/> is valid, an exception is thrown if not; 
+            false to accept nulls. If only the header is requested, this parameter is ignored.
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.Net.IO.PoFileReader.Read(System.String,System.String,System.Boolean,System.Text.Encoding,System.Boolean)">
+            <summary>
+            Reads a .po file and returns a new instance of the <see cref="T:Polib.Net.Catalog"/> class.
+            </summary>
+            <param name="path">The fully-qualified path, including the file name, of the .po file to read.</param>
+            <param name="culture">The culture of the content to read.</param>
+            <param name="skipComments">true to exclude metadata such as comments; otherwise, false.</param>
+            <param name="enc">The file encoding to use. If null, <see cref="P:System.Text.Encoding.UTF7"/> will be used.</param>
+            <param name="enforceCultureInfo">
+            true to make sure that the <paramref name="culture"/> is valid, an exception is thrown if not; 
+            false to accept nulls. If only the header is requested, this parameter is ignored.
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.Net.IO.PoFileReader.Read(System.IO.TextReader,System.String,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            Reads the specified text reader and returns a new instance of the <see cref="T:Polib.Net.Catalog"/> class.
+            </summary>
+            <param name="tr">An object used to read some text.</param>
+            <param name="culture">The culture of the content to read.</param>
+            <param name="skipComments">true to exclude metadata such as comments; otherwise, false.</param>
+            <param name="headerOnly">true to only read the PO header information; otherwise, false to read the whole catalog.</param>
+            <param name="enforceCultureInfo">
+            true to make sure that the <paramref name="culture"/> is valid, an exception is thrown if not; 
+            false to accept nulls. If only the header is requested, this parameter is ignored.
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.Net.IO.PoFileReader.ReadHeader(System.String)">
+            <summary>
+            Reads the header of the specified .po file.
+            </summary>
+            <param name="path">The fully-qualified path, including the file name, of the .po file to read.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.Net.IO.PoFileReader.ReadAll(System.String,System.String,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            Recursively reads all translation files located under the specified path and subdirectories.
+            </summary>
+            <param name="directory">The path to the directory to search.</param>
+            <param name="culture">The name of the culture used to retrieve translation files. Must be in a format similar to 'en-US', 'fr_FR', 'de.DE', or 'es', using any case of these characters (case-insensitive).</param>
+            <param name="skipComments">true to exclude metadata such as comments; otherwise, false.</param>
+            <param name="includeSubdirectories">true to recursively read subdirectories of <paramref name="directory"/>; otherwise, false.</param>
+            <param name="includeRegionCode2">true to include the regioncode2 (e.g. 'fr', 'en', etc.) culture variation in the search; otherwise, false.</param>
+            <returns></returns>
+            <exception cref="T:System.Globalization.CultureNotFoundException">Unsupported culture format.</exception>
+        </member>
+        <member name="M:Polib.Net.IO.PoFileReader.Merge(System.String,System.String,System.String)">
+            <summary>
+            (Experimental) Merges two Uniforum style .po files together.
+            </summary>
+            <param name="poDefFilePath">The .po definition file, which actually contains translations referring to old sources.</param>
+            <param name="refPotFilePath">The .pot file, which actually contains references to new sources.</param>
+            <param name="culture">The culture of the content to read.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.Net.IO.PoFileReader.AddCommentToEntry(Polib.Net.ITranslation,System.String)">
+            <summary>
+            Adds a comment to the appropriate property of the specified <paramref name="entry"/>.
+            </summary>
+            <param name="entry">The translation entry to add a comment to.</param>
+            <param name="line">The comment line to add.</param>
+        </member>
+        <member name="M:Polib.Net.IO.PoFileReader.Unpoify(System.String)">
+            <summary>
+            Gives back the original string from a PO-formatted string.
+            </summary>
+            <param name="value">PO-formatted string.</param>
+            <returns>escaped string.</returns>
+            <remarks>Inspired by the WordPress implementation.</remarks>
+        </member>
+        <member name="M:Polib.Net.IO.PoFileReader.TrimQuotes(System.String)">
+            <summary>
+            Removes double quotes at the beginning and the end of the specified string.
+            </summary>
+            <param name="s">The string to unquote.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.Net.IO.PoFileReader.MakeHeaders(System.String)">
+            <summary>
+            Creates a collection of key/value pairs from the specified translation.
+            </summary>
+            <param name="translation">The translation to transform into a dictionary.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.Net.IO.PoFileReader.GetPluralsExpression(System.String)">
+            <summary>
+            Extracts the number of plurals and the plural expression from the specified header.
+            </summary>
+            <param name="header">The header to extract plural parts from.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.Net.IO.PoFileReader.ReadFiles(System.String,System.Globalization.CultureInfo,System.Collections.Generic.HashSet{Polib.Net.Catalog},System.Collections.Generic.HashSet{System.String},System.Boolean,System.IO.SearchOption,System.Boolean,System.Globalization.CultureInfo)">
+            <summary>
+            Reads (.po) translation files in the specified directory, optionally including subdirectories.
+            </summary>
+            <param name="directory">The directory to search for .po files.</param>
+            <param name="culture">The culture name of the files to search.</param>
+            <param name="catalogs">Collects all read catalogs.</param>
+            <param name="filesRead">To keep reading any file more than once.</param>
+            <param name="skipComments">true to omit comments; otherwise, false.</param>
+            <param name="searchOption">Search top directories only or include subdirectories?</param>
+            <param name="includeRegionCode2">true to search the variations of the specified culture; otherwise, false.</param>
+            <param name="originalCulture">The original culture used to assign to the <see cref="P:Polib.Net.Catalog.Culture"/> property.</param>
+        </member>
+        <member name="T:Polib.Net.IO.PoFileWriter">
+            <summary>
+            Represents an object capable of writing .po files.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.IO.PoFileWriter.PoMaxLineLength">
+            <summary>
+            Gets or sets the maximum number of characters on each line in a .po file.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.IO.PoFileWriter.WordWrapReferences">
+            <summary>
+            Determines whether reference comments are word-wrapped.
+            </summary>
+        </member>
+        <member name="M:Polib.Net.IO.PoFileWriter.#ctor(Polib.Net.ICatalog)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Polib.Net.IO.PoFileWriter"/> class using the specified parameter.
+            </summary>
+            <param name="catalog">The catalog used to write the file.</param>
+        </member>
+        <member name="M:Polib.Net.IO.PoFileWriter.Export">
+            <summary>
+            Exports the whole PO catalog as a string.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.Net.IO.PoFileWriter.Export(System.Boolean)">
+            <summary>
+            Exports the whole PO catalog as a string.
+            </summary>
+            <param name="excludeHeaders">Whether to exclude the headers in the export.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.Net.IO.PoFileWriter.ExportHeaders">
+            <summary>
+            Exports headers to a PO entry.
+            </summary>
+            <returns>msgid/msgstr PO entry for this PO file headers, doesn't contain newline at the end.</returns>
+        </member>
+        <member name="M:Polib.Net.IO.PoFileWriter.ExportEntries">
+            <summary>
+            Exports all entries to PO format.
+            </summary>
+            <returns>Sequence of mgsgid/msgstr PO strings, doesn't containt newline at the end.</returns>
+        </member>
+        <member name="M:Polib.Net.IO.PoFileWriter.ExportEntry(Polib.Net.ITranslation)">
+            <summary>
+            Builds a string from the entry for inclusion in PO file.
+            </summary>
+            <param name="entry">The entry to convert to po string (passed by reference).</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.Net.IO.PoFileWriter.SaveChanges(System.Boolean,System.Text.Encoding)">
+            <summary>
+            Writes the changes back to a temporary file and returns the path pointing at it.
+            </summary>
+            <param name="excludeHeaders">Whether to exclude the headers during the operation.</param>
+            <param name="encoding">The text encoding to use. If null, the catalog's encoding is used.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.Net.IO.PoFileWriter.SaveChanges(System.String,System.Boolean,System.Text.Encoding)">
+            <summary>
+            Writes the changes back to the specified file <paramref name="path"/>.
+            </summary>
+            <param name="path">The fully-qualified name, including the path, of the file changes are written to.</param>
+            <param name="excludeHeaders">Whether to exclude the headers during the operation.</param>
+            <param name="encoding">The text encoding to use. If null, the catalog's encoding is used.</param>
+        </member>
+        <member name="M:Polib.Net.IO.PoFileWriter.SaveChanges(System.IO.TextWriter,System.Boolean)">
+            <summary>
+            Writes the changes back to the specified <paramref name="writer"/>, optionally excluding the headers.
+            </summary>
+            <param name="writer">An object used to write the changes in the catalog.</param>
+            <param name="excludeHeaders">Whether to exclude the headers during the operation.</param>
+        </member>
+        <member name="M:Polib.Net.IO.PoFileWriter.SaveChanges(System.IO.Stream,System.Boolean,System.Text.Encoding)">
+            <summary>
+            Writes back the changes in this catalog to the specified <paramref name="stream"/>.
+            </summary>
+            <param name="stream">An object used to write the changes in the catalog.</param>
+            <param name="excludeHeaders">Whether to exclude the headers during the operation.</param>
+            <param name="encoding">The text encoding to use. If null, the catalog's encoding is used.</param>
+        </member>
+        <member name="M:Polib.Net.IO.PoFileWriter.WriteHeaders(System.IO.TextWriter)">
+            <summary>
+            Writes the headers to the specified text writer.
+            </summary>
+            <param name="writer">An object to which the headers are written.</param>
+        </member>
+        <member name="M:Polib.Net.IO.PoFileWriter.WriteHeaders(System.IO.Stream)">
+            <summary>
+            Writes the headers to the specified stream.
+            </summary>
+            <param name="stream">An object to which the headers are written.</param>
+        </member>
+        <member name="M:Polib.Net.IO.PoFileWriter.WriteEntries(System.IO.TextWriter)">
+            <summary>
+            Writes the <see cref="P:Polib.Net.ICatalog.Entries"/> dictionary to the specified text writer.
+            </summary>
+            <param name="writer">An object to which the entries are written.</param>
+        </member>
+        <member name="M:Polib.Net.IO.PoFileWriter.WriteEntries(System.IO.Stream)">
+            <summary>
+            Writes the <see cref="P:Polib.Net.ICatalog.Entries"/> dictionary to the specified stream.
+            </summary>
+            <param name="stream">An object to which the entries are written.</param>
+        </member>
+        <member name="M:Polib.Net.IO.PoFileWriter.WriteEntry(System.IO.TextWriter,Polib.Net.ITranslation)">
+            <summary>
+            Writes the translation entry to the specified text writer.
+            </summary>
+            <param name="writer">An object to which the entry is written.</param>
+            <param name="entry">The entry to write.</param>
+        </member>
+        <member name="M:Polib.Net.IO.PoFileWriter.WriteEntry(System.IO.Stream,Polib.Net.ITranslation)">
+            <summary>
+            Writes the translation entry to the specified stream.
+            </summary>
+            <param name="stream">An object to which the entry is written.</param>
+            <param name="entry">The entry to write.</param>
+        </member>
+        <member name="M:Polib.Net.IO.PoFileWriter.CommentBlock(System.String,System.String)">
+            <summary>
+            Prepare a text as a comment -- wraps the lines and prepends # and a special character to each line.
+            </summary>
+            <param name="text">The comment text.</param>
+            <param name="type">Character to denote a special PO comment, like :, default is a space.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.Net.IO.PoFileWriter.SetEncoding(System.Text.Encoding)">
+            <summary>
+            Sets the appropriate encoding to be used by this <see cref="T:Polib.Net.IO.PoFileWriter"/> instance.
+            </summary>
+            <param name="encoding">The text encoding to use.</param>
+            <exception cref="T:System.ArgumentNullException">Cannot resolve to the appropriate encoding.</exception>
+        </member>
+        <member name="M:Polib.Net.IO.PoFileWriter.WriteText(System.IO.Stream,System.String)">
+            <summary>
+            Writes the text to specified stream. 
+            </summary>
+            <param name="stream">The stream to write the text to.</param>
+            <param name="text">The text to write to the stream.</param>
+        </member>
+        <member name="M:Polib.Net.IO.PoFileWriter.Poify(System.String)">
+            <summary>
+            Formats a string in PO-style
+            </summary>
+            <param name="s">The string to format.</param>
+            <returns>The poified string.</returns>
+        </member>
+        <member name="M:Polib.Net.IO.PoFileWriter.MatchBeginAndEndNewlines(System.String,System.String)">
+            <summary>
+            Matches the beginning and the end of new lines.
+            </summary>
+            <param name="translation">The translation to match.</param>
+            <param name="original">The original translation.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.Net.IO.PoFileWriter.PrependEachLine(System.String,System.String)">
+            <summary>
+            Inserts <paramref name="with"/> in the beginning of every new 
+            line of <paramref name="s"/> and returns the modified string.
+            </summary>
+            <param name="s">Prepend lines in this string.</param>
+            <param name="with">Prepend lines with this string.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Polib.Net.IO.TranslationFileWatcher">
+            <summary>
+            Represents an object that watches the file system for changes occuring in translation files.
+            </summary>
+        </member>
+        <member name="F:Polib.Net.IO.TranslationFileWatcher.WatcherTimer">
+            <summary>
+            Returns a reference to the internal timer that watches for file changes.
+            </summary>
+        </member>
+        <member name="F:Polib.Net.IO.TranslationFileWatcher.FileWatcher">
+            <summary>
+            Returns a reference to the <see cref="T:System.IO.FileSystemWatcher"/> that tracks changes made 
+            to translation files located under the <see cref="P:Polib.Net.IO.TranslationFileWatcher.Directory"/> directory.
+            </summary>
+        </member>
+        <member name="M:Polib.Net.IO.TranslationFileWatcher.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Polib.Net.IO.TranslationFileWatcher"/> class using the specified parameters.
+            </summary>
+        </member>
+        <member name="E:Polib.Net.IO.TranslationFileWatcher.TranslationFilesSynchronized">
+            <summary>
+            Event fired after a <see cref="T:System.IO.FileSystemWatcher"/> event occured and translations files were synchronized.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.IO.TranslationFileWatcher.SyncRoot">
+            <summary>
+            Gets or sets the synchronization root for this <see cref="T:Polib.Net.IO.TranslationFileWatcher"/> instance.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.IO.TranslationFileWatcher.Catalogs">
+            <summary>
+            Gets or sets the dictionary of catalogs grouped by culture.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.IO.TranslationFileWatcher.MonitorFileChanges">
+            <summary>
+            Determines whether to watch for translation file changes in <see cref="P:Polib.Net.IO.TranslationFileWatcher.Directory"/>. The default value is false.
+            <para>
+            If directory change monitoring is enabled, translations are synchronized immediately as soon as the 
+            <see cref="E:System.IO.FileSystemWatcher.Changed"/>, and <see cref="E:System.IO.FileSystemWatcher.Created"/> events are fired.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Polib.Net.IO.TranslationFileWatcher.IncludeSubdirectories">
+            <summary>
+            Determines whether to include subdirectories when searching for .po files. The default value is true.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.IO.TranslationFileWatcher.TimerPeriodInSeconds">
+            <summary>
+            Gets or sets the time interval (seconds) between invocations of the callback method that watches for translation file changes.
+            To disable the timer, set this value to <see cref="F:System.Threading.Timeout.Infinite"/>. The default value is 600 seconds (10 minutes).
+            </summary>
+        </member>
+        <member name="P:Polib.Net.IO.TranslationFileWatcher.Directory">
+            <summary>
+            Gets or sets the directory path to watch.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.IO.TranslationFileWatcher.SkipComments">
+            <summary>
+            Determines whether to skip comments when reading changed translation files.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.IO.TranslationFileWatcher.CurrentCulture">
+            <summary>
+            Gets or sets the current culture.
+            </summary>
+        </member>
+        <member name="M:Polib.Net.IO.TranslationFileWatcher.Dispose">
+            <summary>
+            Releases all resources used by the current <see cref="T:Polib.Net.IO.TranslationFileWatcher"/>.
+            </summary>
+        </member>
+        <member name="M:Polib.Net.IO.TranslationFileWatcher.OnFileSystemChange(System.Object,System.IO.FileSystemEventArgs)">
+            <summary>
+            Represents a collective handler for supported events of the internal instance of the <see cref="T:System.IO.FileSystemWatcher"/> class.
+            </summary>
+            <param name="sender">The object that raised the event.</param>
+            <param name="e">The event data.</param>
+        </member>
+        <member name="M:Polib.Net.IO.TranslationFileWatcher.OnTranslationFilesSynchronized(Polib.Net.ICatalog[])">
+            <summary>
+            Fires the <see cref="E:Polib.Net.IO.TranslationFileWatcher.TranslationFilesSynchronized"/> event.
+            </summary>
+            <param name="catalogs">The catalogs that were created or refreshed as a result of synchronization.</param>
+        </member>
+        <member name="M:Polib.Net.IO.TranslationFileWatcher.Dispose(System.Boolean)">
+            <summary>
+            Releases all resources used by this <see cref="T:Polib.Net.IO.TranslationFileWatcher"/>.
+            </summary>
+            <param name="disposing">true to release managed resources; otherwise, false.</param>
+        </member>
+        <member name="T:Polib.Net.ITranslation">
+            <summary>
+            Specifies the data contract required by classes to implement a translation entry.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.ITranslation.Context">
+            <summary>
+            Gets or sets the msgctxt property.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.ITranslation.ExtractedComments">
+            <summary>
+            Gets or sets the extracted comments.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.ITranslation.Flags">
+            <summary>
+            Gets a collection of comment flags.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.ITranslation.IsPlural">
+            <summary>
+            Determines whether this translation has a plural form.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.ITranslation.Plural">
+            <summary>
+            Gets or sets the msgid_plural property.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.ITranslation.References">
+            <summary>
+            Gets a collection of commented references for this translation.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.ITranslation.Singular">
+            <summary>
+            Gets or sets the msgid property.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.ITranslation.Translations">
+            <summary>
+            Gets a collection of msgstr properties.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.ITranslation.TranslatorComments">
+            <summary>
+            Gets or sets the translator comments.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.ITranslation.Key">
+            <summary>
+            Generates a unique key for this entry.
+            </summary>
+            <returns>The key or null if the entry is empty.</returns>
+        </member>
+        <member name="M:Polib.Net.ITranslation.GetPlural(System.Int64)">
+            <summary>
+            Returns the plural form of this translation.
+            </summary>
+            <param name="count">The number for which to evaluate the plural form.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.Net.ITranslation.GetPlural(System.Int64,System.Globalization.CultureInfo)">
+            <summary>
+            Returns the plural form of this translation.
+            </summary>
+            <param name="count">The number for which to evaluate the plural form.</param>
+            <param name="fallback">
+            The culture to use if either the current translation's catalog or the catalog's plural evaluator is null.
+            </param>
+            <returns></returns>
+        </member>
+        <member name="T:Polib.Net.ITranslationManager">
+            <summary>
+            Specifies the contract required for classes used to manage translation files.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.ITranslationManager.CachingDisabled">
+            <summary>
+            Determines whether to disable caching of translations.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.ITranslationManager.Catalogs">
+            <summary>
+            Gets or sets a dictionary of <see cref="T:Polib.Net.ICatalog"/> list grouped by culture containing all read catalogs.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.ITranslationManager.FileWatcher">
+            <summary>
+            Gets an object that watches translation file changes.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.ITranslationManager.IncludeCultureRegionCode2">
+            <summary>
+            Determines whether to include the regioncode2 for a specific culture when searching .po files. The default value is true.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.ITranslationManager.PoFilesDirectory">
+            <summary>
+            Gets or sets the .po files directory path.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.ITranslationManager.SkipComments">
+            <summary>
+            Determines whether to skip comments when reading .po files. The default value is true.
+            </summary>
+        </member>
+        <member name="E:Polib.Net.ITranslationManager.TranslationsLoading">
+            <summary>
+            Event fired before translations are loaded.
+            </summary>
+        </member>
+        <member name="M:Polib.Net.ITranslationManager.ClearCache">
+            <summary>
+            Clears the translation cache.
+            </summary>
+        </member>
+        <member name="M:Polib.Net.ITranslationManager.LoadTranslationsAsync(System.String)">
+            <summary>
+            Ensures that translations for the specified culture are loaded asynchronously.
+            </summary>
+            <param name="culture">The culture or domain name of the translation to use.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.Net.ITranslationManager.ResetTranslations">
+            <summary>
+            Invalidates any previously loaded translation files.
+            </summary>
+        </member>
+        <member name="M:Polib.Net.ITranslationManager.Translate(System.String,System.String,System.Object[])">
+            <summary>
+            Returns a localized string from a translated .po file, optionally formatting the result.
+            </summary>
+            <param name="culture">The culture or domain name of the translation to use.</param>
+            <param name="singular">The identifier of the localized string.</param>
+            <param name="formatArgs">An object array that contains zero or more objects to format.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.Net.ITranslationManager.Translate(System.String,System.String,System.String,System.Object[])">
+            <summary>
+            Returns a contextual localized string from a translated .po file, optionally formatting the result.
+            </summary>
+            <param name="culture">The culture or domain name of the translation to use.</param>
+            <param name="context">The message context.</param>
+            <param name="singular">The identifier of the localized string.</param>
+            <param name="formatArgs">An object array that contains zero or more objects to format.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.Net.ITranslationManager.TranslatePlural(System.String,System.String,System.String,System.Int64,System.Object[])">
+            <summary>
+            Returns the singular or plural form of a localized string from a translated .po file, optionally formatting the result.
+            </summary>
+            <param name="culture">The culture or domain name of the translation to use.</param>
+            <param name="singular">The identifier of the singular form of the translation.</param>
+            <param name="plural">The identifier of the plural form of the translation.</param>
+            <param name="count">A number that determines the singular or plural form to choose from.</param>
+            <param name="formatArgs">An object array that contains zero or more objects to format.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.Net.ITranslationManager.TranslatePlural(System.String,System.String,System.String,System.String,System.Int64,System.Object[])">
+            <summary>
+            Returns the singular or plural form of a contextual localized string from a translated .po file, optionally formatting the result.
+            </summary>
+            <param name="culture">The culture or domain name of the translation to use.</param>
+            <param name="context">The message context.</param>
+            <param name="singular">The identifier of the singular form of the translation.</param>
+            <param name="plural">The identifier of the plural form of the translation.</param>
+            <param name="count">A number that determines the singular or plural form to choose from.</param>
+            <param name="formatArgs">An object array that contains zero or more objects to format.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Polib.Net.Methods">
+            <summary>
+            Provides various helper methods used internally.
+            </summary>
+        </member>
+        <member name="F:Polib.Net.Methods.RxWordwrap">
+            <summary>
+            Precompiled regex for uncut lines with default length.
+            </summary>
+        </member>
+        <member name="F:Polib.Net.Methods.RxWordwrapCut">
+            <summary>
+            Precompiled regex for cut lines with default length.
+            </summary>
+        </member>
+        <member name="M:Polib.Net.Methods.GetCultureInfo(System.String,System.Boolean)">
+            <summary>
+            Returns the appropriate culture information.
+            </summary>
+            <param name="culture">The name of the culture. Can be null or empty; if not, must be in a format 
+            similar to 'en-US', 'fr_FR', 'de.DE', or 'es', using any case of these characters (case-insensitive).</param>
+            <param name="throwIfNull">true to throw a <see cref="T:System.Globalization.CultureNotFoundException"/> if the culture is not valid.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.Net.Methods.NormalizeCulture(System.String)">
+            <summary>
+            Replaces the understore '_', or dot '.' symbols (like those in 'fr_FR', 'de.DE', etc.) with a dash '-' in the specified culture
+            </summary>
+            <param name="culture">The name of the culture to normalize.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.Net.Methods.GetFileEncoding(System.String)">
+            <summary>
+            Detects the byte order mark of a file and returns an appropriate encoding for the file.
+            </summary>
+            <param name="path">The full name of the file to check.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.Net.Methods.IsRegionCode2(System.Globalization.CultureInfo)">
+            <summary>
+            Determines whether the specified culture's name equals its two-letter ISO language name.
+            </summary>
+            <param name="c">The culture to check.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.Net.Methods.Hash(System.String,System.Boolean)">
+            <summary>
+            Hash the specified string and return a hexa-decimal number.
+            </summary>
+            <param name="s">The string to hash.</param>
+            <param name="lowerCase">true to return lower-case letters; otherwise, false.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.Net.Methods.ToHex(System.Byte[],System.Boolean)">
+            <summary>
+            Transforms the one-dimensional byte array to a hexadecimal string.
+            </summary>
+            <param name="array">A one-dimensional byte array.</param>
+            <param name="lowerCase">true to return lower-case letters; otherwise, false.</param>
+            <returns>null (Nothing in Visual Basic) if <paramref name="array"/> is null, an empty string of the length of the array is zero; otherwise, a hexadecimal string.</returns>
+        </member>
+        <member name="M:Polib.Net.Methods.Wordwrap(System.String,System.Int32,System.String,System.Boolean)">
+            <summary>
+            Wraps a string to a given number of characters.
+            </summary>
+            <param name="text">The string to wrap.</param>
+            <param name="width">The number of characters at which the string will be wrapped.</param>
+            <param name="separator">The line is broken using this optional parameter.</param>
+            <param name="cut">If the cut is set to true, the string is always wrapped at or before the specified width.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.Net.Methods.WordwrapUncut(System.String,System.Int32,System.String)">
+            <summary>
+            Word wraps the given text to fit within the specified width.
+            </summary>
+            <param name="text">Text to be word wrapped</param>
+            <param name="width">Width, in characters, to which the text should be word wrapped</param>
+            <param name="separator"></param>
+            <returns>The modified text</returns>
+        </member>
+        <member name="M:Polib.Net.Methods.WordwrapRx(System.String,System.Int32,System.String,System.Boolean)">
+            <summary>
+            Wraps a string to a given number of characters. Uses regular expressions.
+            </summary>
+            <param name="text">The string to wrap.</param>
+            <param name="length">The maximum length.</param>
+            <param name="separator">The string used to separate words.</param>
+            <param name="cut">true to cut if a line exceeds <paramref name="length"/>; otherwise, false.</param>
+            <returns></returns>
+            <remarks>This method, even though it looks neat, is way too slow (over 4 times slower) compared to the ones above.</remarks>
+        </member>
+        <member name="M:Polib.Net.Methods.WrapText(System.String,System.Int32)">
+            <summary>
+            Wraps a string to a given number of characters.
+            </summary>
+            <param name="text">The string to wrap.</param>
+            <param name="lineWidth">The number of characters at which the string will be wrapped.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Polib.Net.Plurals.IPluralFormsEvaluator">
+            <summary>
+            Specifies the contract required by a class that returns the right translation index, according to a given plural forms parser.
+            </summary>
+        </member>
+        <member name="M:Polib.Net.Plurals.IPluralFormsEvaluator.Evaluate(System.Int64)">
+            <summary>
+            Evaluates the given number and returns the appriopriate plural index.
+            </summary>
+            <param name="n">The number whose plural form is to be evaluated.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.Net.Plurals.IPluralFormsEvaluator.Execute(System.Int64)">
+            <summary>
+            Executes the plural form function.
+            </summary>
+            <param name="n">Variable "n" to substitute in the expression.</param>
+            <returns>A <see cref="T:System.Int32"/> that represents the plural form index.</returns>
+        </member>
+        <member name="T:Polib.Net.Plurals.IPluralFormsParser">
+            <summary>
+            Specifies the contract required by a class that provides gettext Plural-Forms parser functionality.
+            </summary>
+        </member>
+        <member name="M:Polib.Net.Plurals.IPluralFormsParser.Parse">
+            <summary>
+            Parse a Plural-Forms string into tokens.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Polib.Net.Plurals.PluralFormsEvaluator">
+            <summary>
+            Represents a class that returns the right translation index, according to a given plural forms expression.
+            </summary>
+        </member>
+        <member name="F:Polib.Net.Plurals.PluralFormsEvaluator.Parser">
+            <summary>
+            Gets the plural forms parser.
+            </summary>
+        </member>
+        <member name="F:Polib.Net.Plurals.PluralFormsEvaluator.Tokens">
+            <summary>
+            Tokens generated from the string.
+            </summary>
+        </member>
+        <member name="F:Polib.Net.Plurals.PluralFormsEvaluator.EvaluatorCache">
+            <summary>
+            Cache for repeated calls to the <see cref="M:Polib.Net.Plurals.PluralFormsEvaluator.Evaluate(System.Int64)"/> function.
+            </summary>
+        </member>
+        <member name="F:Polib.Net.Plurals.PluralFormsEvaluator.Default">
+            <summary>
+            Gets the default plural forms evaluator.
+            </summary>
+        </member>
+        <member name="M:Polib.Net.Plurals.PluralFormsEvaluator.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Polib.Net.Plurals.PluralFormsEvaluator"/> class using the specified value.
+            </summary>
+            <param name="expression">The plural forms expression to parse and evaluate when needed.</param>
+        </member>
+        <member name="M:Polib.Net.Plurals.PluralFormsEvaluator.#ctor(Polib.Net.Plurals.IPluralFormsParser)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Polib.Net.Plurals.PluralFormsEvaluator"/> class using the specified parameter.
+            </summary>
+            <param name="parser">The plural forms parser.</param>
+        </member>
+        <member name="M:Polib.Net.Plurals.PluralFormsEvaluator.#ctor(System.Func{System.Int64,System.Int32})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Polib.Net.Plurals.PluralFormsEvaluator"/> class using the specified function.
+            </summary>
+            <param name="evaluator">A function that evaluates the plural form.</param>
+        </member>
+        <member name="M:Polib.Net.Plurals.PluralFormsEvaluator.Evaluate(System.Int64)">
+            <summary>
+            Evaluates the given number and returns the appriopriate plural index.
+            </summary>
+            <param name="n">The number whose plural form is to be evaluated.</param>
+            <returns><see cref="T:System.Int32"/> representing the plural form value.</returns>
+        </member>
+        <member name="M:Polib.Net.Plurals.PluralFormsEvaluator.Execute(System.Int64)">
+            <summary>
+            Execute the plural form function.
+            </summary>
+            <param name="n">Variable "n" to substitute.</param>
+            <returns>Plural form value.</returns>
+        </member>
+        <member name="M:Polib.Net.Plurals.PluralFormsEvaluator.GetPluralIndex(System.Globalization.CultureInfo,System.Int64)">
+            <summary>
+            Returns the plural forms index based on the specified culture and number <paramref name="n"/>.
+            </summary>
+            <param name="culture">The culture used to determine the plural form index.</param>
+            <param name="n">The number to evaluate.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.Net.Plurals.PluralFormsEvaluator.GetPluralIndex(System.Globalization.CultureInfo,System.Int64,System.Int32@)">
+            <summary>
+            Returns the plural forms index based on the specified culture and number <paramref name="n"/>.
+            </summary>
+            <param name="culture">The culture used to determine the plural form index.</param>
+            <param name="n">The number to evaluate.</param>
+            <param name="nplurals">Returns the number of plural forms for the specified culture.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Polib.Net.Plurals.PluralFormsParser">
+            <summary>
+            Represents a gettext Plural-Forms parser. Ported from WordPress 4.9.0.
+            </summary>
+        </member>
+        <member name="F:Polib.Net.Plurals.PluralFormsParser.OP_CHARS">
+            <summary>
+            Operator characters.
+            </summary>
+        </member>
+        <member name="F:Polib.Net.Plurals.PluralFormsParser.NUM_CHARS">
+            <summary>
+            Valid number characters.
+            </summary>
+        </member>
+        <member name="F:Polib.Net.Plurals.PluralFormsParser.OpPrecedence">
+            <summary>
+            Operator precedence from highest to lowest. Higher numbers indicate higher precedence, and are executed first.
+            </summary>
+        </member>
+        <member name="F:Polib.Net.Plurals.PluralFormsParser.Tokens">
+            <summary>
+            Tokens generated from the string.
+            </summary>
+        </member>
+        <member name="M:Polib.Net.Plurals.PluralFormsParser.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Polib.Net.Plurals.PluralFormsParser"/> class using the specified parameter.
+            </summary>
+            <param name="expression">The plural function to parse (just the bit after 'plural=' from Plural-Forms)</param>
+        </member>
+        <member name="M:Polib.Net.Plurals.PluralFormsParser.Parse">
+            <summary>
+            Parse a Plural-Forms string into tokens.
+            </summary>
+        </member>
+        <member name="M:Polib.Net.Plurals.PluralFormsParser.Parse(System.String)">
+            <summary>
+            Parse a Plural-Forms expression string into tokens.
+            </summary>
+            <param name="expression">The plural function to parse (just the bit after 'plural=' from Plural-Forms)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.Net.Plurals.PluralFormsParser.Strspn(System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            Finds the length of the initial segment of a string consisting 
+            entirely of characters contained within a given mask.
+            </summary>
+            <param name="subject">The string to seek.</param>
+            <param name="mask">The string within which to search.</param>
+            <param name="start">The position within <paramref name="subject"/> at which to start seeking.</param>
+            <param name="length">The number of characters to count. Zero or less means all characters.</param>
+            <returns></returns>
+            <remarks>Mimics the PHP 'strspn' function. </remarks>
+        </member>
+        <member name="T:Polib.Net.Synchronization.IUpdatedCatalog">
+            <summary>
+            Specifies the data contract required for classes 
+            that represent an updated catalog of translated items.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.Synchronization.IUpdatedCatalog.Id">
+            <summary>
+            Gets or sets the unique of the catalog.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.Synchronization.IUpdatedCatalog.Items">
+            <summary>
+            Gets or sets the collection of updated translations.
+            </summary>
+        </member>
+        <member name="T:Polib.Net.Synchronization.IUpdatedTranslation">
+            <summary>
+            Specifies the data contract required by classes that implement updatable translations.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.Synchronization.IUpdatedTranslation.Row">
+            <summary>
+            Gets the ordinal row number.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.Synchronization.IUpdatedTranslation.UniqueKey">
+            <summary>
+            Gets or sets the unique key of this translation.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.Synchronization.IUpdatedTranslation.Key">
+            <summary>
+            Gets the unique of this translation.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.Synchronization.IUpdatedTranslation.Context">
+            <summary>
+            Gets or sets the context.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.Synchronization.IUpdatedTranslation.Singular">
+            <summary>
+            Gets or sets the singular form.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.Synchronization.IUpdatedTranslation.Plural">
+            <summary>
+            Gets or sets the plural form.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.Synchronization.IUpdatedTranslation.Translations">
+            <summary>
+            Gets or sets the translations collection.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.Synchronization.IUpdatedTranslation.ExtractedComments">
+            <summary>
+            Gets or sets the extracted comments.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.Synchronization.IUpdatedTranslation.Flags">
+            <summary>
+            Gets or sets the flags collection.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.Synchronization.IUpdatedTranslation.References">
+            <summary>
+            Gets or sets the references collection.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.Synchronization.IUpdatedTranslation.TranslatorComments">
+            <summary>
+            Gets or sets the translators comments.
+            </summary>
+        </member>
+        <member name="T:Polib.Net.Synchronization.SyncExtensions">
+            <summary>
+            Provides extension methods for synchronizing catalogs and translations.
+            </summary>
+        </member>
+        <member name="M:Polib.Net.Synchronization.SyncExtensions.MergeChanges(System.Collections.Generic.IList{Polib.Net.Synchronization.UpdatedTranslation},System.Collections.Generic.IList{Polib.Net.ITranslation})">
+            <summary>
+            Detects and returns all changes relative to the specified <paramref name="unchangedCollection"/>.
+            </summary>
+            <param name="potentialChanges">The potentially changed collection.</param>
+            <param name="unchangedCollection">The original, unchanged collection of translations.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.Net.Synchronization.SyncExtensions.SaveChanges(Polib.Net.ICatalog,System.Boolean,System.Boolean)">
+            <summary>
+            Saves the changes made to the specified catalog on disk.
+            </summary>
+            <param name="catalog">The catalog to save.</param>
+            <param name="backup">Whether to create a backup of the original catalog.</param>
+            <param name="wrapReferences">Whether to word-wrap comment references.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.Net.Synchronization.SyncExtensions.Sync(System.Collections.Generic.IList{System.String},System.Collections.Generic.IList{System.String})">
+            <summary>
+            Compares <paramref name="unchanged"/> to <paramref name="maybeChanged"/>, and 
+            if differences exist, synchronizes them with the <paramref name="unchanged"/>.
+            </summary>
+            <param name="unchanged">The unchanged collection.</param>
+            <param name="maybeChanged">The collection containing potential changes.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Polib.Net.Synchronization.UpdatedCatalog">
+            <summary>
+            Represents a serializable catalog that has been modified on the client side.
+            </summary>
+        </member>
+        <member name="M:Polib.Net.Synchronization.UpdatedCatalog.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Polib.Net.Synchronization.UpdatedCatalog"/> class.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.Synchronization.UpdatedCatalog.Id">
+            <summary>
+            Gets or sets the unique identifier of the catalog.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.Synchronization.UpdatedCatalog.Culture">
+            <summary>
+            Gets or sets the culture of the catalog.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.Synchronization.UpdatedCatalog.FileName">
+            <summary>
+            Gets or sets the name of file associated with this catalog.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.Synchronization.UpdatedCatalog.HeaderComments">
+            <summary>
+            Gets or sets the header comments.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.Synchronization.UpdatedCatalog.PluralCount">
+            <summary>
+            Gets or sets the plural count.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.Synchronization.UpdatedCatalog.LastAccessTime">
+            <summary>
+            Gets or sets the last access time.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.Synchronization.UpdatedCatalog.Items">
+            <summary>
+            Gets or sets the collection of updated translations.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.Synchronization.UpdatedCatalog.FileId">
+            <summary>
+            Gets the unique hashed file identifier.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.Synchronization.UpdatedCatalog.Entries">
+            <summary>
+            Returns null. For the dictionary's values, use <see cref="P:Polib.Net.Synchronization.UpdatedCatalog.Items"/>.
+            </summary>
+            <remarks>Don't throw exceptions; might cause problems during serializations.</remarks>
+        </member>
+        <member name="P:Polib.Net.Synchronization.UpdatedCatalog.Headers">
+            <summary>
+            Returns null.
+            </summary>
+            <remarks>Don't throw exceptions; might cause problems during serializations.</remarks>
+        </member>
+        <member name="M:Polib.Net.Synchronization.UpdatedCatalog.GetCharset(System.String@)">
+            <summary>
+            Throws <see cref="T:System.NotImplementedException"/>.
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.Net.Synchronization.UpdatedCatalog.GetEncoding">
+            <summary>
+            Throws <see cref="T:System.NotImplementedException"/>.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.Net.Synchronization.UpdatedCatalog.GetHeader(System.String,System.String@)">
+            <summary>
+            Throws <see cref="T:System.NotImplementedException"/>.
+            </summary>
+            <param name="name"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Polib.Net.Synchronization.UpdatedTranslation">
+            <summary>
+            Represents a serializable object used to update (from a client application) an existing translation.
+            This is essentially a version of the <see cref="T:Polib.Net.Translation"/> class which has read-write properties.
+            </summary>
+        </member>
+        <member name="M:Polib.Net.Synchronization.UpdatedTranslation.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Polib.Net.Synchronization.UpdatedTranslation"/> class.
+            </summary>
+        </member>
+        <member name="M:Polib.Net.Synchronization.UpdatedTranslation.#ctor(System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Polib.Net.Synchronization.UpdatedTranslation"/> class using the specified parameter.
+            </summary>
+            <param name="row">The ordinal row number.</param>
+        </member>
+        <member name="P:Polib.Net.Synchronization.UpdatedTranslation.Row">
+            <summary>
+            Gets or sets the ordinal row number.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.Synchronization.UpdatedTranslation.UniqueKey">
+            <summary>
+            Gets or sets the unique key of this translation.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.Synchronization.UpdatedTranslation.Key">
+            <summary>
+            Gets the unique of this translation.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.Synchronization.UpdatedTranslation.Context">
+            <summary>
+            Gets or sets the context.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.Synchronization.UpdatedTranslation.Singular">
+            <summary>
+            Gets or sets the singular form.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.Synchronization.UpdatedTranslation.Plural">
+            <summary>
+            Gets or sets the plural form.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.Synchronization.UpdatedTranslation.Translations">
+            <summary>
+            Gets or sets the translations collection.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.Synchronization.UpdatedTranslation.ExtractedComments">
+            <summary>
+            Gets or sets the extracted comments.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.Synchronization.UpdatedTranslation.Flags">
+            <summary>
+            Gets or sets the flags collection.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.Synchronization.UpdatedTranslation.References">
+            <summary>
+            Gets or sets the references collection.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.Synchronization.UpdatedTranslation.TranslatorComments">
+            <summary>
+            Gets or sets the translators comments.
+            </summary>
+        </member>
+        <member name="T:Polib.Net.Translation">
+            <summary>
+            Represents a translation entry in a .po file.
+            </summary>
+        </member>
+        <member name="M:Polib.Net.Translation.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Polib.Net.Translation"/> class.
+            </summary>
+        </member>
+        <member name="M:Polib.Net.Translation.#ctor(Polib.Net.Catalog)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Polib.Net.Translation"/> class using the specified parameter.
+            </summary>
+            <param name="parent">The catalog to which this translation belongs.</param>
+        </member>
+        <member name="P:Polib.Net.Translation.Context">
+            <summary>
+            Gets or sets the msgctxt property.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.Translation.Singular">
+            <summary>
+            Gets or sets the msgid property.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.Translation.Plural">
+            <summary>
+            Gets or sets the msgid_plural property.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.Translation.Translations">
+            <summary>
+            Gets a collection of msgstr properties.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.Translation.References">
+            <summary>
+            Gets a collection of commented references for this translation.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.Translation.ExtractedComments">
+            <summary>
+            Gets or sets the extracted comments.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.Translation.TranslatorComments">
+            <summary>
+            Gets or sets the translator comments.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.Translation.Flags">
+            <summary>
+            Gets a collection of comment flags.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.Translation.IsPlural">
+            <summary>
+            Determines whether this translation has a plural form.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.Translation.Catalog">
+            <summary>
+            Gets the catalog to which the current translation belongs.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.Translation.Key">
+            <summary>
+            Generates a unique key for this entry.
+            </summary>
+            <returns>The key or null if the entry is empty.</returns>
+        </member>
+        <member name="M:Polib.Net.Translation.GetSingular">
+            <summary>
+            Returns the singular form of this translation, or the message identifier.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.Net.Translation.GetPlural(System.Int64)">
+            <summary>
+            Returns the plural form of this translation.
+            </summary>
+            <param name="count">The number for which to evaluate the plural form.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.Net.Translation.GetPlural(System.Int64,System.Globalization.CultureInfo)">
+            <summary>
+            Returns the plural form of this translation.
+            </summary>
+            <param name="count">The number for which to evaluate the plural form.</param>
+            <param name="fallbackCulture">
+            The culture to use if either <see cref="P:Polib.Net.Translation.Catalog"/> or <see cref="P:Polib.Net.Catalog.PluralEvaluator"/> is null.
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.Net.Translation.MergeWith(Polib.Net.ITranslation)">
+            <summary>
+            Merges this <see cref="T:Polib.Net.ITranslation"/> with <paramref name="other"/>.
+            </summary>
+            <param name="other">The other <see cref="T:Polib.Net.ITranslation"/> to merge into this instance.</param>
+        </member>
+        <member name="M:Polib.Net.Translation.ToString">
+            <summary>
+            Returns the string representation of the current instance.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Polib.Net.TranslationEventArgs">
+            <summary>
+            Represents the base for classes that contain data for translation events.
+            </summary>
+        </member>
+        <member name="M:Polib.Net.TranslationEventArgs.#ctor">
+            <summary>
+            Initializes a new instace of the <see cref="T:Polib.Net.TranslationEventArgs"/> class.
+            </summary>
+        </member>
+        <member name="M:Polib.Net.TranslationEventArgs.#ctor(System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Polib.Net.TranslationEventArgs"/> class using the specified parameter.
+            </summary>
+            <param name="cancel">true to cancel the event; otherwise, false.</param>
+        </member>
+        <member name="P:Polib.Net.TranslationEventArgs.Cancel">
+            <summary>
+            Determines whether the event should be canceled.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.TranslationEventArgs.Catalogs">
+            <summary>
+            Gets or sets a collection of <see cref="T:Polib.Net.ICatalog"/> elements.
+            </summary>
+        </member>
+        <member name="T:Polib.Net.TranslationExtensions">
+            <summary>
+            Provides extension methods for translation file items.
+            </summary>
+        </member>
+        <member name="M:Polib.Net.TranslationExtensions.GroupByCulture(System.Collections.Generic.IEnumerable{Polib.Net.ICatalog})">
+            <summary>
+            Transforms the collection into a dictionary containing collections of <see cref="T:Polib.Net.ICatalog"/> elements grouped by culture.
+            </summary>
+            <param name="collection">The collection of <see cref="T:Polib.Net.ICatalog"/> to transform.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.Net.TranslationExtensions.FindCatalog(System.Collections.Generic.IDictionary{System.String,System.Collections.Generic.IList{Polib.Net.ICatalog}},System.String,Polib.Net.ICatalog@)">
+            <summary>
+            Searches the dictionary for a <see cref="T:Polib.Net.Catalog"/> read from the specified file name.
+            </summary>
+            <param name="dictionary">The dictionary to search.</param>
+            <param name="fileName">The name of the file used to read the catalog.</param>
+            <param name="catalog">Returns the <see cref="T:Polib.Net.Catalog"/>.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.Net.TranslationExtensions.RemoveCatalog(System.Collections.Generic.IDictionary{System.String,System.Collections.Generic.IList{Polib.Net.ICatalog}},Polib.Net.ICatalog)">
+            <summary>
+            Attempts to remove the specified catalog from the dictionary.
+            </summary>
+            <param name="dictionary">The dictionary from which to remove <paramref name="catalog"/>.</param>
+            <param name="catalog">The catalog to remove from <paramref name="dictionary"/>.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.Net.TranslationExtensions.GetCatalogs(System.Collections.Generic.IDictionary{System.String,System.Collections.Generic.IList{Polib.Net.ICatalog}},System.String)">
+            <summary>
+            Returns a collection of all catalogs, optionally of the specified culture, contained in the dictionary.
+            </summary>
+            <param name="dictionary">The dictionary whose catalogs are to be returned.</param>
+            <param name="culture">The culture for which to return catalogs. Can be null.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.Net.TranslationExtensions.FindById(System.Collections.Generic.IDictionary{System.String,System.Collections.Generic.IList{Polib.Net.ICatalog}},System.String,Polib.Net.ICatalog@)">
+            <summary>
+            Finds the first catalog with the specified <paramref name="id"/>.
+            </summary>
+            <param name="dictionary">The dictionary to search.</param>
+            <param name="id">The unique identifier of the catalog to find.</param>
+            <param name="result">Returns the matched catalog, or null.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.Net.TranslationExtensions.FindById(System.Collections.Generic.IEnumerable{Polib.Net.ICatalog},System.String,Polib.Net.ICatalog@)">
+            <summary>
+            Finds the first catalog with the specified <paramref name="id"/>.
+            </summary>
+            <param name="collection">The collection to search.</param>
+            <param name="id">The unique identifier of the catalog to find.</param>
+            <param name="result">Returns the matched catalog, or null.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.Net.TranslationExtensions.Find(System.Collections.Generic.IEnumerable{Polib.Net.ICatalog},System.String,Polib.Net.ITranslation@)">
+            <summary>
+            Finds the first translation that matches the specified key in the catalog collection.
+            </summary>
+            <param name="collection">The collection to search.</param>
+            <param name="key">The unique key of the cached translation to find.</param>
+            <param name="result">Returns the matched translation, or null.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.Net.TranslationExtensions.Find(System.Collections.Generic.IEnumerable{Polib.Net.CachedTranslation},System.String,System.String,Polib.Net.ITranslation@)">
+            <summary>
+            Finds the first cached translation that matches the specified key in the collection.
+            </summary>
+            <param name="collection">The collection to search.</param>
+            <param name="culture">The culture of the translation to find.</param>
+            <param name="key">The unique key of the cached translation to find.</param>
+            <param name="result">Returns the matched translation, or null.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Polib.Net.TranslationManager">
+            <summary>
+            Represents an object used for translation files management.
+            </summary>
+        </member>
+        <member name="F:Polib.Net.TranslationManager.Cache">
+            <summary>
+            Returns a reference to the cached translations.
+            </summary>
+        </member>
+        <member name="M:Polib.Net.TranslationManager.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Polib.Net.TranslationManager"/> class.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.TranslationManager.FileWatcher">
+            <summary>
+            Gets an object that watches translation file changes.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.TranslationManager.Catalogs">
+            <summary>
+            Gets or sets a dictionary of <see cref="T:Polib.Net.ICatalog"/> list grouped by culture containing all read catalogs.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.TranslationManager.Instance">
+            <summary>
+            Returns the default instance of this <see cref="T:Polib.Net.TranslationManager"/> class.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.TranslationManager.PoFilesDirectory">
+            <summary>
+            Gets or sets the .po files directory path.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.TranslationManager.SkipComments">
+            <summary>
+            Determines whether to skip comments when reading .po files. The default value is true.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.TranslationManager.IncludeCultureRegionCode2">
+            <summary>
+            Determines whether to include the regioncode2 for a specific culture when searching .po files. The default value is true.
+            </summary>
+        </member>
+        <member name="P:Polib.Net.TranslationManager.CachingDisabled">
+            <summary>
+            Determines whether to disable caching of translations.
+            </summary>
+        </member>
+        <member name="E:Polib.Net.TranslationManager.TranslationsLoading">
+            <summary>
+            Event fired before translations are loaded.
+            </summary>
+        </member>
+        <member name="M:Polib.Net.TranslationManager.Translate(System.String,System.String,System.Object[])">
+            <summary>
+            Returns a localized string from a translated .po file, optionally formatting the result.
+            </summary>
+            <param name="culture">The culture or domain name of the translation to use.</param>
+            <param name="singular">The identifier of the localized string.</param>
+            <param name="formatArgs">An object array that contains zero or more objects to format.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.Net.TranslationManager.Translate(System.String,System.String,System.String,System.Object[])">
+            <summary>
+            Returns a contextual localized string from a translated .po file, optionally formatting the result.
+            </summary>
+            <param name="culture">The culture or domain name of the translation to use.</param>
+            <param name="context">The message context.</param>
+            <param name="singular">The identifier of the localized string.</param>
+            <param name="formatArgs">An object array that contains zero or more objects to format.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.Net.TranslationManager.TranslatePlural(System.String,System.String,System.String,System.Int64,System.Object[])">
+            <summary>
+            Returns the singular or plural form of a localized string from a translated .po file, optionally formatting the result.
+            </summary>
+            <param name="culture">The culture or domain name of the translation to use.</param>
+            <param name="singular">The identifier of the singular form of the translation.</param>
+            <param name="plural">The identifier of the plural form of the translation.</param>
+            <param name="count">A number that determines the singular or plural form to choose from.</param>
+            <param name="formatArgs">An object array that contains zero or more objects to format.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.Net.TranslationManager.TranslatePlural(System.String,System.String,System.String,System.String,System.Int64,System.Object[])">
+            <summary>
+            Returns the singular or plural form of a contextual localized string from a translated .po file, optionally formatting the result.
+            </summary>
+            <param name="culture">The culture or domain name of the translation to use.</param>
+            <param name="context">The message context.</param>
+            <param name="singular">The identifier of the singular form of the translation.</param>
+            <param name="plural">The identifier of the plural form of the translation.</param>
+            <param name="count">A number that determines the singular or plural form to choose from.</param>
+            <param name="formatArgs">An object array that contains zero or more objects to format.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.Net.TranslationManager.ResetTranslations">
+            <summary>
+            Invalidates any previously loaded translation files.
+            </summary>
+        </member>
+        <member name="M:Polib.Net.TranslationManager.ClearCache">
+            <summary>
+            Clears the translation cache.
+            </summary>
+        </member>
+        <member name="M:Polib.Net.TranslationManager.LoadTranslationsAsync(System.String)">
+            <summary>
+            Ensures that translations for the specified culture are loaded asynchronously.
+            </summary>
+            <param name="culture">The culture or domain name of the translation to use.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.Net.TranslationManager.Dispose">
+            <summary>
+            Releases all resources used by the current <see cref="T:Polib.Net.TranslationManager"/>.
+            </summary>
+        </member>
+        <member name="M:Polib.Net.TranslationManager.EnsureTranslationsLoaded(System.String)">
+            <summary>
+            Makes sure that all translation files have been loaded from the <see cref="P:Polib.Net.TranslationManager.PoFilesDirectory"/> path.
+            </summary>
+            <param name="culture">The culture or domain name of the translation to use.</param>
+        </member>
+        <member name="M:Polib.Net.TranslationManager.OnTranslationsLoading(Polib.Net.TranslationEventArgs)">
+            <summary>
+            Fires the <see cref="E:Polib.Net.TranslationManager.TranslationsLoading"/> event.
+            </summary>
+        </member>
+        <member name="M:Polib.Net.TranslationManager.FindEntry(System.String,Polib.Net.ITranslation,Polib.Net.ITranslation@)">
+            <summary>
+            Ensures that translation files are loaded and attempts to find the identified translation.
+            </summary>
+            <param name="culture">The culture or domain name of the translation to use.</param>
+            <param name="model">The model whose <see cref="P:Polib.Net.Translation.Key"/> property is used to retrieve a translation.</param>
+            <param name="result">Returns the retrieved translation entry, if any.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.Net.TranslationManager.Dispose(System.Boolean)">
+            <summary>
+            Releases all resources used by this <see cref="T:Polib.Net.TranslationManager"/>.
+            </summary>
+            <param name="disposing">true to release managed resources; otherwise, false.</param>
+        </member>
+    </members>
+</doc>

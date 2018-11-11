@@ -1,0 +1,287 @@
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Home\About.cshtml:2
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Shared\_Layout.cshtml:43
+msgid "About"
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Home\About.cshtml:7
+msgid "Use this area to provide additional information."
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Home\Contact.cshtml:2
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Shared\_Layout.cshtml:44
+msgid "Contact"
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Home\Contact.cshtml:5
+msgid "Message"
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Home\Contact.cshtml:15
+msgid "Support:"
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Home\Contact.cshtml:16
+msgid "Marketing:"
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Home\Index.cshtml:2
+msgid "Home Page"
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Home\Index.cshtml:16
+msgid "Learn how to build ASP.NET apps that can run anywhere."
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Home\Index.cshtml:18
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Home\Index.cshtml:29
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Home\Index.cshtml:40
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Shared\_CookieConsentPartial.cshtml:27
+msgid "Learn More"
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Home\Index.cshtml:27
+msgid ""
+"There are powerful new features in Visual Studio for building modern web "
+"apps."
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Home\Index.cshtml:38
+msgid ""
+"Learn how Microsoft's Azure cloud platform allows you to build, deploy, and "
+"scale web apps."
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Home\Index.cshtml:48
+msgid "Previous"
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Home\Index.cshtml:52
+msgid "Next"
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Home\Index.cshtml:58
+msgid "Application uses"
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Home\Index.cshtml:60
+msgid "Sample pages using ASP.NET Core MVC"
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Home\Index.cshtml:61
+msgid ""
+"Theming using <a href=\"https://go.microsoft.com/fwlink/?"
+"LinkID=398939\">Bootstrap</a>"
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Home\Index.cshtml:65
+msgid "How to"
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Home\Index.cshtml:67
+msgid "Add a Controller and View"
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Home\Index.cshtml:68
+msgid "Manage User Secrets using Secret Manager."
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Home\Index.cshtml:69
+msgid "Use logging to log a message."
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Home\Index.cshtml:70
+msgid "Add packages using NuGet."
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Home\Index.cshtml:71
+msgid "Target development, staging or production environment."
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Home\Index.cshtml:75
+msgid "Overview"
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Home\Index.cshtml:77
+msgid "Conceptual overview of what is ASP.NET Core"
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Home\Index.cshtml:78
+msgid "Fundamentals of ASP.NET Core such as Startup and middleware."
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Home\Index.cshtml:79
+msgid "Working with Data"
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Home\Index.cshtml:80
+msgid "Security"
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Home\Index.cshtml:81
+msgid "Client side development"
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Home\Index.cshtml:82
+msgid "Develop on different platforms"
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Home\Index.cshtml:83
+msgid "Read more on the documentation site"
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Home\Index.cshtml:87
+msgid "Run &amp; Deploy"
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Home\Index.cshtml:89
+msgid "Run your app"
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Home\Index.cshtml:90
+msgid "Run tools such as EF migrations and more"
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Home\Index.cshtml:91
+msgid "Publish to Microsoft Azure Web Apps"
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Home\Privacy.cshtml:2
+msgid "Privacy Policy"
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Home\Privacy.cshtml:6
+msgid "Use this page to detail your site's privacy policy."
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Shared\Error.cshtml:3
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Shared\Error.cshtml:6
+msgid "Error"
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Shared\Error.cshtml:7
+msgid "An error occurred while processing your request."
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Shared\Error.cshtml:12
+msgid "Request ID"
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Shared\Error.cshtml:16
+msgid "Development Mode"
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Shared\Error.cshtml:18
+msgid ""
+"Swapping to <strong>Development</strong> environment will display more "
+"detailed information about the error that occurred."
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Shared\Error.cshtml:21
+msgid ""
+"<strong>Development environment should not be enabled in deployed "
+"applications</strong>, as it can result in sensitive information from "
+"exceptions being displayed to end users. For local debugging, development "
+"environment can be enabled by setting the <strong>ASPNETCORE_ENVIRONMENT</"
+"strong> environment variable to <strong>Development</strong>, and restarting "
+"the application."
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Shared\_CookieConsentPartial.cshtml:15
+msgid "Toggle cookie consent banner"
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Shared\_CookieConsentPartial.cshtml:24
+msgid "Use this space to summarize your privacy and cookie use policy."
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Shared\_CookieConsentPartial.cshtml:28
+msgid "Accept"
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Shared\_Layout.cshtml:41
+msgid "Home"
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Shared\_Layout.cshtml:42
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Translations\Catalog.cshtml:82
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Translations\Index.cshtml:35
+msgid "Translations"
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Translations\Catalog.cshtml:4
+msgid "Edit Translations"
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Translations\Catalog.cshtml:9
+msgid "No such catalog!"
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Translations\Catalog.cshtml:10
+msgid ""
+"The catalog you are requesting hasn't been found. Make sure to refresh the "
+"page at the translations home page."
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Translations\Catalog.cshtml:14
+msgid "Go back to the translations home page."
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Translations\Catalog.cshtml:31
+msgid "Original Text"
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Translations\Catalog.cshtml:32
+#, csharp-format
+msgid "Translated Text: {0}"
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Translations\Catalog.cshtml:57
+msgid "Source Text"
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Translations\Catalog.cshtml:66
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Translations\Catalog.cshtml:91
+msgid "Singular"
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Translations\Catalog.cshtml:70
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Translations\Catalog.cshtml:96
+msgid "Plural"
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Translations\Index.cshtml:4
+msgid "Translations Page"
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Translations\Index.cshtml:9
+msgid "Translation catalogs"
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Translations\Index.cshtml:17
+msgid "Catalog"
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Translations\Index.cshtml:19
+msgid "Culture"
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Translations\Index.cshtml:22
+msgctxt "Catalog"
+msgid "Headers"
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Translations\Index.cshtml:32
+msgid "Plural Count"
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Translations\Index.cshtml:38
+msgid "File Name"
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Translations\Index.cshtml:43
+msgid "File Last Access Time"
+msgstr ""
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net.Web\src\Views\Translations\Index.cshtml:53
+msgid "No translation catalogs available!"
+msgstr ""

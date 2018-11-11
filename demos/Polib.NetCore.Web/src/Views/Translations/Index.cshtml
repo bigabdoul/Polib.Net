@@ -1,0 +1,54 @@
+﻿@model CatalogDictionary
+
+@{
+    ViewData["Title"] = _.T("Translations Page");
+}
+
+@if (null != Model)
+{
+    <h3>@_.T("Translation catalogs")</h3>
+    <ul>
+        @foreach (var collection in Model.Values)
+        {
+            foreach (var c in collection)
+            {
+                var fname = System.IO.Path.GetFileName(c.FileName);
+                <li>
+                    <h3>@_.T("Catalog") <a asp-action="catalog" asp-route-id="@c.FileId">@c.FileId</a></h3>
+                    <dl class="dl-horizontal">
+                        <dt>@_.T("Culture")</dt>
+                        <dd>@c.Culture</dd>
+
+                        <dt>@_.Tx("Catalog", "Headers")</dt>
+                        <dd>
+                            <ul class="list-unstyled">
+                                @foreach (var hdr in c.Headers)
+                                {
+                                <li>@hdr.Key : <strong>@hdr.Value</strong> </li>
+                                }
+                            </ul>
+                        </dd>
+
+                        <dt>@_.T("Plural Count")</dt>
+                        <dd>@c.PluralCount</dd>
+
+                        <dt>@_.T("Translations")</dt>
+                        <dd>@c.Entries.Count</dd>
+
+                        <dt>@_.T("File Name")</dt>
+                        <dd>
+                            <a asp-action="download" asp-route-id="@c.FileId">@fname</a>
+                        </dd>
+
+                        <dt>@_.T("File Last Access Time")</dt>
+                        <dd>@c.LastAccessTime</dd>
+                    </dl>
+                </li>
+            }
+        }
+    </ul>
+}
+else
+{
+    <h1>@_.T("No translation catalogs available!")</h1>
+}

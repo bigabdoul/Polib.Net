@@ -1,0 +1,109 @@
+﻿@model Catalog
+
+@{
+    ViewData["Title"] = _.T("Edit Translations");
+}
+
+@if (Model == null)
+{
+    <h1>@_.T("No such catalog!")</h1>
+    <p>@_.T("The catalog you are requesting hasn't been found. Make sure to refresh the page at the translations home page.")</p>
+    <p>
+        <a asp-action="index">
+            <i class="fa fa-back"></i>
+            @_.T("Go back to the translations home page.")
+        </a>
+    </p>
+    return;
+}
+
+<h2>@ViewData["Title"]</h2>
+
+@{ 
+    var token = Html.AntiForgeryToken().ExtractInputValue();
+}
+
+<div ng-controller="CatalogController" ng-init="load('@Model.FileId')">
+    <div class="i18n-container">
+        <table class="table table-condensed table-bordered">
+            <thead>
+                <tr>
+                    <th>@_.T("Original Text")</th>
+                    <th>@_.T("Translated Text: {0}", Model.Culture.DisplayName)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="i18n-row" ng-repeat="t in catalog.items" id="i18n-{{t.row}}" 
+                    data-content="{{t.row}}" ng-click="show(t)" ng-class="{'btn-info':selected(t)}">
+                    <td>
+                        <span class="btn-warning i18n-context" ng-show="{{t.context!==null}}">{{t.context}}</span>
+                        <span class="i18n-singular">{{truncate(t.singular)}}</span>
+                    </td>
+                    <td class="i18n-translations">
+                        <div class="i18n-singular">{{truncate(t.translations[0])}}</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <hr style="margin:0;"/>
+    <form ng-submit="update()" novalidate>
+        @Html.AntiForgeryToken()
+        <div class="i18n-footer">
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="translation-collapse-heading-one">
+                    <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#translation-collapse" href="#translation-collapse-one" aria-expanded="true" aria-controls="translation-collapse-one">
+                            @_.T("Source Text") : <span class="btn-warning i18n-context" ng-show="current.context">{{current.context}}</span>
+                        </a>
+                    </h4>
+                </div>
+                <div id="translation-collapse-one" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="translation-collapse-heading-one">
+                    <div class="panel-body">
+                        <p class="i18n-singular" ng-show="!isplural()">{{current.singular}}</p>
+                        <div ng-show="isplural()">
+                            <div class="i18n-singular">
+                                <label>@_.H("Singular")</label>
+                                <p>{{current.singular}}</p>
+                            </div>
+                            <div class="i18n-plural">
+                                <label>@_.H("Plural")</label>
+                                <p>{{current.plural}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="translation-collapse-heading-two">
+                    <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#translation-collapse" href="#translation-collapse-two" aria-expanded="true" aria-controls="translation-collapse-two">
+                            @_.T("Translations") :
+                        </a>
+                    </h4>
+                </div>
+                <div id="translation-collapse-two" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="translation-collapse-heading-two">
+                    <div class="panel-body">
+                        <textarea class="i18n-singular form-control" ng-show="!isplural()" ng-model="current.translations[0]"></textarea>
+                        <div ng-show="isplural()">
+                            <div class="i18n-singular">
+                                <label>@_.H("Singular")</label>
+                                <textarea class="i18n-singular form-control" ng-model="current.translations[0]"></textarea>
+                            </div>
+                            <div class="i18n-plural" ng-repeat="idx in pluralIndices(current)">
+                                <hr style="margin:5px 0;" />
+                                <label>@_.H("Plural")</label>
+                                <textarea class="form-control" ng-model="current.translations[idx]"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p>
+                <input type="submit" value="@_.T("Save")" class="btn btn-primary" ng-disabled="!current"/>
+            </p>
+        </div>
+    </form>
+</div>

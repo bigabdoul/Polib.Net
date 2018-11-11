@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = _.T("Contact");
+}
+<h2>@ViewData["Title"]</h2>
+<h3>@_.T((string)ViewData["Message"])</h3>
+
+<address>
+    One Microsoft Way<br />
+    Redmond, WA 98052-6399<br />
+    <abbr title="Phone">P:</abbr>
+    425.555.0100
+</address>
+
+<address>
+    <strong>@_.T("Support:")</strong> <a href="mailto:Support@example.com">Support@example.com</a><br />
+    <strong>@_.T("Marketing:")</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+</address>

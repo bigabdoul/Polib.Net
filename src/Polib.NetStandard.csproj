@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.4</TargetFramework>
+    <Description>A simple .NET standard library for reading .po translation files.</Description>
+    <Authors>Bigabdoul</Authors>
+    <Company>Karfamsoft Corporation</Company>
+    <RepositoryUrl>https://github.com/bigabdoul/polib.net</RepositoryUrl>
+    <PackageId>Polib.Net</PackageId>
+    <Product>Polib.Net</Product>
+    <RepositoryType>Github</RepositoryType>
+    <AssemblyName>Polib.Net</AssemblyName>
+    <RootNamespace>Polib.Net</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net\src\Polib.Net.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Polib.Net.Core.Mvc\**" />
+    <Compile Remove="Polib.Net.Core.Tests\**" />
+    <Compile Remove="Polib.Net.Mvc\**" />
+    <Compile Remove="Polib.NetCore.Mvc\**" />
+    <Compile Remove="test\**" />
+    <EmbeddedResource Remove="Polib.Net.Core.Mvc\**" />
+    <EmbeddedResource Remove="Polib.Net.Core.Tests\**" />
+    <EmbeddedResource Remove="Polib.Net.Mvc\**" />
+    <EmbeddedResource Remove="Polib.NetCore.Mvc\**" />
+    <EmbeddedResource Remove="test\**" />
+    <None Remove="Polib.Net.Core.Mvc\**" />
+    <None Remove="Polib.Net.Core.Tests\**" />
+    <None Remove="Polib.Net.Mvc\**" />
+    <None Remove="Polib.NetCore.Mvc\**" />
+    <None Remove="test\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="TextFileEncodingDetector.cs" />
+    <Compile Remove="TranslationEntryList.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.IO.FileSystem.Watcher" Version="4.3.0" />
+  </ItemGroup>
+
+</Project>

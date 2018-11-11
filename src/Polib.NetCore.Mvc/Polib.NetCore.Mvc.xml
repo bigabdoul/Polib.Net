@@ -1,0 +1,193 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Polib.NetCore.Mvc</name>
+    </assembly>
+    <members>
+        <member name="T:Polib.NetCore.Mvc.IRazorPageTranslationManager">
+            <summary>
+            Specifies the contract required for classes that inject .po files translation capabilities into razor views.
+            </summary>
+        </member>
+        <member name="M:Polib.NetCore.Mvc.IRazorPageTranslationManager.H(System.String,System.Object[])">
+            <summary>
+            Returns a localized HTML-encoded string from a 
+            translated .po file, optionally formatting the result.
+            </summary>
+            <param name="singular">The identifier of the localized string.</param>
+            <param name="formatArgs">An object array that contains zero or more objects to format.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.NetCore.Mvc.IRazorPageTranslationManager.Hx(System.String,System.String,System.Object[])">
+            <summary>
+            Returns a contextual localized HTML-encoded string from a 
+            translated .po file, optionally formatting the result.
+            </summary>
+            <param name="context">The context to use.</param>
+            <param name="singular">The identifier of the singular form of the translation.</param>
+            <param name="formatArgs">An object array that contains zero or more objects to format.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.NetCore.Mvc.IRazorPageTranslationManager.Hn(System.String,System.String,System.Int64,System.Object[])">
+            <summary>
+            Returns the singular or plural form of a localized HTML-encoded 
+            string from a translated .po file, optionally formatting the result.
+            </summary>
+            <param name="singular">The identifier of the singular form of the translation.</param>
+            <param name="plural">The identifier of the plural form of the translation.</param>
+            <param name="count">A number that determines the singular or plural form to choose from.</param>
+            <param name="formatArgs">An object array that contains zero or more objects to format.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.NetCore.Mvc.IRazorPageTranslationManager.Hnx(System.String,System.String,System.String,System.Int64,System.Object[])">
+            <summary>
+            Returns the singular or plural form of a contextual localized HTML-encoded 
+            string from a translated .po file, optionally formatting the result.
+            </summary>
+            <param name="context">The context to use.</param>
+            <param name="singular">The identifier of the singular form of the translation.</param>
+            <param name="plural">The identifier of the plural form of the translation.</param>
+            <param name="count">A number that determines the singular or plural form to choose from.</param>
+            <param name="formatArgs">An object array that contains zero or more objects to format.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.NetCore.Mvc.IRazorPageTranslationManager.T(System.String,System.Object[])">
+            <summary>
+            Returns a localized string from a translated .po file, optionally formatting the result.
+            </summary>
+            <param name="singular">The identifier of the localized string.</param>
+            <param name="formatArgs">An object array that contains zero or more objects to format.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.NetCore.Mvc.IRazorPageTranslationManager.Tx(System.String,System.String,System.Object[])">
+            <summary>
+            Returns a contextual localized string from a translated .po file, optionally formatting the result.
+            </summary>
+            <param name="context">The context to use.</param>
+            <param name="singular">The identifier of the singular form of the translation.</param>
+            <param name="formatArgs">An object array that contains zero or more objects to format.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.NetCore.Mvc.IRazorPageTranslationManager.Tn(System.String,System.String,System.Int64,System.Object[])">
+            <summary>
+            Returns the singular or plural form of a localized string from a translated .po file, optionally formatting the result.
+            </summary>
+            <param name="singular">The identifier of the singular form of the translation.</param>
+            <param name="plural">The identifier of the plural form of the translation.</param>
+            <param name="count">A number that determines the singular or plural form to choose from.</param>
+            <param name="formatArgs">An object array that contains zero or more objects to format.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.NetCore.Mvc.IRazorPageTranslationManager.Tnx(System.String,System.String,System.String,System.Int64,System.Object[])">
+            <summary>
+            Returns the singular or plural form of a contextual localized string from a translated .po file, optionally formatting the result.
+            </summary>
+            <param name="context">The context to use.</param>
+            <param name="singular">The identifier of the singular form of the translation.</param>
+            <param name="plural">The identifier of the plural form of the translation.</param>
+            <param name="count">A number that determines the singular or plural form to choose from.</param>
+            <param name="formatArgs">An object array that contains zero or more objects to format.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Polib.NetCore.Mvc.RazorPageTranslationManager">
+            <summary>
+            Represents the base class for injecting .po files translation capabilities into razor views.
+            </summary>
+        </member>
+        <member name="M:Polib.NetCore.Mvc.RazorPageTranslationManager.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Polib.NetCore.Mvc.RazorPageTranslationManager"/> class.
+            </summary>
+        </member>
+        <member name="P:Polib.NetCore.Mvc.RazorPageTranslationManager.TranslationManager">
+            <summary>
+            Returns a reference to the <see cref="P:Polib.NetCore.Mvc.RazorPageTranslationManager.TranslationManager"/> class instance.
+            </summary>
+        </member>
+        <member name="M:Polib.NetCore.Mvc.RazorPageTranslationManager.H(System.String,System.Object[])">
+            <summary>
+            Returns a localized HTML-encoded string from a 
+            translated .po file, optionally formatting the result.
+            </summary>
+            <param name="singular">The identifier of the localized string.</param>
+            <param name="formatArgs">An object array that contains zero or more objects to format.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.NetCore.Mvc.RazorPageTranslationManager.Hx(System.String,System.String,System.Object[])">
+            <summary>
+            Returns a contextual localized HTML-encoded string from 
+            a translated .po file, optionally formatting the result.
+            </summary>
+            <param name="context">The context to use.</param>
+            <param name="singular">The identifier of the singular form of the translation.</param>
+            <param name="formatArgs">An object array that contains zero or more objects to format.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.NetCore.Mvc.RazorPageTranslationManager.Hn(System.String,System.String,System.Int64,System.Object[])">
+            <summary>
+            Returns the singular or plural form of a localized HTML-encoded 
+            string from a translated .po file, optionally formatting the result.
+            </summary>
+            <param name="singular">The identifier of the singular form of the translation.</param>
+            <param name="plural">The identifier of the plural form of the translation.</param>
+            <param name="number">A number that determines the singular or plural form to choose from.</param>
+            <param name="formatArgs">An object array that contains zero or more objects to format.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.NetCore.Mvc.RazorPageTranslationManager.Hnx(System.String,System.String,System.String,System.Int64,System.Object[])">
+            <summary>
+            Returns the singular or plural form of a contextual localized HTML-encoded 
+            string from a translated .po file, optionally formatting the result.
+            </summary>
+            <param name="context">The context to use.</param>
+            <param name="singular">The identifier of the singular form of the translation.</param>
+            <param name="plural">The identifier of the plural form of the translation.</param>
+            <param name="count">A number that determines the singular or plural form to choose from.</param>
+            <param name="formatArgs">An object array that contains zero or more objects to format.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.NetCore.Mvc.RazorPageTranslationManager.T(System.String,System.Object[])">
+            <summary>
+            Returns a localized string from a translated .po file, optionally formatting the result.
+            </summary>
+            <param name="singular">The identifier of the localized string.</param>
+            <param name="formatArgs">An object array that contains zero or more objects to format.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.NetCore.Mvc.RazorPageTranslationManager.Tx(System.String,System.String,System.Object[])">
+            <summary>
+            Returns a contextual localized string from a translated .po file, optionally formatting the result.
+            </summary>
+            <param name="context">The message context.</param>
+            <param name="singular">The identifier of the localized string.</param>
+            <param name="formatArgs">An object array that contains zero or more objects to format.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.NetCore.Mvc.RazorPageTranslationManager.Tn(System.String,System.String,System.Int64,System.Object[])">
+            <summary>
+            Returns the singular or plural form of a localized string from a translated .po file.
+            </summary>
+            <param name="singular">The identifier of the singular form of the translation.</param>
+            <param name="plural">The identifier of the plural form of the translation.</param>
+            <param name="count">A number that determines the singular or plural form to choose from.</param>
+            <param name="formatArgs"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Polib.NetCore.Mvc.RazorPageTranslationManager.Tnx(System.String,System.String,System.String,System.Int64,System.Object[])">
+            <summary>
+            Returns the singular or plural form of a contextual localized string from a translated .po file, optionally formatting the result.
+            </summary>
+            <param name="context">The message context.</param>
+            <param name="singular">The identifier of the singular form of the translation.</param>
+            <param name="plural">The identifier of the plural form of the translation.</param>
+            <param name="count">A number that determines the singular or plural form to choose from.</param>
+            <param name="formatArgs">An object array that contains zero or more objects to format.</param>
+            <returns></returns>
+        </member>
+        <member name="P:Polib.NetCore.Mvc.RazorPageTranslationManager.Culture">
+            <summary>
+            Gets the current UI culture info name of the current thread.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,69 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Polib.NetStandard", "src\Polib.NetStandard.csproj", "{C9DC3492-043B-4FD7-B70B-139D3203ADEE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D80B0393-105A-4629-8583-09C5AA25A0AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Polib.Net.Mvc", "src\Polib.Net.Mvc\Polib.Net.Mvc.csproj", "{8415A979-4035-4459-B3BA-229C189B0256}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Polib.NetCore.Mvc", "src\Polib.NetCore.Mvc\Polib.NetCore.Mvc.csproj", "{4C9711C0-AFEC-4F5B-B1C1-5B1A30B2F57A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{CE8BE982-BCD3-4689-98D8-5F5D65AF4BE4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "demos", "demos", "{A40ECB76-A486-4A17-A805-848FA219D13E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Polib.NetCore.Tests", "test\Polib.NetCore.Tests\Polib.NetCore.Tests.csproj", "{66B50C57-1E30-45F3-9F9A-D57556590277}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Polib.NetCore.Web", "demos\Polib.NetCore.Web\src\Polib.NetCore.Web.csproj", "{072C83C9-A8C2-4E2E-B14B-5089065D2DBE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4F58B48C-9060-4AA7-AAFF-9372E45A4C27}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C9DC3492-043B-4FD7-B70B-139D3203ADEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9DC3492-043B-4FD7-B70B-139D3203ADEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9DC3492-043B-4FD7-B70B-139D3203ADEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9DC3492-043B-4FD7-B70B-139D3203ADEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8415A979-4035-4459-B3BA-229C189B0256}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8415A979-4035-4459-B3BA-229C189B0256}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8415A979-4035-4459-B3BA-229C189B0256}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8415A979-4035-4459-B3BA-229C189B0256}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C9711C0-AFEC-4F5B-B1C1-5B1A30B2F57A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C9711C0-AFEC-4F5B-B1C1-5B1A30B2F57A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C9711C0-AFEC-4F5B-B1C1-5B1A30B2F57A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C9711C0-AFEC-4F5B-B1C1-5B1A30B2F57A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66B50C57-1E30-45F3-9F9A-D57556590277}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66B50C57-1E30-45F3-9F9A-D57556590277}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66B50C57-1E30-45F3-9F9A-D57556590277}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66B50C57-1E30-45F3-9F9A-D57556590277}.Release|Any CPU.Build.0 = Release|Any CPU
+		{072C83C9-A8C2-4E2E-B14B-5089065D2DBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{072C83C9-A8C2-4E2E-B14B-5089065D2DBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{072C83C9-A8C2-4E2E-B14B-5089065D2DBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{072C83C9-A8C2-4E2E-B14B-5089065D2DBE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C9DC3492-043B-4FD7-B70B-139D3203ADEE} = {D80B0393-105A-4629-8583-09C5AA25A0AB}
+		{8415A979-4035-4459-B3BA-229C189B0256} = {D80B0393-105A-4629-8583-09C5AA25A0AB}
+		{4C9711C0-AFEC-4F5B-B1C1-5B1A30B2F57A} = {D80B0393-105A-4629-8583-09C5AA25A0AB}
+		{66B50C57-1E30-45F3-9F9A-D57556590277} = {CE8BE982-BCD3-4689-98D8-5F5D65AF4BE4}
+		{072C83C9-A8C2-4E2E-B14B-5089065D2DBE} = {A40ECB76-A486-4A17-A805-848FA219D13E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B7B7BDAA-E62F-4700-B088-98E47AE06288}
+	EndGlobalSection
+EndGlobal
