@@ -26,14 +26,14 @@ To get up and running, do the following:
 
 1. Clone this repository into a directory (e.g. 'github-projects'):
 
-   ```git clone https://github.com/bigabdoul/Polib.Net.git```
+   ```$> git clone https://github.com/bigabdoul/Polib.Net.git```
 
    This will create a subdirectory 'Polib.Net' in 'github-projects' like so: 
    'github-projects/Polib.net'
 
 2. Clone this demo-dependent project also into 'github-projects' like so:
 
-   ```git clone https://github.com/bigabdoul/Bootstrap.Themes.git```
+   ```$> git clone https://github.com/bigabdoul/Bootstrap.Themes.git```
 
    This project is not required by the Polib.Net Solution but is used in the demo 
    web app and is just a fancy way to change its appearence using many pre-built 
@@ -52,7 +52,7 @@ The Solution has 4 folders, namely *demos*, *Solution Items*, *src*, and *test*.
 It contains three projects:
 
 1. **Polib.NetStandard**: This is the core project targeting .NET Standard 1.4, 
-which means it's a cross-platform implementation. It responsible for all interactions 
+which means it's a cross-platform implementation. It's responsible for all interactions 
 with .po translation files.
 
 2. **Polib.NetCore.Mvc**: This one is a translation library project targeting 
@@ -112,7 +112,7 @@ https://mlocati.github.io/articles/gettext-iconv-windows.html
 Once downloaded and installed the binaries of gettext, you can execute the following
 at the command prompt (supposing that the current directory is where 'Program.cs' is):
 ```
-xgettext.exe -k -kTranslatePlural:2,3 --from-code=UTF-8 -LC# --omit-header -omessages.pot -fProgram.cs
+xgettext.exe -k -kTranslatePlural:2,3 --from-code=UTF-8 -LC# --omit-header -omessages.pot Program.cs
 ```
 More on that command, right now! First, there's 'xgettext.exe', which is a
 command-line tool used to extract translatable strings from source code. It supports
@@ -127,6 +127,9 @@ provide its own default keywords.
 
 The -o (output) option followed by 'messages.pot' indicates the .pot (PO template)
 file to write on disk as the result of parsing our source code.
+
+*Program.cs* is the name of the source code file we want to scan. We could have replaced
+this by a list of files specified in another file (that would be the -f option ).
 
 The -f (file) input option indicates the file to scan. This could be a list of files
 or even another file that contains the list of files to scan; but here, we are using
@@ -148,35 +151,57 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        // the culture we're handling
-        var culture = "fr-FR";
+        try
+        {
+            if (args.Length < 1)
+            {
+                Console.WriteLine("Please enter the translation file name");
+                return;
+            }
 
-        // read the translation file; make sure to set the full path
-        var catalog = PoFileReader.Read("messages.po", culture);
+            // get the file name
+            var filename = args[0];
 
-        // get a reference to the default translation manager instance
-        var manager = TranslationManager.Instance;
+            if (!File.Exists(filename))
+            {
+                Console.WriteLine("File '{0}' does not exist!", filename);
+                return;
+            }
 
-        // add the catalog to the translation manager's catalogs dictionary;
-        // we could add as many different cultures as we want to support;
-        manager.Catalogs.Add(culture, new[] { catalog });
+            // the culture we're handling
+            var culture = "fr-FR";
 
-        // use a generic list instead of an array if you intend to monitor
-        // changes that occur within the file system in the directory containing
-        // the translation files, like so:
-        // manager.Catalogs.Add(culture, new List<ICatalog> { catalog });
+            // read the translation file; make sure to set the full path
+            var catalog = PoFileReader.Read(filename, culture);
 
-        // should come as a parameter from somewhere
-        var filesRestored = 3;
+            // get a reference to the default translation manager instance
+            var manager = TranslationManager.Instance;
 
-        // translate the message and format the output on the fly
-        var result = manager.TranslatePlural(culture
-            , "{0} media file restored from the trash."
-            , "{0} media files restored from the trash."
-            , filesRestored
-            , filesRestored);
+            // add the catalog to the translation manager's catalogs dictionary;
+            // we could add as many different cultures as we want to support;
+            manager.Catalogs.Add(culture, new[] { catalog });
 
-        Console.WriteLine(result);
+            // use a generic list instead of an array if you intend to monitor
+            // changes that occur within the file system in the directory containing
+            // the translation files, like so:
+            manager.Catalogs.Add(culture, new List<ICatalog> { catalog });
+
+            // should come as a parameter from somewhere
+            var filesRestored = 3;
+
+            // translate the message and format the output on the fly
+            var result = manager.TranslatePlural(culture
+                , "{0} media file restored from the trash."
+                , "{0} media files restored from the trash."
+                , filesRestored
+                , filesRestored);
+
+            Console.WriteLine(result);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("The following error occured: {0}", ex);
+        }
     }
 }
 ```
