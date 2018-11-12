@@ -16,6 +16,7 @@ namespace Polib.Net.IO
         private bool _insync;
         private bool _disposed;
         private readonly object objLock = new object();
+        private IDictionary<string, IList<ICatalog>> _catalogs;
 
         /// <summary>
         /// Returns a reference to the internal timer that watches for file changes.
@@ -74,7 +75,18 @@ namespace Polib.Net.IO
         /// <summary>
         /// Gets or sets the dictionary of catalogs grouped by culture.
         /// </summary>
-        public virtual IDictionary<string, IList<ICatalog>> Catalogs { get; set; }
+        public virtual IDictionary<string, IList<ICatalog>> Catalogs
+        {
+            get
+            {
+                if (_catalogs == null)
+                {
+                    _catalogs = new Dictionary<string, IList<ICatalog>>();
+                }
+                return _catalogs;
+            }
+            set => _catalogs = value;
+        }
 
         /// <summary>
         /// Determines whether to watch for translation file changes in <see cref="Directory"/>. The default value is false.
