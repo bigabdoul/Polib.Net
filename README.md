@@ -184,7 +184,7 @@ public class Program
             // use a generic list instead of an array if you intend to monitor
             // changes that occur within the file system in the directory containing
             // the translation files, like so:
-            manager.Catalogs.Add(culture, new List<ICatalog> { catalog });
+            // manager.Catalogs.Add(culture, new List<ICatalog> { catalog });
 
             // should come as a parameter from somewhere
             var filesRestored = 3;
