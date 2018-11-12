@@ -250,14 +250,26 @@ namespace Polib.Net
 
                         if (!cancel)
                         {
-                            Catalogs = PoFileReader.ReadAll(PoFilesDirectory
-                                , culture
-                                , SkipComments
-                                , FileWatcher.IncludeSubdirectories
-                                , IncludeCultureRegionCode2).GroupByCulture();
+                            if (!string.IsNullOrEmpty(PoFilesDirectory))
+                            {
+                                Catalogs = PoFileReader.ReadAll(PoFilesDirectory
+                                    , culture
+                                    , SkipComments
+                                    , FileWatcher.IncludeSubdirectories
+                                    , IncludeCultureRegionCode2).GroupByCulture();
+
+                                _catalogsLoaded = true;
+                            }
+                            else if (Catalogs?.Count > 0)
+                            {
+                                _catalogsLoaded = true;
+                            }
+                            else
+                            {
+                                throw new InvalidOperationException("Translation catalogs have not been initialized.");
+                            }
 
                             FileWatcher.CurrentCulture = culture;
-                            _catalogsLoaded = true;
                         }
                     }
                 }
