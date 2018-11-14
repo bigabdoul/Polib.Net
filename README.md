@@ -22,7 +22,7 @@ the **Polib.NetCore.Web** project in the *demos* folder, an ASP.NET Core Web
 application under development to showcase this feature.
 
 ## Getting started
-To get up and running, do the following:
+To get up and running, do the following from the command prompt or terminal:
 
 1. Clone this repository into a directory (e.g. 'github-projects'):
 
@@ -90,7 +90,7 @@ libraries into a new project. For example, to build a multi-lingual console app:
    using Polib.Net;
    using System;
    ```
-   In the *public static void Main(string[] args)* method, add the following:
+   In the *static void Main(string[] args)* method, add the following:
    ```
    // get a reference to the default translation manager instance
    var manager = TranslationManager.Instance;
@@ -115,7 +115,7 @@ at the command prompt (supposing that the current directory is where 'Program.cs
 xgettext.exe -k -kTranslatePlural:2,3 --from-code=UTF-8 -LC# --omit-header -omessages.pot Program.cs
 ```
 More on that command, right now! First, there's 'xgettext.exe', which is a
-command-line tool used to extract translatable strings from source code. It supports
+command-line tool used to extract translatable strings from your source code. It supports
 multiple programming languages, one of which is C# (hence the -LC# switch).
 
 The -k option stands for 'keyword', meaning the method name used to translate 
@@ -131,76 +131,78 @@ file to write on disk as the result of parsing our source code.
 *Program.cs* is the name of the source code file we want to scan. We could have replaced
 this by a list of files specified in another file (that would be the -f option ).
 
-The -f (file) input option indicates the file to scan. This could be a list of files
-or even another file that contains the list of files to scan; but here, we are using
-just 'Program.cs'.
+The -f (file) input option indicates the file that contains the list of files to scan; 
+but here, we are just using 'Program.cs'.
 
-This command should generate a 'messages.pot' file in the same directory as the 
+This command should generate a 'messages.pot' file in the same directory as the file
 'Program.cs' is in. If you open this file with a program like *Poedit*, you can easily
 start making translations. In our *Main(string args[])* method above, you can also 
 simply rename the file's extension to .po and replace 
 ```manager.PoFilesDirectory = "path/to/po/files";``` with the directory name that
 ```messages.po``` is in. Or, you could just load this ```messages.po``` files:
 ```
-using Polib.Net;
 using Polib.Net.IO;
 using System;
 using System.Collections.Generic;
+using System.IO;
 
-public class Program
+namespace Polib.Net.Demos
 {
-    public static void Main(string[] args)
+    class Program
     {
-        try
+        static void Main(string[] args)
         {
-            if (args.Length < 1)
+            try
             {
-                Console.WriteLine("Please enter the translation file name");
-                return;
+                if (args.Length < 1)
+                {
+                    Console.WriteLine("Please enter the translation file name");
+                    return;
+                }
+
+                // get the file name
+                var filename = args[0];
+
+                if (!File.Exists(filename))
+                {
+                    Console.WriteLine("File '{0}' does not exist!", filename);
+                    return;
+                }
+
+                // the culture we're handling
+                var culture = "fr-FR";
+
+                // read the translation file; make sure to set the full path
+                var catalog = PoFileReader.Read(filename, culture);
+
+                // get a reference to the default translation manager instance
+                var manager = TranslationManager.Instance;
+
+                // add the catalog to the translation manager's catalogs dictionary;
+                // we could add as many different cultures as we want to support;
+                manager.Catalogs.Add(culture, new[] { catalog });
+
+                // use a generic list instead of an array if you intend to monitor
+                // changes that occur within the file system in the directory containing
+                // the translation files, like so:
+                //manager.Catalogs.Add(culture, new List<ICatalog> { catalog });
+
+                // should come as a parameter from somewhere
+                var filesRestored = 3;
+
+                // translate the message and format the output on the fly
+                var result = manager.TranslatePlural(culture
+                    , "{0} media file restored from the trash."
+                    , "{0} media files restored from the trash."
+                    , filesRestored
+                    , filesRestored);
+
+                Console.WriteLine(result);
             }
-
-            // get the file name
-            var filename = args[0];
-
-            if (!File.Exists(filename))
+            catch (Exception ex)
             {
-                Console.WriteLine("File '{0}' does not exist!", filename);
-                return;
+                Console.WriteLine("The following error occured: {0}", ex);
             }
-
-            // the culture we're handling
-            var culture = "fr-FR";
-
-            // read the translation file; make sure to set the full path
-            var catalog = PoFileReader.Read(filename, culture);
-
-            // get a reference to the default translation manager instance
-            var manager = TranslationManager.Instance;
-
-            // add the catalog to the translation manager's catalogs dictionary;
-            // we could add as many different cultures as we want to support;
-            manager.Catalogs.Add(culture, new[] { catalog });
-
-            // use a generic list instead of an array if you intend to monitor
-            // changes that occur within the file system in the directory containing
-            // the translation files, like so:
-            // manager.Catalogs.Add(culture, new List<ICatalog> { catalog });
-
-            // should come as a parameter from somewhere
-            var filesRestored = 3;
-
-            // translate the message and format the output on the fly
-            var result = manager.TranslatePlural(culture
-                , "{0} media file restored from the trash."
-                , "{0} media files restored from the trash."
-                , filesRestored
-                , filesRestored);
-
-            Console.WriteLine(result);
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine("The following error occured: {0}", ex);
         }
     }
 }
