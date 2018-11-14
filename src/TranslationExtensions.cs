@@ -209,5 +209,61 @@ namespace Polib.Net
             result = null;
             return false;
         }
+
+        /// <summary>
+        /// (Experimental) Merges <paramref name="source"/> catalog with <paramref name="other"/> catalog.
+        /// </summary>
+        /// <param name="source">The source catalog. Changes are reflected in this one.</param>
+        /// <param name="other">The other catalog to merge with.</param>
+        /// <returns>The number of new entries added.</returns>
+        public static int Merge(this ICatalog source, ICatalog other)
+        {
+            var count = 0;
+            // for easier access and better performance
+            var refDict = other.Entries;
+            var srcDict = source.Entries;
+            var poDefValues = srcDict.Values;
+
+            // now merge the entries
+            foreach (var kvp in refDict)
+            {
+                var entry = kvp.Value;
+
+                // get the key from the dictionary instead of the entry itself
+                // because it's already been computed, no need to do it twice
+                var key = kvp.Key;
+
+                // search for a matching key
+                var tobeUpdated = poDefValues.FirstOrDefault(e => e.Key == key);
+
+                if (null == tobeUpdated)
+                {
+                    // entry does not exist, add it to the definition entries
+                    srcDict.Add(key, entry);
+                    count++;
+                }
+                else
+                {
+                    // match found, update stuff
+                    tobeUpdated.ExtractedComments = entry.ExtractedComments;
+                    tobeUpdated.TranslatorComments = entry.TranslatorComments;
+
+                    merge_lists(entry.Flags, tobeUpdated.Flags);
+                    merge_lists(entry.References, tobeUpdated.References);
+                }
+            }
+
+            return count;
+
+            void merge_lists(IList<string> sourceList, IList<string> listToBeUpdated)
+            {
+                listToBeUpdated.Clear();
+
+                for (int i = 0; i < sourceList.Count; i++)
+                {
+                    listToBeUpdated.Add(sourceList[i]);
+                }
+            }
+        }
     } // end class
 }

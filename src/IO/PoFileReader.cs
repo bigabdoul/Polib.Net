@@ -328,50 +328,9 @@ namespace Polib.Net.IO
             // read the POT template file
             var pot = Read(refPotFilePath, culture, enforceCultureInfo: false);
 
-            // for easier access and better performance
-            var refDict = pot.Entries;
-            var poDict = po.Entries;
-            var poDefValues = poDict.Values;
-
-            // now merge the entries
-            foreach (var kvp in refDict)
-            {
-                var entry = kvp.Value;
-
-                // get the key from the dictionary instead of the entry itself
-                // because it's already been computed, no need to do it twice
-                var key = kvp.Key;
-
-                // search for a matching key
-                var tobeUpdated = poDefValues.FirstOrDefault(e => e.Key == key);
-
-                if (null == tobeUpdated)
-                {
-                    // entry does not exist, add it to the definition entries
-                    poDict.Add(key, entry);
-                }
-                else
-                {
-                    // match found, update stuff
-                    tobeUpdated.ExtractedComments = entry.ExtractedComments;
-                    tobeUpdated.TranslatorComments = entry.TranslatorComments;
-
-                    merge_lists(entry.Flags, tobeUpdated.Flags);
-                    merge_lists(entry.References, tobeUpdated.References);
-                }
-            }
+            po.MergeWith(pot);
 
             return po;
-
-            void merge_lists(IList<string> sourceList, IList<string> listToBeUpdated)
-            {
-                listToBeUpdated.Clear();
-
-                for (int i = 0; i < sourceList.Count; i++)
-                {
-                    listToBeUpdated.Add(sourceList[i]);
-                }
-            }
         }
 
         #endregion

@@ -104,6 +104,13 @@
             </summary>
             <returns>An initialized instance of the <see cref="T:System.Text.Encoding"/> class, or null.</returns>
         </member>
+        <member name="M:Polib.Net.Catalog.MergeWith(Polib.Net.ICatalog)">
+            <summary>
+            (Experimental) Merges this catalog with <paramref name="other"/>.
+            </summary>
+            <param name="other">The catalog to merge with, which actually contains references to new sources.</param>
+            <returns>The number of new entries added.</returns>
+        </member>
         <member name="T:Polib.Net.Collections.CatalogDictionary">
             <summary>
             Represents a dictionary of <see cref="T:Polib.Net.ICatalog"/> collections grouped by culture.
@@ -325,6 +332,13 @@
             Finds the character set and returns a new instance of the corresponding <see cref="T:System.Text.Encoding"/> class.
             </summary>
             <returns>An initialized instance of the <see cref="T:System.Text.Encoding"/> class, or null.</returns>
+        </member>
+        <member name="M:Polib.Net.ICatalog.MergeWith(Polib.Net.ICatalog)">
+            <summary>
+            Merges this catalog with <paramref name="other"/>.
+            </summary>
+            <param name="other">The catalog to merge with, which actually contains references to new sources.</param>
+            <returns>The number of new entries added.</returns>
         </member>
         <member name="T:Polib.Net.IO.IPoFileWriter">
             <summary>
@@ -1393,6 +1407,13 @@
             Gets the unique hashed file identifier.
             </summary>
         </member>
+        <member name="M:Polib.Net.Synchronization.UpdatedCatalog.MergeWith(Polib.Net.ICatalog)">
+            <summary>
+            (Experimental) Merges this catalog with <paramref name="other"/>.
+            </summary>
+            <param name="other">The catalog to merge with, which actually contains references to new sources.</param>
+            <returns>The number of new entries added.</returns>
+        </member>
         <member name="P:Polib.Net.Synchronization.UpdatedCatalog.Entries">
             <summary>
             Returns null. For the dictionary's values, use <see cref="P:Polib.Net.Synchronization.UpdatedCatalog.Items"/>.
@@ -1704,6 +1725,14 @@
             <param name="key">The unique key of the cached translation to find.</param>
             <param name="result">Returns the matched translation, or null.</param>
             <returns></returns>
+        </member>
+        <member name="M:Polib.Net.TranslationExtensions.Merge(Polib.Net.ICatalog,Polib.Net.ICatalog)">
+            <summary>
+            (Experimental) Merges <paramref name="source"/> catalog with <paramref name="other"/> catalog.
+            </summary>
+            <param name="source">The source catalog. Changes are reflected in this one.</param>
+            <param name="other">The other catalog to merge with.</param>
+            <returns>The number of new entries added.</returns>
         </member>
         <member name="T:Polib.Net.TranslationManager">
             <summary>

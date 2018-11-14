@@ -57,6 +57,13 @@ namespace Polib.Net.Synchronization
         /// </summary>
         public virtual string FileId => Id;
 
+        /// <summary>
+        /// (Experimental) Merges this catalog with <paramref name="other"/>.
+        /// </summary>
+        /// <param name="other">The catalog to merge with, which actually contains references to new sources.</param>
+        /// <returns>The number of new entries added.</returns>
+        public virtual int MergeWith(ICatalog other) => this.Merge(other);
+
         #region NotImplemented ICatalog methods
 
         /// <summary>

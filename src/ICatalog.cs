@@ -70,5 +70,12 @@ namespace Polib.Net
         /// </summary>
         /// <returns>An initialized instance of the <see cref="Encoding"/> class, or null.</returns>
         Encoding GetEncoding();
+
+        /// <summary>
+        /// Merges this catalog with <paramref name="other"/>.
+        /// </summary>
+        /// <param name="other">The catalog to merge with, which actually contains references to new sources.</param>
+        /// <returns>The number of new entries added.</returns>
+        int MergeWith(ICatalog other);
     }
 }
