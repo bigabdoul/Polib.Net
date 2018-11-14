@@ -5,9 +5,8 @@
     var row = 1;
 }
 
-<div class="page-header">
-    <h3>@_.T("Translation catalogs")</h3>
-</div>
+<h3>@_.T("Translation catalogs")</h3>
+
 <div class="panel-group" id="collapse" role="tablist" aria-multiselectable="true">
     @foreach (var collection in Model.Values)
     {
@@ -24,38 +23,60 @@
                 </div>
                 <div id="collapse-@row" class="panel-collapse collapse" role="tabpanel" aria-labelledby="collapse-heading-@row">
                     <div class="panel-body">
-                        <h3>@_.T("Catalog") <a asp-action="catalog" asp-route-id="@c.FileId">@fname</a></h3>
-                        <dl class="dl-horizontal">
-                            <dt>@_.T("Culture")</dt>
-                            <dd>@c.Culture</dd>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h4>@_.T("Catalog") <a asp-action="catalog" asp-route-id="@c.FileId">@fname</a></h4>
+                                <dl class="dl-horizontal">
+                                    <dt>@_.T("Culture")</dt>
+                                    <dd>@c.Culture</dd>
 
-                            <dt>@_.Tx("Catalog", "Headers")</dt>
-                            <dd>
-                                <ul class="list-unstyled">
-                                    @foreach (var hdr in c.Headers)
-                                    {
-                                        <li>@hdr.Key : <strong>@hdr.Value</strong> </li>
-                                    }
-                                </ul>
-                            </dd>
+                                    <dt>@_.Tx("Catalog", "Headers")</dt>
+                                    <dd>
+                                        <ul class="list-unstyled">
+                                            @foreach (var hdr in c.Headers)
+                                            {
+                                                <li>@hdr.Key : <strong>@hdr.Value</strong> </li>
+                                            }
+                                        </ul>
+                                    </dd>
 
-                            <dt>@_.T("Plural Count")</dt>
-                            <dd>@c.PluralCount</dd>
+                                    <dt>@_.T("Plural Count")</dt>
+                                    <dd>@c.PluralCount</dd>
 
-                            <dt>@_.T("Translations")</dt>
-                            <dd>@c.Entries.Count</dd>
+                                    <dt>@_.T("Translations")</dt>
+                                    <dd>@c.Entries.Count</dd>
 
-                            <dt>@_.T("File Name")</dt>
-                            <dd>
-                                <a asp-action="download" asp-route-id="@c.FileId">@fname</a>
-                            </dd>
+                                    <dt>@_.T("File Name")</dt>
+                                    <dd>
+                                        <a asp-action="download" asp-route-id="@c.FileId">@fname</a>
+                                    </dd>
 
-                            <dt>@_.T("File Last Access Time")</dt>
-                            <dd>@c.LastAccessTime</dd>
-                        </dl>
+                                    <dt>@_.T("File Last Access Time")</dt>
+                                    <dd>@c.LastAccessTime</dd>
+                                </dl>
+                            </div>
+                            <div class="col-md-4">
+                                <p>@_.T("Update catalog from existing POT files...")</p>
+                                <form asp-action="MergeCatalog" asp-route-id="@c.FileId" method="post" enctype="multipart/form-data">
+                                    <p>
+                                        <input type="file" name="PotFile" multiple />
+                                    </p>
+                                    <button type="submit" class="btn btn-xs btn-primary">@_.T("Update catalog")</button>
+                                    @Html.AntiForgeryToken()
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         }
     }
 </div>
+
+<hr />
+<form asp-action="Refresh" method="post">
+    <button type="submit" class="btn btn-xs btn-primary">
+        <i class="fa fa-refresh"></i> @_.T("Refresh translations")
+    </button>
+    @Html.AntiForgeryToken()
+</form>

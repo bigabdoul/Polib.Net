@@ -1,4 +1,4 @@
-﻿@model Catalog
+﻿@model ICatalog
 
 @{
     ViewData["Title"] = _.T("Edit Translations");
@@ -17,11 +17,17 @@
     return;
 }
 
-<h2>@ViewData["Title"]</h2>
-
-@{ 
-    var token = Html.AntiForgeryToken().ExtractInputValue();
-}
+<div class="clearfix">
+    <h3>
+        @ViewData["Title"]
+        @if (ViewBag.NewEntries != null)
+        {
+            <small class="text-success pull-right">
+                @_.Tx("Catalog", "New Entries") : @ViewBag.NewEntries
+            </small>
+        }
+    </h3>
+</div>
 
 <div ng-controller="CatalogController" ng-init="load('@Model.FileId')">
     <div class="i18n-container">
@@ -33,9 +39,9 @@
                 </tr>
             </thead>
             <tbody>
-                <tr class="i18n-row" ng-repeat="t in catalog.items" id="i18n-{{t.row}}" 
+                <tr class="i18n-row" ng-repeat="t in catalog.items" id="i18n-{{t.row}}"
                     data-content="{{t.row}}" ng-click="show(t)" ng-class="{'btn-info':selected(t)}">
-                    <td>
+                    <td ng-class="{'text-danger': !hasTranslation(t)}">
                         <span class="btn-warning i18n-context" ng-show="{{t.context!==null}}">{{t.context}}</span>
                         <span class="i18n-singular">{{truncate(t.singular)}}</span>
                     </td>
@@ -46,7 +52,7 @@
             </tbody>
         </table>
     </div>
-    <hr style="margin:0;"/>
+    <hr style="margin:0;" />
     <form ng-submit="update()" novalidate>
         @Html.AntiForgeryToken()
         <div class="i18n-footer">
@@ -102,8 +108,15 @@
             </div>
 
             <p>
-                <input type="submit" value="@_.T("Save")" class="btn btn-primary" ng-disabled="!current"/>
+                <button type="submit" class="btn btn-primary" ng-disabled="!current">@_.T("Save")</button>
             </p>
         </div>
     </form>
+</div>
+
+<div class="catalog-props">
+    <small>
+        @_.Tx("Catalog", "Headers Count:") @Model.Headers.Count |
+        @_.Tx("Catalog", "Entries Count:") @Model.Entries.Count
+    </small>
 </div>
