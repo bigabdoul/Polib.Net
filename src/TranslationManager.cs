@@ -17,6 +17,7 @@ namespace Polib.Net
 
         private bool _disposed;
         private bool _catalogsLoaded = false;
+        private ITranslationFileWatcher _fileWatcher;
         private readonly object objLock = new object();
         private readonly Dictionary<string, CultureInfo> _cultures = new Dictionary<string, CultureInfo>(StringComparer.OrdinalIgnoreCase);
 
@@ -38,27 +39,42 @@ namespace Polib.Net
         /// </summary>
         public TranslationManager()
         {
-            FileWatcher = new TranslationFileWatcher();
         }
 
         #endregion
-
-        #region properties
-
-        /// <summary>
-        /// Gets an object that watches translation file changes.
-        /// </summary>
-        public ITranslationFileWatcher FileWatcher { get; private set; }
-
-        /// <summary>
-        /// Gets or sets a dictionary of <see cref="ICatalog"/> list grouped by culture containing all read catalogs.
-        /// </summary>
-        public IDictionary<string, IList<ICatalog>> Catalogs { get => FileWatcher.Catalogs; protected set => FileWatcher.Catalogs = value; }
+        
+        #region static properties
 
         /// <summary>
         /// Returns the default instance of this <see cref="TranslationManager"/> class.
         /// </summary>
         public static TranslationManager Instance { get; } = new TranslationManager();
+
+        #endregion
+        
+        #region public properties
+
+        /// <summary>
+        /// Gets or sets an object that watches translation file changes.
+        /// </summary>
+        public ITranslationFileWatcher FileWatcher
+        {
+            get
+            {
+                if (null == _fileWatcher)
+                    _fileWatcher = new TranslationFileWatcher();
+                return _fileWatcher;
+            }
+            set
+            {
+                _fileWatcher = value;
+            }
+        }
+
+        /// <summary>
+        /// Gets or sets a dictionary of <see cref="ICatalog"/> list grouped by culture containing all read catalogs.
+        /// </summary>
+        public IDictionary<string, IList<ICatalog>> Catalogs { get => FileWatcher.Catalogs; protected set => FileWatcher.Catalogs = value; }
 
         /// <summary>
         /// Gets or sets the .po files directory path.
