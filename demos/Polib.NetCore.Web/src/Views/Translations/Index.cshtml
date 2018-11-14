@@ -1,54 +1,61 @@
-﻿@model CatalogDictionary
+﻿@model IDictionary<string, IList<ICatalog>>
 
 @{
     ViewData["Title"] = _.T("Translations Page");
+    var row = 1;
 }
 
-@if (null != Model)
-{
+<div class="page-header">
     <h3>@_.T("Translation catalogs")</h3>
-    <ul>
-        @foreach (var collection in Model.Values)
+</div>
+<div class="panel-group" id="collapse" role="tablist" aria-multiselectable="true">
+    @foreach (var collection in Model.Values)
+    {
+        foreach (var c in collection)
         {
-            foreach (var c in collection)
-            {
-                var fname = System.IO.Path.GetFileName(c.FileName);
-                <li>
-                    <h3>@_.T("Catalog") <a asp-action="catalog" asp-route-id="@c.FileId">@c.FileId</a></h3>
-                    <dl class="dl-horizontal">
-                        <dt>@_.T("Culture")</dt>
-                        <dd>@c.Culture</dd>
+            var fname = System.IO.Path.GetFileName(c.FileName);
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="collapse-heading-@(row++)">
+                    <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#collapse" href="#collapse-@row" aria-expanded="true" aria-controls="collapse-@row">
+                            @fname
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapse-@row" class="panel-collapse collapse" role="tabpanel" aria-labelledby="collapse-heading-@row">
+                    <div class="panel-body">
+                        <h3>@_.T("Catalog") <a asp-action="catalog" asp-route-id="@c.FileId">@fname</a></h3>
+                        <dl class="dl-horizontal">
+                            <dt>@_.T("Culture")</dt>
+                            <dd>@c.Culture</dd>
 
-                        <dt>@_.Tx("Catalog", "Headers")</dt>
-                        <dd>
-                            <ul class="list-unstyled">
-                                @foreach (var hdr in c.Headers)
-                                {
-                                <li>@hdr.Key : <strong>@hdr.Value</strong> </li>
-                                }
-                            </ul>
-                        </dd>
+                            <dt>@_.Tx("Catalog", "Headers")</dt>
+                            <dd>
+                                <ul class="list-unstyled">
+                                    @foreach (var hdr in c.Headers)
+                                    {
+                                        <li>@hdr.Key : <strong>@hdr.Value</strong> </li>
+                                    }
+                                </ul>
+                            </dd>
 
-                        <dt>@_.T("Plural Count")</dt>
-                        <dd>@c.PluralCount</dd>
+                            <dt>@_.T("Plural Count")</dt>
+                            <dd>@c.PluralCount</dd>
 
-                        <dt>@_.T("Translations")</dt>
-                        <dd>@c.Entries.Count</dd>
+                            <dt>@_.T("Translations")</dt>
+                            <dd>@c.Entries.Count</dd>
 
-                        <dt>@_.T("File Name")</dt>
-                        <dd>
-                            <a asp-action="download" asp-route-id="@c.FileId">@fname</a>
-                        </dd>
+                            <dt>@_.T("File Name")</dt>
+                            <dd>
+                                <a asp-action="download" asp-route-id="@c.FileId">@fname</a>
+                            </dd>
 
-                        <dt>@_.T("File Last Access Time")</dt>
-                        <dd>@c.LastAccessTime</dd>
-                    </dl>
-                </li>
-            }
+                            <dt>@_.T("File Last Access Time")</dt>
+                            <dd>@c.LastAccessTime</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
         }
-    </ul>
-}
-else
-{
-    <h1>@_.T("No translation catalogs available!")</h1>
-}
+    }
+</div>
