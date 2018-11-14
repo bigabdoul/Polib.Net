@@ -1,13 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Polib.NetCore.Web.Extensions;
-using Polib.NetCore.Web.Models;
+using Polib.Net;
 using Polib.Net.Synchronization;
-using System;
-using System.Collections.Generic;
+using Polib.NetCore.Web.Models;
 using System.IO;
 using System.Linq;
-using System.Text;
-using Polib.Net;
 
 namespace Polib.NetCore.Web.Controllers
 {
@@ -25,6 +21,7 @@ namespace Polib.NetCore.Web.Controllers
             if (!FindCatalog(id, out var catalog))
             {
                 ViewBag.Message = T("Catalog id '{0}' not found!", id);
+                return NotFound();
             }
             
             return View(catalog);
