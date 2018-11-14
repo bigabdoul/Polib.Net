@@ -48,7 +48,9 @@
 
                                     <dt>@_.T("File Name")</dt>
                                     <dd>
-                                        <a asp-action="download" asp-route-id="@c.FileId">@fname</a>
+                                        @fname <a asp-action="download" asp-route-id="@c.FileId">
+                                            <i class="fa fa-download"></i> @_.T("Download")
+                                        </a>
                                     </dd>
 
                                     <dt>@_.T("File Last Access Time")</dt>

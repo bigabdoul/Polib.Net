@@ -20,7 +20,7 @@
 <div class="clearfix">
     <h3>
         @ViewData["Title"]
-        @if (ViewBag.NewEntries != null)
+        @if (ViewBag.NewEntries is int newentries && newentries > 0)
         {
             <small class="text-success pull-right">
                 @_.Tx("Catalog", "New Entries") : @ViewBag.NewEntries
