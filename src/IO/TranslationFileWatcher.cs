@@ -16,7 +16,7 @@ namespace Polib.Net.IO
         private bool _insync;
         private bool _disposed;
         private readonly object objLock = new object();
-        private IDictionary<string, IList<ICatalog>> _catalogs;
+        private IDictionary<string, IList<ICatalog>> _catalogs = new Dictionary<string, IList<ICatalog>>();
 
         /// <summary>
         /// Returns a reference to the internal timer that watches for file changes.
@@ -75,17 +75,35 @@ namespace Polib.Net.IO
         /// <summary>
         /// Gets or sets the dictionary of catalogs grouped by culture.
         /// </summary>
+        /// <exception cref="InvalidOperationException">All catalog lists require not to be read-only.</exception>
         public virtual IDictionary<string, IList<ICatalog>> Catalogs
         {
             get
             {
                 if (_catalogs == null)
-                {
                     _catalogs = new Dictionary<string, IList<ICatalog>>();
-                }
                 return _catalogs;
             }
-            set => _catalogs = value;
+            set
+            {
+                if (null != value)
+                {
+                    if (value.Values.Any(c => c.IsReadOnly))
+                    {
+                        /*
+                         * we cannot allow read-only catalog lists in the dictionary
+                         * because we wouldn't be able to add any new translation catalog to 
+                         * the appropriate collection should there be changes in the file system
+                         */
+                        throw new InvalidOperationException("All catalog lists require not to be read-only.");
+                    }
+                    _catalogs = value;
+                }
+                else
+                {
+                    _catalogs?.Clear();
+                }
+            }
         }
 
         /// <summary>
