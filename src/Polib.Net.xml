@@ -738,6 +738,7 @@
             <summary>
             Gets or sets the dictionary of catalogs grouped by culture.
             </summary>
+            <exception cref="T:System.InvalidOperationException">All catalog lists require not to be read-only.</exception>
         </member>
         <member name="P:Polib.Net.IO.TranslationFileWatcher.MonitorFileChanges">
             <summary>
@@ -791,6 +792,13 @@
             Fires the <see cref="E:Polib.Net.IO.TranslationFileWatcher.TranslationFilesSynchronized"/> event.
             </summary>
             <param name="catalogs">The catalogs that were created or refreshed as a result of synchronization.</param>
+        </member>
+        <member name="M:Polib.Net.IO.TranslationFileWatcher.EnsureNoReadonlyCatalogs(System.Collections.Generic.IDictionary{System.String,System.Collections.Generic.IList{Polib.Net.ICatalog}})">
+            <summary>
+            Makes sure that the specified catalogs dictionary does not contain any read-only list.
+            </summary>
+            <param name="catalogs">The dictionary to check.</param>
+            <exception cref="T:System.InvalidOperationException">All catalog lists require not to be read-only.</exception>
         </member>
         <member name="M:Polib.Net.IO.TranslationFileWatcher.Dispose(System.Boolean)">
             <summary>
@@ -1712,19 +1720,19 @@
             Initializes a new instance of the <see cref="T:Polib.Net.TranslationManager"/> class.
             </summary>
         </member>
+        <member name="P:Polib.Net.TranslationManager.Instance">
+            <summary>
+            Returns the default instance of this <see cref="T:Polib.Net.TranslationManager"/> class.
+            </summary>
+        </member>
         <member name="P:Polib.Net.TranslationManager.FileWatcher">
             <summary>
-            Gets an object that watches translation file changes.
+            Gets or sets an object that watches translation file changes.
             </summary>
         </member>
         <member name="P:Polib.Net.TranslationManager.Catalogs">
             <summary>
             Gets or sets a dictionary of <see cref="T:Polib.Net.ICatalog"/> list grouped by culture containing all read catalogs.
-            </summary>
-        </member>
-        <member name="P:Polib.Net.TranslationManager.Instance">
-            <summary>
-            Returns the default instance of this <see cref="T:Polib.Net.TranslationManager"/> class.
             </summary>
         </member>
         <member name="P:Polib.Net.TranslationManager.PoFilesDirectory">
