@@ -96,5 +96,9 @@
                         console.log(result);
                 });
             };
+
+            me.hasTranslation = function (t) {
+                return t && t.translations.length > 0 && t.translations[0] !== '';
+            };
         }]);
 })(angular);
