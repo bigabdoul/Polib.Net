@@ -88,15 +88,8 @@ namespace Polib.Net.IO
             {
                 if (null != value)
                 {
-                    if (value.Values.Any(c => c.IsReadOnly))
-                    {
-                        /*
-                         * we cannot allow read-only catalog lists in the dictionary
-                         * because we wouldn't be able to add any new translation catalog to 
-                         * the appropriate collection should there be changes in the file system
-                         */
-                        throw new InvalidOperationException("All catalog lists require not to be read-only.");
-                    }
+                    if (MonitorFileChanges)
+                        EnsureNoReadonlyCatalogs(value);
                     _catalogs = value;
                 }
                 else
@@ -120,15 +113,18 @@ namespace Polib.Net.IO
             {
                 if (value != FileWatcher.EnableRaisingEvents)
                 {
-                    FileWatcher.EnableRaisingEvents = value;
                     if (value)
                     {
-                        // enable the timer
+                        EnsureNoReadonlyCatalogs(_catalogs);
+
+                        // enable
+                        FileWatcher.EnableRaisingEvents = true;
                         WatcherTimer.Change(0, TimerPeriodInSeconds * 1000);
                     }
                     else
                     {
                         // disable
+                        FileWatcher.EnableRaisingEvents = false;
                         WatcherTimer.Change(Timeout.Infinite, Timeout.Infinite);
                     }
                 }
@@ -248,6 +244,27 @@ namespace Polib.Net.IO
         /// <param name="catalogs">The catalogs that were created or refreshed as a result of synchronization.</param>
         protected virtual void OnTranslationFilesSynchronized(params ICatalog[] catalogs)
             => TranslationFilesSynchronized?.Invoke(this, new TranslationEventArgs { Catalogs = catalogs, });
+
+        /// <summary>
+        /// Makes sure that the specified catalogs dictionary does not contain any read-only list.
+        /// </summary>
+        /// <param name="catalogs">The dictionary to check.</param>
+        /// <exception cref="InvalidOperationException">All catalog lists require not to be read-only.</exception>
+        protected virtual void EnsureNoReadonlyCatalogs(IDictionary<string, IList<ICatalog>> catalogs)
+        {
+            if (catalogs == null) return;
+
+            if (catalogs.Values.Any(c => c.IsReadOnly))
+            {
+                /*
+                 * we cannot allow read-only catalog lists in the dictionary
+                 * because we wouldn't be able to add any new translation catalog to 
+                 * the appropriate collection should there be changes in the file system;
+                 * check out the method OnFileSystemChange
+                 */
+                throw new InvalidOperationException("All catalog lists require not to be read-only.");
+            }
+        }
 
         /// <summary>
         /// Releases all resources used by this <see cref="TranslationFileWatcher"/>.
