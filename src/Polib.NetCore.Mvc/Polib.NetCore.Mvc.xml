@@ -89,6 +89,11 @@
             <param name="formatArgs">An object array that contains zero or more objects to format.</param>
             <returns></returns>
         </member>
+        <member name="P:Polib.NetCore.Mvc.IRazorPageTranslationManager.Culture">
+            <summary>
+            Gets or sets the current UI culture info name.
+            </summary>
+        </member>
         <member name="T:Polib.NetCore.Mvc.RazorPageTranslationManager">
             <summary>
             Represents the base class for injecting .po files translation capabilities into razor views.

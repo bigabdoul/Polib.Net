@@ -94,5 +94,10 @@ namespace Polib.NetCore.Mvc
         string Tnx(string context, string singular, string plural, long count, params object[] formatArgs);
 
         #endregion
+
+        /// <summary>
+        /// Gets or sets the current UI culture info name.
+        /// </summary>
+        string Culture { get; }
     }
 }

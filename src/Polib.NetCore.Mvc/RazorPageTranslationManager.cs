@@ -134,7 +134,7 @@ namespace Polib.NetCore.Mvc
         /// <summary>
         /// Gets the current UI culture info name of the current thread.
         /// </summary>
-        string Culture
+        public virtual string Culture
         {
             get
             {
