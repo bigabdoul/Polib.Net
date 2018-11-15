@@ -17,8 +17,10 @@
                 <div class="panel-heading" role="tab" id="collapse-heading-@(row++)">
                     <h4 class="panel-title">
                         <a role="button" data-toggle="collapse" data-parent="#collapse" href="#collapse-@row" aria-expanded="true" aria-controls="collapse-@row">
-                            @fname
+                            <span class="caret"></span> @fname
                         </a>
+                        |
+                        <a asp-action="catalog" asp-route-id="@c.FileId"><img src="~/images/arrow.png" /></a>
                     </h4>
                 </div>
                 <div id="collapse-@row" class="panel-collapse collapse" role="tabpanel" aria-labelledby="collapse-heading-@row">
