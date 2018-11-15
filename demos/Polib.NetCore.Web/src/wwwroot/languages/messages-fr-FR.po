@@ -298,12 +298,12 @@ msgstr "Enregistrer"
 #: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net\demos\Polib.NetCore.Web\src\Views\Translations\Catalog.cshtml:119
 msgctxt "Catalog"
 msgid "Headers Count:"
-msgstr "Nombre de Propriétés"
+msgstr "Nombre de Propriétés :"
 
 #: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net\demos\Polib.NetCore.Web\src\Views\Translations\Catalog.cshtml:120
 msgctxt "Catalog"
 msgid "Entries Count:"
-msgstr "Nombre d'Entrées"
+msgstr "Nombre de Traductions :"
 
 #: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net\demos\Polib.NetCore.Web\src\Views\Translations\Index.cshtml:66
 msgid "Update catalog"
