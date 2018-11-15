@@ -5,6 +5,7 @@ using System.Linq;
 namespace Polib.Net
 {
     using Collections;
+    using System.Globalization;
 
     /// <summary>
     /// Provides extension methods for translation file items.
@@ -264,6 +265,36 @@ namespace Polib.Net
                     listToBeUpdated.Add(sourceList[i]);
                 }
             }
+        }
+
+        /// <summary>
+        /// Attempts to find the first translation entry that is the closest match to the specified culture's TwoLetterISOLanguageName.
+        /// </summary>
+        /// <param name="dictionary">The dictionary to check.</param>
+        /// <param name="culture">The culture to find.</param>
+        /// <param name="key">The key of the translation entry to find.</param>
+        /// <param name="result">Returns the matched translation entry, if any.</param>
+        /// <returns></returns>
+        public static bool FindClosest(this IDictionary<string, IList<ICatalog>> dictionary, CultureInfo culture, string key, out ITranslation result)
+        {
+            var twoletter = culture.TwoLetterISOLanguageName;
+
+            foreach (var kvp in dictionary)
+            {
+                var dictkey = kvp.Key;
+
+                if (dictkey.Length > 2 && string.Equals(dictkey.Substring(0, 2), twoletter, StringComparison.OrdinalIgnoreCase))
+                {
+                    var cats = dictionary[dictkey];
+                    if (cats.Find(key, out result))
+                    {
+                        return true;
+                    }
+                }
+            }
+
+            result = null;
+            return false;
         }
     } // end class
 }

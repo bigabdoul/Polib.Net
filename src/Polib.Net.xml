@@ -1734,6 +1734,16 @@
             <param name="other">The other catalog to merge with.</param>
             <returns>The number of new entries added.</returns>
         </member>
+        <member name="M:Polib.Net.TranslationExtensions.FindClosest(System.Collections.Generic.IDictionary{System.String,System.Collections.Generic.IList{Polib.Net.ICatalog}},System.Globalization.CultureInfo,System.String,Polib.Net.ITranslation@)">
+            <summary>
+            Attempts to find the first translation entry that is the closest match to the specified culture's TwoLetterISOLanguageName.
+            </summary>
+            <param name="dictionary">The dictionary to check.</param>
+            <param name="culture">The culture to find.</param>
+            <param name="key">The key of the translation entry to find.</param>
+            <param name="result">Returns the matched translation entry, if any.</param>
+            <returns></returns>
+        </member>
         <member name="T:Polib.Net.TranslationManager">
             <summary>
             Represents an object used for translation files management.

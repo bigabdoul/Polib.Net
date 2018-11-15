@@ -323,25 +323,34 @@ namespace Polib.Net
 
             if (Catalogs.TryGetValue(culture, out var cats) && cats.Find(key, out result))
             {
-                if (useCache) 
-                    Cache.Add(new CachedTranslation(culture, key, result));
-                return true;
+                return set_cached(culture, result);
             }
 
             // try the regioncode2
             var cinfo = GetCulture(culture);
+            var twoLetter = cinfo.TwoLetterISOLanguageName;
 
-            if (!cinfo.IsRegionCode2() && 
-                Catalogs.TryGetValue(cinfo.TwoLetterISOLanguageName, out cats) && 
-                cats.Find(key, out result))
+            if (cinfo.IsRegionCode2())
             {
-                if (useCache)
-                    Cache.Add(new CachedTranslation(cinfo.TwoLetterISOLanguageName, key, result));
-                return true;
+                // attempt to find the first entry that matches the specified culture's regioncode2 
+                if (Catalogs.FindClosest(cinfo, key, out result))
+                {
+                    return set_cached(twoLetter, result);
+                }
+            }
+            else if (Catalogs.TryGetValue(twoLetter, out cats) && cats.Find(key, out result))
+            {
+                return set_cached(twoLetter, result);
             }
 
             result = null;
             return false;
+
+            bool set_cached(string cult, ITranslation entry)
+            {
+                if (useCache) Cache.Add(new CachedTranslation(cult, key, entry));
+                return true;
+            }
         }
 
         /// <summary>
