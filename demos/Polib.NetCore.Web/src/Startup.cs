@@ -9,6 +9,7 @@ using Polib.Net;
 using Polib.Net.IO;
 using Polib.Net.Synchronization;
 using Polib.NetCore.Mvc;
+using Polib.NetCore.Mvc.Models;
 using Polib.NetCore.Web.Models;
 using System;
 using System.IO;
@@ -56,7 +57,7 @@ namespace Polib.NetCore.Web
                 .AddScoped<IUpdatedCatalog, UpdatedCatalog>()
                 .AddScoped<IUpdatedTranslation, UpdatedTranslation>()
                 .AddTransient<IHttpContextAccessor, HttpContextAccessor>()
-                .AddTransient<IRazorPageTranslationManager, RazorPageTranslationManager>()
+                .AddTransient<IRazorPageTranslationManager, RazorTranslationManager>()
                 .Configure<TranslationSettings>(Configuration.GetSection(nameof(TranslationSettings)));
         }
 
