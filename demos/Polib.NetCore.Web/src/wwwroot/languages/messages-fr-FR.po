@@ -278,11 +278,11 @@ msgstr "Nombre Pluriel"
 msgid "File Name"
 msgstr "Nom du Fichier"
 
-#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net\demos\Polib.NetCore.Web\src\Views\Translations\Index.cshtml:54
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net\demos\Polib.NetCore.Web\src\Views\Translations\Index.cshtml:56
 msgid "File Last Access Time"
 msgstr "Dernier accès au fichier"
 
-#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net\demos\Polib.NetCore.Web\src\Views\Translations\Index.cshtml:59
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net\demos\Polib.NetCore.Web\src\Views\Translations\Index.cshtml:61
 msgid "Update catalog from existing POT files..."
 msgstr "Mettre à jour le catalogue depuis des fichiers POT existants..."
 
@@ -305,10 +305,14 @@ msgctxt "Catalog"
 msgid "Entries Count:"
 msgstr "Nombre d'Entrées"
 
-#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net\demos\Polib.NetCore.Web\src\Views\Translations\Index.cshtml:64
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net\demos\Polib.NetCore.Web\src\Views\Translations\Index.cshtml:66
 msgid "Update catalog"
 msgstr "Mettre à jour le catalogue"
 
-#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net\demos\Polib.NetCore.Web\src\Views\Translations\Index.cshtml:79
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net\demos\Polib.NetCore.Web\src\Views\Translations\Index.cshtml:81
 msgid "Refresh translations"
 msgstr "Raffraîchir les traductions"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net\demos\Polib.NetCore.Web\src\Views\Translations\Index.cshtml:52
+msgid "Download"
+msgstr "Télécharger"
