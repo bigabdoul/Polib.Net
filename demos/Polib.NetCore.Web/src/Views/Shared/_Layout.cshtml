@@ -1,9 +1,15 @@
 ﻿@{ 
     string theme = ViewBag.Theme;
+    string lang = HttpContextAccessor.HttpContext.Session.GetString("CurrentCulture");
     if (string.IsNullOrEmpty(theme))
     {
-        theme = "superhero";
+        theme = "slate";
     }
+    if (string.IsNullOrEmpty(lang))
+    {
+        lang = System.Threading.Thread.CurrentThread.CurrentUICulture.Name;
+    }
+    var isfrench = lang.StartsWith("fr", StringComparison.OrdinalIgnoreCase);
 }
 <!DOCTYPE html>
 <html ng-app="polib">
@@ -42,6 +48,16 @@
                     <li><a asp-area="" asp-controller="translations" asp-action="index">@_.T("Translations")</a></li>
                     <li><a asp-area="" asp-controller="home" asp-action="about">@_.T("About")</a></li>
                     <li><a asp-area="" asp-controller="home" asp-action="contact">@_.T("Contact")</a></li>
+                </ul>
+                <ul class="nav navbar-nav pull-right">
+                    @if (isfrench)
+                    {
+                        <li><a asp-route-lang="en"><img src="~/images/flags_uk_32x19.png" /> @_.Tx("Language", "English")</a></li>
+                    }
+                    else
+                    {
+                        <li><a asp-route-lang="fr-FR"><img src="~/images/flags_france_32x21.png" /> @_.Tx("Language", "French")</a></li>
+                    }
                 </ul>
             </div>
         </div>
