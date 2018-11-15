@@ -78,8 +78,12 @@
 </div>
 
 <hr />
+<div class="text-warning small">
+    <h4>@_.T("Warning!")</h4>
+    <p>@_.T("Pushing the 'Refresh translations' button will discard any change being currently made by all translators.")</p>
+</div>
 <form asp-action="Refresh" method="post">
-    <button type="submit" class="btn btn-xs btn-primary">
+    <button type="submit" class="btn btn-xs btn-warning">
         <i class="fa fa-refresh"></i> @_.T("Refresh translations")
     </button>
     @Html.AntiForgeryToken()
