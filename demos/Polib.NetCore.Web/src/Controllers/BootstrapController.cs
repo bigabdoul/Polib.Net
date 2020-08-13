@@ -1,5 +1,9 @@
 ﻿using Bootstrap.Themes;
+#if ASPNETCORE
 using Microsoft.AspNetCore.Mvc;
+#else
+using System.Web.Mvc;
+#endif
 using System;
 
 namespace Polib.NetCore.Web.Controllers

@@ -5,6 +5,10 @@
     <RootNamespace>Polib.NetCore.Mvc</RootNamespace>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>TRACE;ASPNETCORE</DefineConstants>
+  </PropertyGroup>
+
   <ItemGroup>
     <Compile Remove="Polib.Net.Cmd\**" />
     <Content Remove="Polib.Net.Cmd\**" />
