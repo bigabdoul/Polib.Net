@@ -16,7 +16,11 @@ namespace Polib.NetCore.Web.Controllers
         /// <param name="id">The identifier of the default built-in theme to return.</param>
         /// <param name="theme">The name of another built-in theme to return. This has a higher precedence over <paramref name="id"/>.</param>
         /// <returns></returns>
-        public IActionResult Themes(BuiltInThemeName? id, [FromQuery(Name = "theme")] string theme)
+        public IActionResult Themes(BuiltInThemeName? id,
+#if ASPNETCORE
+            [FromQuery(Name = "theme")]
+#endif
+        string theme)
         {
             if (!string.IsNullOrEmpty(theme) && Enum.TryParse<BuiltInThemeName>(theme, true, out var result))
             {
