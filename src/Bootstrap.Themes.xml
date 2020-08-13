@@ -1,0 +1,642 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Bootstrap.Themes</name>
+    </assembly>
+    <members>
+        <member name="T:Bootstrap.Themes.BuiltInThemeName">
+            <summary>
+            Provides enumerated names of built-in bootstrap themes.
+            </summary>
+        </member>
+        <member name="F:Bootstrap.Themes.BuiltInThemeName.Cerulean">
+            <summary>
+            Cerulean Bootstrap theme name.
+            </summary>
+        </member>
+        <member name="F:Bootstrap.Themes.BuiltInThemeName.Cosmo">
+            <summary>
+            Cosmo Bootstrap theme name.
+            </summary>
+        </member>
+        <member name="F:Bootstrap.Themes.BuiltInThemeName.Cyborg">
+            <summary>
+            Cyborg Bootstrap theme name.
+            </summary>
+        </member>
+        <member name="F:Bootstrap.Themes.BuiltInThemeName.Darkly">
+            <summary>
+            Darkly Bootstrap theme name.
+            </summary>
+        </member>
+        <member name="F:Bootstrap.Themes.BuiltInThemeName.Flatly">
+            <summary>
+            Flatly Bootstrap theme name.
+            </summary>
+        </member>
+        <member name="F:Bootstrap.Themes.BuiltInThemeName.Journal">
+            <summary>
+            Journal Bootstrap theme name.
+            </summary>
+        </member>
+        <member name="F:Bootstrap.Themes.BuiltInThemeName.Lumen">
+            <summary>
+            Lumen Bootstrap theme name.
+            </summary>
+        </member>
+        <member name="F:Bootstrap.Themes.BuiltInThemeName.Paper">
+            <summary>
+            Paper Bootstrap theme name.
+            </summary>
+        </member>
+        <member name="F:Bootstrap.Themes.BuiltInThemeName.Readable">
+            <summary>
+            Readable Bootstrap theme name.
+            </summary>
+        </member>
+        <member name="F:Bootstrap.Themes.BuiltInThemeName.Sandstone">
+            <summary>
+            Sandstone Bootstrap theme name.
+            </summary>
+        </member>
+        <member name="F:Bootstrap.Themes.BuiltInThemeName.Simplex">
+            <summary>
+            Simplex Bootstrap theme name.
+            </summary>
+        </member>
+        <member name="F:Bootstrap.Themes.BuiltInThemeName.Slate">
+            <summary>
+            Slate Bootstrap theme name.
+            </summary>
+        </member>
+        <member name="F:Bootstrap.Themes.BuiltInThemeName.Solar">
+            <summary>
+            Solar Bootstrap theme name.
+            </summary>
+        </member>
+        <member name="F:Bootstrap.Themes.BuiltInThemeName.Spacelab">
+            <summary>
+            Spacelab Bootstrap theme name.
+            </summary>
+        </member>
+        <member name="F:Bootstrap.Themes.BuiltInThemeName.Superhero">
+            <summary>
+            Superhero Bootstrap theme name.
+            </summary>
+        </member>
+        <member name="F:Bootstrap.Themes.BuiltInThemeName.United">
+            <summary>
+            United Bootstrap theme name.
+            </summary>
+        </member>
+        <member name="F:Bootstrap.Themes.BuiltInThemeName.Yeti">
+            <summary>
+            Yeti Bootstrap theme name.
+            </summary>
+        </member>
+        <member name="F:Bootstrap.Themes.BuiltInThemeName.V4_Litera">
+            <summary>
+            Litera Bootstrap 4 theme name.
+            </summary>
+        </member>
+        <member name="F:Bootstrap.Themes.BuiltInThemeName.V4_Lux">
+            <summary>
+            Lux Boostrap 4 theme name.
+            </summary>
+        </member>
+        <member name="F:Bootstrap.Themes.BuiltInThemeName.V4_Materia">
+            <summary>
+            Materia Bootstrap 4 theme name.
+            </summary>
+        </member>
+        <member name="F:Bootstrap.Themes.BuiltInThemeName.V4_Minty">
+            <summary>
+            Simplex Bootstrap 4 theme name.
+            </summary>
+        </member>
+        <member name="F:Bootstrap.Themes.BuiltInThemeName.V4_Pulse">
+            <summary>
+            Pulse Bootstrap 4 theme name.
+            </summary>
+        </member>
+        <member name="F:Bootstrap.Themes.BuiltInThemeName.V4_Sketchy">
+            <summary>
+            Sketchy Bootstrap 4 theme name.
+            </summary>
+        </member>
+        <member name="T:Bootstrap.Themes.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Bootstrap.Themes.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Bootstrap.Themes.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Bootstrap.Themes.Properties.Resources.amelia_bootstrap_min">
+            <summary>
+              Looks up a localized string similar to @import url(&apos;//fonts.googleapis.com/css?family=Lobster|Cabin:400,700&apos;);/*!
+            * Bootstrap v2.3.2
+            *
+            * Copyright 2013 Twitter, Inc
+            * Licensed under the Apache License v2.0
+            * http://www.apache.org/licenses/LICENSE-2.0
+            *
+            * Designed and built with all the love in the world by @mdo and @fat.
+            */.clearfix{*zoom:1}.clearfix:before,.clearfix:after{display:table;line-height:0;content:&quot;&quot;}.clearfix:after{clear:both}.hide-text{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0}.input [rest of string was truncated]&quot;;.
+            </summary>
+        </member>
+        <member name="P:Bootstrap.Themes.Properties.Resources.cerulean_bootstrap_min">
+             <summary>
+               Looks up a localized string similar to /*!
+             * bootswatch v3.3.7
+             * Homepage: http://bootswatch.com
+             * Copyright 2012-2017 Thomas Park
+             * Licensed under MIT
+             * Based on Bootstrap
+            *//*!
+             * Bootstrap v3.3.7 (http://getbootstrap.com)
+             * Copyright 2011-2016 Twitter, Inc.
+             * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+             *//*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcapt [rest of string was truncated]&quot;;.
+             </summary>
+        </member>
+        <member name="P:Bootstrap.Themes.Properties.Resources.cosmo_bootstrap_min">
+             <summary>
+               Looks up a localized string similar to @import url(&quot;https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&quot;);/*!
+             * bootswatch v3.3.7
+             * Homepage: http://bootswatch.com
+             * Copyright 2012-2017 Thomas Park
+             * Licensed under MIT
+             * Based on Bootstrap
+            *//*!
+             * Bootstrap v3.3.7 (http://getbootstrap.com)
+             * Copyright 2011-2016 Twitter, Inc.
+             * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+             *//*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */html{font-family:sans-serif;-ms-text-size-ad [rest of string was truncated]&quot;;.
+             </summary>
+        </member>
+        <member name="P:Bootstrap.Themes.Properties.Resources.cyborg_bootstrap_min">
+             <summary>
+               Looks up a localized string similar to @import url(&quot;https://fonts.googleapis.com/css?family=Roboto:400,700&quot;);/*!
+             * bootswatch v3.3.7
+             * Homepage: http://bootswatch.com
+             * Copyright 2012-2016 Thomas Park
+             * Licensed under MIT
+             * Based on Bootstrap
+            *//*!
+             * Bootstrap v3.3.7 (http://getbootstrap.com)
+             * Copyright 2011-2016 Twitter, Inc.
+             * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+             *//*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */html{font-family:sans-serif;-ms-text-size-adjus [rest of string was truncated]&quot;;.
+             </summary>
+        </member>
+        <member name="P:Bootstrap.Themes.Properties.Resources.darkly_bootstrap_min">
+             <summary>
+               Looks up a localized string similar to @import url(&quot;https://fonts.googleapis.com/css?family=Lato:400,700,400italic&quot;);/*!
+             * bootswatch v3.3.7
+             * Homepage: http://bootswatch.com
+             * Copyright 2012-2016 Thomas Park
+             * Licensed under MIT
+             * Based on Bootstrap
+            *//*!
+             * Bootstrap v3.3.7 (http://getbootstrap.com)
+             * Copyright 2011-2016 Twitter, Inc.
+             * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+             *//*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */html{font-family:sans-serif;-ms-text-size-adjust: [rest of string was truncated]&quot;;.
+             </summary>
+        </member>
+        <member name="P:Bootstrap.Themes.Properties.Resources.flatly_bootstrap_min">
+             <summary>
+               Looks up a localized string similar to @import url(&quot;https://fonts.googleapis.com/css?family=Lato:400,700,400italic&quot;);/*!
+             * bootswatch v3.3.7
+             * Homepage: http://bootswatch.com
+             * Copyright 2012-2016 Thomas Park
+             * Licensed under MIT
+             * Based on Bootstrap
+            *//*!
+             * Bootstrap v3.3.7 (http://getbootstrap.com)
+             * Copyright 2011-2016 Twitter, Inc.
+             * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+             *//*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */html{font-family:sans-serif;-ms-text-size-adjust: [rest of string was truncated]&quot;;.
+             </summary>
+        </member>
+        <member name="P:Bootstrap.Themes.Properties.Resources.journal_bootstrap_min">
+             <summary>
+               Looks up a localized string similar to @import url(&quot;https://fonts.googleapis.com/css?family=News+Cycle:400,700&quot;);/*!
+             * bootswatch v3.3.7
+             * Homepage: http://bootswatch.com
+             * Copyright 2012-2016 Thomas Park
+             * Licensed under MIT
+             * Based on Bootstrap
+            *//*!
+             * Bootstrap v3.3.7 (http://getbootstrap.com)
+             * Copyright 2011-2016 Twitter, Inc.
+             * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+             *//*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */html{font-family:sans-serif;-ms-text-size-adjust:100% [rest of string was truncated]&quot;;.
+             </summary>
+        </member>
+        <member name="P:Bootstrap.Themes.Properties.Resources.lumen_bootstrap_min">
+             <summary>
+               Looks up a localized string similar to @import url(&quot;https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic&quot;);/*!
+             * bootswatch v3.3.7
+             * Homepage: http://bootswatch.com
+             * Copyright 2012-2017 Thomas Park
+             * Licensed under MIT
+             * Based on Bootstrap
+            *//*!
+             * Bootstrap v3.3.7 (http://getbootstrap.com)
+             * Copyright 2011-2016 Twitter, Inc.
+             * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+             *//*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */html{font-family:sans-serif;-ms-te [rest of string was truncated]&quot;;.
+             </summary>
+        </member>
+        <member name="P:Bootstrap.Themes.Properties.Resources.paper_bootstrap_min">
+             <summary>
+               Looks up a localized string similar to @import url(&quot;https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&quot;);/*!
+             * bootswatch v3.3.7
+             * Homepage: http://bootswatch.com
+             * Copyright 2012-2017 Thomas Park
+             * Licensed under MIT
+             * Based on Bootstrap
+            *//*!
+             * Bootstrap v3.3.7 (http://getbootstrap.com)
+             * Copyright 2011-2016 Twitter, Inc.
+             * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+             *//*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */html{font-family:sans-serif;-ms-text-size-adjust: [rest of string was truncated]&quot;;.
+             </summary>
+        </member>
+        <member name="P:Bootstrap.Themes.Properties.Resources.readable_bootstrap_min">
+             <summary>
+               Looks up a localized string similar to @import url(&quot;https://fonts.googleapis.com/css?family=Raleway:400,700&quot;);/*!
+             * bootswatch v3.3.7
+             * Homepage: http://bootswatch.com
+             * Copyright 2012-2016 Thomas Park
+             * Licensed under MIT
+             * Based on Bootstrap
+            *//*!
+             * Bootstrap v3.3.7 (http://getbootstrap.com)
+             * Copyright 2011-2016 Twitter, Inc.
+             * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+             *//*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */html{font-family:sans-serif;-ms-text-size-adjust:100%;-w [rest of string was truncated]&quot;;.
+             </summary>
+        </member>
+        <member name="P:Bootstrap.Themes.Properties.Resources.sandstone_bootstrap_min">
+             <summary>
+               Looks up a localized string similar to @import url(&quot;https://fonts.googleapis.com/css?family=Roboto:400,500,700&quot;);/*!
+             * bootswatch v3.3.7
+             * Homepage: http://bootswatch.com
+             * Copyright 2012-2016 Thomas Park
+             * Licensed under MIT
+             * Based on Bootstrap
+            *//*!
+             * Bootstrap v3.3.7 (http://getbootstrap.com)
+             * Copyright 2011-2016 Twitter, Inc.
+             * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+             *//*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */html{font-family:sans-serif;-ms-text-size-adjust:100% [rest of string was truncated]&quot;;.
+             </summary>
+        </member>
+        <member name="P:Bootstrap.Themes.Properties.Resources.simplex_bootstrap_min">
+             <summary>
+               Looks up a localized string similar to @import url(&quot;https://fonts.googleapis.com/css?family=Open+Sans:400,700&quot;);/*!
+             * bootswatch v3.3.7
+             * Homepage: http://bootswatch.com
+             * Copyright 2012-2016 Thomas Park
+             * Licensed under MIT
+             * Based on Bootstrap
+            *//*!
+             * Bootstrap v3.3.7 (http://getbootstrap.com)
+             * Copyright 2011-2016 Twitter, Inc.
+             * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+             *//*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */html{font-family:sans-serif;-ms-text-size-adjust:100%; [rest of string was truncated]&quot;;.
+             </summary>
+        </member>
+        <member name="P:Bootstrap.Themes.Properties.Resources.slate_bootstrap_min">
+             <summary>
+               Looks up a localized string similar to /*!
+             * bootswatch v3.3.7
+             * Homepage: http://bootswatch.com
+             * Copyright 2012-2016 Thomas Park
+             * Licensed under MIT
+             * Based on Bootstrap
+            *//*!
+             * Bootstrap v3.3.7 (http://getbootstrap.com)
+             * Copyright 2011-2016 Twitter, Inc.
+             * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+             *//*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcapt [rest of string was truncated]&quot;;.
+             </summary>
+        </member>
+        <member name="P:Bootstrap.Themes.Properties.Resources.solar_bootstrap_min">
+             <summary>
+               Looks up a localized string similar to @import url(&quot;https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&quot;);/*!
+             * bootswatch v3.3.7
+             * Homepage: http://bootswatch.com
+             * Copyright 2012-2017 Thomas Park
+             * Licensed under MIT
+             * Based on Bootstrap
+            *//*!
+             * Bootstrap v3.3.7 (http://getbootstrap.com)
+             * Copyright 2011-2016 Twitter, Inc.
+             * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+             *//*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */html{font-family:sans-serif;-ms-text-size-ad [rest of string was truncated]&quot;;.
+             </summary>
+        </member>
+        <member name="P:Bootstrap.Themes.Properties.Resources.spacelab_bootstrap_min">
+             <summary>
+               Looks up a localized string similar to @import url(&quot;https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&quot;);/*!
+             * bootswatch v3.3.7
+             * Homepage: http://bootswatch.com
+             * Copyright 2012-2016 Thomas Park
+             * Licensed under MIT
+             * Based on Bootstrap
+            *//*!
+             * Bootstrap v3.3.7 (http://getbootstrap.com)
+             * Copyright 2011-2016 Twitter, Inc.
+             * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+             *//*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */html{font-family:sans-serif;-ms-te [rest of string was truncated]&quot;;.
+             </summary>
+        </member>
+        <member name="P:Bootstrap.Themes.Properties.Resources.superhero_bootstrap_min">
+             <summary>
+               Looks up a localized string similar to @import url(&quot;https://fonts.googleapis.com/css?family=Lato:300,400,700&quot;);/*!
+             * bootswatch v3.3.7
+             * Homepage: http://bootswatch.com
+             * Copyright 2012-2017 Thomas Park
+             * Licensed under MIT
+             * Based on Bootstrap
+            *//*!
+             * Bootstrap v3.3.7 (http://getbootstrap.com)
+             * Copyright 2011-2016 Twitter, Inc.
+             * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+             *//*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */html{font-family:sans-serif;-ms-text-size-adjust:100%;- [rest of string was truncated]&quot;;.
+             </summary>
+        </member>
+        <member name="P:Bootstrap.Themes.Properties.Resources.united_bootstrap_min">
+             <summary>
+               Looks up a localized string similar to @import url(&quot;https://fonts.googleapis.com/css?family=Ubuntu:400,700&quot;);/*!
+             * bootswatch v3.3.7
+             * Homepage: http://bootswatch.com
+             * Copyright 2012-2016 Thomas Park
+             * Licensed under MIT
+             * Based on Bootstrap
+            *//*!
+             * Bootstrap v3.3.7 (http://getbootstrap.com)
+             * Copyright 2011-2016 Twitter, Inc.
+             * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+             *//*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */html{font-family:sans-serif;-ms-text-size-adjust:100%;-we [rest of string was truncated]&quot;;.
+             </summary>
+        </member>
+        <member name="P:Bootstrap.Themes.Properties.Resources.v4_cyborg_bootstrap_min">
+             <summary>
+               Looks up a localized string similar to /*!
+             * Bootswatch v4.0.0
+             * Homepage: https://bootswatch.com
+             * Copyright 2012-2018 Thomas Park
+             * Licensed under MIT
+             * Based on Bootstrap
+            *//*!
+             * Bootstrap v4.0.0 (https://getbootstrap.com)
+             * Copyright 2011-2018 The Bootstrap Authors
+             * Copyright 2011-2018 Twitter, Inc.
+             * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+             */@import url(&quot;https://fonts.googleapis.com/css?family=Roboto:400,700&quot;);:root{--blue:#2A9FD6;--indigo:#6610f2;--purple:#6f42c1;--pink:#e83e8c;--red:#CC0000;-- [rest of string was truncated]&quot;;.
+             </summary>
+        </member>
+        <member name="P:Bootstrap.Themes.Properties.Resources.v4_litera_bootstrap_min">
+             <summary>
+               Looks up a localized string similar to /*!
+             * Bootswatch v4.0.0
+             * Homepage: https://bootswatch.com
+             * Copyright 2012-2018 Thomas Park
+             * Licensed under MIT
+             * Based on Bootstrap
+            *//*!
+             * Bootstrap v4.0.0 (https://getbootstrap.com)
+             * Copyright 2011-2018 The Bootstrap Authors
+             * Copyright 2011-2018 Twitter, Inc.
+             * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+             */@import url(&quot;https://fonts.googleapis.com/css?family=Raleway:400,700&quot;);:root{--blue:#4582EC;--indigo:#6610f2;--purple:#6f42c1;--pink:#e83e8c;--red:#d9534f;- [rest of string was truncated]&quot;;.
+             </summary>
+        </member>
+        <member name="P:Bootstrap.Themes.Properties.Resources.v4_lux_bootstrap_min">
+             <summary>
+               Looks up a localized string similar to /*!
+             * Bootswatch v4.0.0
+             * Homepage: https://bootswatch.com
+             * Copyright 2012-2018 Thomas Park
+             * Licensed under MIT
+             * Based on Bootstrap
+            *//*!
+             * Bootstrap v4.0.0 (https://getbootstrap.com)
+             * Copyright 2011-2018 The Bootstrap Authors
+             * Copyright 2011-2018 Twitter, Inc.
+             * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+             */@import url(&quot;https://fonts.googleapis.com/css?family=Nunito+Sans:400,600&quot;);:root{--blue:#007bff;--indigo:#6610f2;--purple:#6f42c1;--pink:#e83e8c;--red:#d953 [rest of string was truncated]&quot;;.
+             </summary>
+        </member>
+        <member name="P:Bootstrap.Themes.Properties.Resources.v4_materia_bootstrap_min">
+             <summary>
+               Looks up a localized string similar to /*!
+             * Bootswatch v4.0.0
+             * Homepage: https://bootswatch.com
+             * Copyright 2012-2018 Thomas Park
+             * Licensed under MIT
+             * Based on Bootstrap
+            *//*!
+             * Bootstrap v4.0.0 (https://getbootstrap.com)
+             * Copyright 2011-2018 The Bootstrap Authors
+             * Copyright 2011-2018 Twitter, Inc.
+             * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+             */@import url(&quot;https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&quot;);:root{--blue:#2196F3;--indigo:#6610f2;--purple:#6f42c1;--pink:#e83e8c;--red:#e [rest of string was truncated]&quot;;.
+             </summary>
+        </member>
+        <member name="P:Bootstrap.Themes.Properties.Resources.v4_minty_bootstrap_min">
+             <summary>
+               Looks up a localized string similar to /*!
+             * Bootswatch v4.0.0
+             * Homepage: https://bootswatch.com
+             * Copyright 2012-2018 Thomas Park
+             * Licensed under MIT
+             * Based on Bootstrap
+            *//*!
+             * Bootstrap v4.0.0 (https://getbootstrap.com)
+             * Copyright 2011-2018 The Bootstrap Authors
+             * Copyright 2011-2018 Twitter, Inc.
+             * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+             */@import url(&quot;https://fonts.googleapis.com/css?family=Montserrat&quot;);:root{--blue:#007bff;--indigo:#6610f2;--purple:#6f42c1;--pink:#e83e8c;--red:#FF7851;--oran [rest of string was truncated]&quot;;.
+             </summary>
+        </member>
+        <member name="P:Bootstrap.Themes.Properties.Resources.v4_pulse_bootstrap_min">
+             <summary>
+               Looks up a localized string similar to /*!
+             * Bootswatch v4.0.0
+             * Homepage: https://bootswatch.com
+             * Copyright 2012-2018 Thomas Park
+             * Licensed under MIT
+             * Based on Bootstrap
+            *//*!
+             * Bootstrap v4.0.0 (https://getbootstrap.com)
+             * Copyright 2011-2018 The Bootstrap Authors
+             * Copyright 2011-2018 Twitter, Inc.
+             * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+             */:root{--blue:#007bff;--indigo:#6610f2;--purple:#593196;--pink:#e83e8c;--red:#FC3939;--orange:#fd7e14;--yellow:#EFA31D;--green:#13B955;--teal:#20c997;--cyan: [rest of string was truncated]&quot;;.
+             </summary>
+        </member>
+        <member name="P:Bootstrap.Themes.Properties.Resources.v4_sketchy_bootstrap_min">
+             <summary>
+               Looks up a localized string similar to /*!
+             * Bootswatch v4.0.0
+             * Homepage: https://bootswatch.com
+             * Copyright 2012-2018 Thomas Park
+             * Licensed under MIT
+             * Based on Bootstrap
+            *//*!
+             * Bootstrap v4.0.0 (https://getbootstrap.com)
+             * Copyright 2011-2018 The Bootstrap Authors
+             * Copyright 2011-2018 Twitter, Inc.
+             * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+             */@import url(&quot;https://fonts.googleapis.com/css?family=Neucha|Cabin+Sketch&quot;);:root{--blue:#007bff;--indigo:#6610f2;--purple:#6f42c1;--pink:#e83e8c;--red:#dc35 [rest of string was truncated]&quot;;.
+             </summary>
+        </member>
+        <member name="P:Bootstrap.Themes.Properties.Resources.yeti_bootstrap_min">
+             <summary>
+               Looks up a localized string similar to @import url(&quot;https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700&quot;);/*!
+             * bootswatch v3.3.7
+             * Homepage: http://bootswatch.com
+             * Copyright 2012-2016 Thomas Park
+             * Licensed under MIT
+             * Based on Bootstrap
+            *//*!
+             * Bootstrap v3.3.7 (http://getbootstrap.com)
+             * Copyright 2011-2016 Twitter, Inc.
+             * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+             *//*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */html{font-family:san [rest of string was truncated]&quot;;.
+             </summary>
+        </member>
+        <member name="T:Bootstrap.Themes.Theme">
+            <summary>
+            Represents a Twitter Bootstrap theme.
+            </summary>
+        </member>
+        <member name="M:Bootstrap.Themes.Theme.#ctor">
+            <summary>
+            Initializes an instance of the <see cref="T:Bootstrap.Themes.Theme"/> class.
+            </summary>
+        </member>
+        <member name="P:Bootstrap.Themes.Theme.Id">
+            <summary>
+            Gets or sets the identifier for the current theme.
+            </summary>
+        </member>
+        <member name="P:Bootstrap.Themes.Theme.Name">
+            <summary>
+            Gets or sets the current theme name.
+            </summary>
+        </member>
+        <member name="P:Bootstrap.Themes.Theme.DisplayName">
+            <summary>
+            Gets or sets the name to display for the current theme.
+            </summary>
+        </member>
+        <member name="P:Bootstrap.Themes.Theme.Description">
+            <summary>
+            Gets or sets the description for the current theme.
+            </summary>
+        </member>
+        <member name="P:Bootstrap.Themes.Theme.FileName">
+            <summary>
+            Gets or sets the fully-qualified name, including the path, of the current theme.
+            </summary>
+        </member>
+        <member name="P:Bootstrap.Themes.Theme.Content">
+            <summary>
+            Gets or sets the content definition of the current theme.
+            </summary>
+        </member>
+        <member name="M:Bootstrap.Themes.Theme.GetContent">
+            <summary>
+            Reads all the text contained in the theme found under <see cref="P:Bootstrap.Themes.Theme.FileName"/>.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bootstrap.Themes.Theme.FindThemes(System.String,System.String,System.IO.SearchOption)">
+            <summary>
+            Returns a collection of Bootstrap <see cref="T:Bootstrap.Themes.Theme"/> elements that match the specified search
+            pattern in the specified directory, using a value to determine whether to search subdirectories.
+            </summary>
+            <param name="path">The relative or absolute path to the directory to search. This string is not case-sensitive.</param>
+            <param name="searchPattern">The search string to match against the names of files in path.
+            This parameter can contain a combination of valid literal path and wildcard (* and ?).
+            You can specify multiple search patterns by separating them with the pipe | symbol.
+            </param>
+            <param name="searchOption">One of the enumeration values that specifies whether the search operation 
+            should include all subdirectories or only the current directory.
+            </param>
+            <returns>An enumerated collection of <see cref="T:Bootstrap.Themes.Theme"/> instances.</returns>
+        </member>
+        <member name="M:Bootstrap.Themes.Theme.FromResource(Bootstrap.Themes.BuiltInThemeName,Bootstrap.Themes.Theme@,System.Globalization.CultureInfo)">
+            <summary>
+            Returns a theme with its definition from the resources file.
+            </summary>
+            <param name="name">The name of the built-in theme to find.</param>
+            <param name="theme">Returns the requested theme, if any.</param>
+            <param name="culture">The culture to use for resource lookup.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Bootstrap.Themes.Theme.FromResource(Bootstrap.Themes.BuiltInThemeName,Bootstrap.Themes.Theme@,System.String,System.Globalization.CultureInfo)">
+            <summary>
+            Returns a theme with its definition from the resources file.
+            </summary>
+            <param name="name">The name of the built-in theme to find.</param>
+            <param name="theme">Returns the requested theme, if any.</param>
+            <param name="fallBackThemeName">The name of the theme to use if <paramref name="name"/>is not found in the resources file.</param>
+            <param name="culture">The culture to use for resource lookup.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Bootstrap.Themes.Theme.GetBuiltInThemeNames">
+            <summary>
+            Returns an array of the application's built-in theme names.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bootstrap.Themes.Theme.GetBuiltInThemeNames(System.Func{System.String,System.Boolean})">
+            <summary>
+            Returns a collection of the application's built-in theme names according to <paramref name="predicate"/>.
+            </summary>
+            <param name="predicate">A function that evaluates a condition for including a theme name.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Bootstrap.Themes.ThemeList">
+            <summary>
+            Represents a list of <see cref="T:Bootstrap.Themes.Theme"/> objects.
+            </summary>
+        </member>
+        <member name="M:Bootstrap.Themes.ThemeList.#ctor">
+            <summary>
+            Initializes an instance of the <see cref="T:Bootstrap.Themes.ThemeList"/> class.
+            </summary>
+        </member>
+        <member name="M:Bootstrap.Themes.ThemeList.#ctor(System.Collections.Generic.IEnumerable{Bootstrap.Themes.Theme})">
+            <summary>
+            Initializes an instance of the <see cref="T:Bootstrap.Themes.ThemeList"/> class with the specified collection.
+            </summary>
+            <param name="collection">A collection of <see cref="T:Bootstrap.Themes.Theme"/> objects to add to the base list.</param>
+        </member>
+        <member name="M:Bootstrap.Themes.ThemeList.GetThemes(System.String,System.String,System.IO.SearchOption)">
+            <summary>
+            Returns a collection of Bootstrap <see cref="T:Bootstrap.Themes.Theme"/> objects.
+            </summary>
+            <param name="path">See <see cref="M:Bootstrap.Themes.Theme.FindThemes(System.String,System.String,System.IO.SearchOption)"/>.</param>
+            <param name="searchPattern">See <see cref="M:Bootstrap.Themes.Theme.FindThemes(System.String,System.String,System.IO.SearchOption)"/>.</param>
+            <param name="searchOption">See <see cref="M:Bootstrap.Themes.Theme.FindThemes(System.String,System.String,System.IO.SearchOption)"/>.</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
