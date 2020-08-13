@@ -162,7 +162,7 @@ msgstr "Marketing :"
 
 #: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net\demos\Polib.NetCore.Web\src\Views\Home\Privacy.cshtml:2
 msgid "Privacy Policy"
-msgstr "Politque de confidentialité"
+msgstr "Politique de confidentialité"
 
 #: C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net\demos\Polib.NetCore.Web\src\Views\Home\Privacy.cshtml:6
 msgid "Use this page to detail your site's privacy policy."
