@@ -1,8 +1,9 @@
 ﻿using Bootstrap.Themes;
-#if ASPNETCORE
-using Microsoft.AspNetCore.Mvc;
+// Depending upon the target Framework
+#if NETCORE
+using Microsoft.AspNetCore.Mvc; // .NET Core
 #else
-using System.Web.Mvc;
+using System.Web.Mvc;           // .NET Framework 3.5 or later
 #endif
 using System;
 
@@ -17,7 +18,7 @@ namespace Polib.NetCore.Web.Controllers
         /// <param name="theme">The name of another built-in theme to return. This has a higher precedence over <paramref name="id"/>.</param>
         /// <returns></returns>
         public IActionResult Themes(BuiltInThemeName? id,
-#if ASPNETCORE
+#if NETCORE
             [FromQuery(Name = "theme")]
 #endif
         string theme)
@@ -31,8 +32,11 @@ namespace Polib.NetCore.Web.Controllers
             {
                 return File(System.Text.Encoding.UTF8.GetBytes(t.Content), "text/css");
             }
-
+#if NETCORE
             return NotFound();
+#else
+            return new HttpNotFoundResult();
+#endif
         }
 
     }
