@@ -17,5 +17,10 @@ namespace Polib.Net.Synchronization
         /// Gets or sets the collection of updated translations.
         /// </summary>
         IList<UpdatedTranslation> Items { get; set; }
+
+        /// <summary>
+        /// Initializes the <see cref="ICatalog.Headers"/> dictionary.
+        /// </summary>
+        IDictionary<string, string> CreateHeaders();
     }
 }

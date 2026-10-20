@@ -334,3 +334,4 @@ Thumbs.db
 .DS_Store*
 
 temp
+src/*.xml

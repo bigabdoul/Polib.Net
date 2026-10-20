@@ -1,0 +1,1063 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr_FR\n"
+"X-Generator: Poedit 2.0.2\n"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Blog\Create.cshtml:4 C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_ElaSidebar.cshtml:32
+msgid "Create a blog"
+msgstr "Créer un blog"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Blog\Edit.cshtml:14 C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Media\Edit.cshtml:16
+msgid "Show"
+msgstr "Afficher"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Blog\Edit.cshtml:15 C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Blog\Index.cshtml:44 C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Dashboard\Index.cshtml:31 C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Posts\Index.cshtml:6 C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_EditBlog.cshtml:38 C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_ElaSidebar.cshtml:34
+msgid "Articles"
+msgstr "Articles"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Blog\Edit.cshtml:17 C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Posts\Index.cshtml:17
+msgid "Write an article"
+msgstr "Ecrire un article"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Blog\Index.cshtml:3 C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Dashboard\Index.cshtml:18 C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_ElaSidebar.cshtml:33
+msgid "Blogs"
+msgstr "Blogs"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Blog\Index.cshtml:14 C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Media\Index.cshtml:26 C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_BlogPosts.cshtml:99
+msgid "Name"
+msgstr "Nom"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Blog\Index.cshtml:15 C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Media\Index.cshtml:27 C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_BlogPosts.cshtml:104
+msgid "Date"
+msgstr "Date"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Blog\Index.cshtml:23 C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Posts\Create.cshtml:31 C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Posts\Edit.cshtml:24 C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_BlogPosts.cshtml:102
+msgid "Blog"
+msgstr "Blog"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Blog\Index.cshtml:73
+msgid "Create new blog"
+msgstr "Créer un nouveau blog"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Dashboard\Index.cshtml:2 C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_ElaSidebar.cshtml:18 C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_ElaSidebar.cshtml:21
+msgid "Dashboard"
+msgstr "Tableau de board"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Dashboard\Index.cshtml:44 C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Media\Index.cshtml:3 C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_ElaSidebar.cshtml:39
+msgid "Medias"
+msgstr "Médias"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Dashboard\Index.cshtml:70
+msgid "Extra Area Chart"
+msgstr "Zone de widget de page"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Media\Delete.cshtml:4
+msgid "Do you want to delete this?"
+msgstr "Voulez-vous supprimer ceci ?"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Media\Edit.cshtml:17
+msgid "Add media"
+msgstr "Ajouter un média"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Media\Index.cshtml:11 C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_BlogPosts.cshtml:75
+msgid "Grouped actions"
+msgstr "Actions groupées"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Media\Index.cshtml:12 C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_BlogPosts.cshtml:79
+msgid "Delete permanently"
+msgstr "Supprimer définitivement"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Media\Upload.cshtml:4 C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_ElaSidebar.cshtml:43
+msgid "Upload media"
+msgstr "Téléverser un média"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Posts\Create.cshtml:4
+msgid "Create new blog post"
+msgstr "Créer un nouvel article"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Posts\Create.cshtml:28
+#, csharp-format
+msgid "Blog : {0}"
+msgstr "Blog : {0}"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Posts\Edit.cshtml:4 C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Posts\Index.cshtml:20
+#, csharp-format
+msgid "Edit {0}"
+msgstr "Editer {0}"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Posts\Edit.cshtml:27
+msgid "View blog"
+msgstr "Voir le blog"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Posts\Edit.cshtml:31
+msgid "View post"
+msgstr "Voir l'article"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Posts\Edit.cshtml:35 C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\V4\Views\Shared\_PageTopHeader.cshtml:30
+msgid "New blog post"
+msgstr "Nouvel article"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_BlogHeader.cshtml:31
+msgid "Visit"
+msgstr "Visiter"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_BlogPosts.cshtml:46
+msgid "Hide thumbnails"
+msgstr "Masquer les miniatures"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_BlogPosts.cshtml:50
+msgid "Show thumbnails"
+msgstr "Afficher les miniatures"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_BlogPosts.cshtml:78
+msgid "Recover"
+msgstr "Rétablir"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_BlogPosts.cshtml:83 C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_EditPost.cshtml:87
+msgid "Move to trash"
+msgstr "Déplacer dans la corbeille"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_BlogPosts.cshtml:115
+msgid "Article"
+msgstr "Article"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_EditBlog.cshtml:27
+msgid "Blog name"
+msgstr "Nom du blog"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_EditBlog.cshtml:31 C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_MediaEdit.cshtml:74 C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Shop\Views\Service\Index.cshtml:34
+msgid "Description"
+msgstr "Description"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_EditBlog.cshtml:34 C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_EditPost.cshtml:67 C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_EditPost.cshtml:95 C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_MediaEdit.cshtml:80
+msgid "Save"
+msgstr "Enregistrer"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_EditBlog.cshtml:43
+msgid "Blog thumbnail image"
+msgstr "Image à la une"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_EditPost.cshtml:13
+msgid "Published"
+msgstr "Publié"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_EditPost.cshtml:14
+msgid "Review pending"
+msgstr "En attente de relecture"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_EditPost.cshtml:15
+msgid "Draft"
+msgstr "Brouillon"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_EditPost.cshtml:34 C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_MediaEdit.cshtml:70
+msgid "Title"
+msgstr "Titre"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_EditPost.cshtml:44
+msgid "Excerpt"
+msgstr "Extrait"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_EditPost.cshtml:56
+msgid "Discussion"
+msgstr "Discussion"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_EditPost.cshtml:59
+msgid "Allow comments"
+msgstr "Autoriser les commentaires"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_EditPost.cshtml:60
+msgid "Do not allow comments"
+msgstr "Ne pas autoriser les commentaires"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_EditPost.cshtml:72
+msgid "Publish"
+msgstr "Publier"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_EditPost.cshtml:76
+msgid "Status"
+msgstr "Etat"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_EditPost.cshtml:102
+msgid "Post thumbnail image"
+msgstr "Image à la une"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_EditPost.cshtml:137
+msgid "Language"
+msgstr "Menu de Langue"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_EditPost.cshtml:149 C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\V4\Views\Shared\_PageTopHeader.cshtml:37
+msgid "Translate this article"
+msgstr "Traduire cet article"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_EditPost.cshtml:159
+#, csharp-format
+msgid "Translate article &laquo; <a class=\"fancybox link\" href=\"#original-blogpost\" style=\"color:blue\">{0}</a> &raquo; from <strong>{1}</strong> to:"
+msgstr "Traduire l'article &laquo; <a class=\"fancybox link\" href=\"#original-blogpost\" style=\"color:blue\">{0}</a> &raquo; de <strong>{1}</strong> vers :"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_EditPost.cshtml:166
+#, csharp-format
+msgid "This article has been translated from &laquo; <a class=\"fancybox link\" href=\"#original-blogpost\" style=\"color:blue\">{0}</a> &raquo;"
+msgstr "Cet article a été traduit à partir de &laquo; <a class=\"fancybox link\" href=\"#original-blogpost\" style=\"color:blue\">{0}</a> &raquo;"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_ElaHeader.cshtml:31
+msgid "Contact us"
+msgstr "Contactez-nous"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_ElaHeader.cshtml:43
+msgid "Submit"
+msgstr "Soumettre"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_ElaHeader.cshtml:103
+msgid "Notifications"
+msgstr "Notifications"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_ElaHeader.cshtml:153
+#, csharp-format
+msgid "You have {0} new message"
+msgid_plural "You have {0} new messages"
+msgstr[0] "Vous avez {0} nouveau message"
+msgstr[1] "Vous avez {0} nouveaux messages"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_ElaHeader.cshtml:205
+msgid "My profile"
+msgstr "Mon profil"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_ElaHeader.cshtml:210
+msgid "Sign out"
+msgstr "Déconnecter"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_ElaSidebar.cshtml:24
+msgid "Overview"
+msgstr "Vue d'ensemble"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_ElaSidebar.cshtml:29
+msgid "Blogs &amp; Articles"
+msgstr "Blogs &amp; Articles"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_ElaSidebar.cshtml:42
+msgid "All media"
+msgstr "Tous les médias"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_Layout.cshtml:89 C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\V4\Views\Shared\_PageFooter.cshtml:39
+msgid "All rights reserved"
+msgstr "Tous droits réservés"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_MediaEdit.cshtml:14
+msgid "Drop zone"
+msgstr "Zone de téléversement"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_MediaEdit.cshtml:15
+msgid "Select one or more files to upload"
+msgstr "Sélectionnez un ou plusieurs fichiers à envoyer"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_MediaEdit.cshtml:17
+msgid "Click here or drag and drop files to upload."
+msgstr "Cliquer ici ou glisser-déposer les fichiers à téléverser."
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_MediaEdit.cshtml:47
+msgid "Type"
+msgstr "Type"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_MediaEdit.cshtml:55
+msgid "Dimensions"
+msgstr "Dimensions"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_MediaEdit.cshtml:64
+msgid "Media name"
+msgstr "Nom du média"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_MediaEdit.cshtml:84
+msgid "Delete"
+msgstr "Supprimer"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_MediaEdit.cshtml:101
+msgid "Extra Small"
+msgstr "Très Petit"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_MediaEdit.cshtml:102
+msgid "Small"
+msgstr "Petit"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_MediaEdit.cshtml:103
+msgid "Medium"
+msgstr "Moyenne"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_MediaEdit.cshtml:104
+msgid "Medium Large"
+msgstr "Moyenne Grande"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_MediaEdit.cshtml:105
+msgid "Large"
+msgstr "Grande"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_MediaPicker.cshtml:7
+msgid "Select"
+msgstr "Sélectionner"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_MediaPicker.cshtml:15
+msgid "Cancel"
+msgstr "Annuler"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_MediaPicker.cshtml:22
+msgid "No image"
+msgstr "Pas d'image"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_ScriptSweetAlert.cshtml:4
+msgid "Are you sure to delete this?"
+msgstr "Etes-vous sûr(e) de vouloir supprimer ceci ?"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_ScriptSweetAlert.cshtml:5
+msgid "This action may be permanent and irreversible."
+msgstr "Cette opération pourrait être définitive et irréversible."
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_ScriptSweetAlert.cshtml:6
+msgid "Yes, delete!"
+msgstr "Oui, supprimer !"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\V4\Views\Shared\_PageTopHeader.cshtml:36
+msgid "Edit this article"
+msgstr "Modifier cet article"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Views\Home\_PopularDirectories.cshtml:13
+msgctxt "Male"
+msgid "New articles"
+msgstr "Nouveaux articles"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Media\Index.cshtml:98
+msgid "Add a media"
+msgstr "Ajouter un média"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_MediaEdit.cshtml:101
+msgctxt "Media"
+msgid "Extra Small"
+msgstr "Très Petit"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_MediaEdit.cshtml:102
+msgctxt "Media"
+msgid "Small"
+msgstr "Petit"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_MediaEdit.cshtml:103
+msgctxt "Media"
+msgid "Medium"
+msgstr "Moyen"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_MediaEdit.cshtml:104
+msgctxt "Media"
+msgid "Medium Large"
+msgstr "Moyen Grand"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Admin\Views\Shared\_MediaEdit.cshtml:105
+msgctxt "Media"
+msgid "Large"
+msgstr "Grand"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\V4\Views\Shared\_PageTopHeader.cshtml:36
+msgid "Edit this page"
+msgstr "Modifier cette page"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\V4\Views\Shared\_PageTopHeader.cshtml:37
+msgid "Translate this page"
+msgstr "Traduire cette page"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Views\Home\_DirectoriesWelcome.cshtml:16
+msgid "Local and global news feeds"
+msgstr "Fils d'actualités locales et mondiales"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Views\Home\_DirectoriesWelcome.cshtml:17
+msgid "Offers published by site's members"
+msgstr "Offres publiées par les membres du site"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Views\Home\_DirectoriesWelcome.cshtml:18
+msgid "Demands made by site's members"
+msgstr "Demandes formulées par les membres du site"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Views\Home\_DirectoriesWelcome.cshtml:19
+msgid "Schools &amp; Universities"
+msgstr "Ecoles &amp; Universités"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Views\Home\_DirectoriesWelcome.cshtml:37
+msgid "Companies &amp; Professionals"
+msgstr "Entreprises &amp; Professionnels"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Views\Home\_DirectoriesWelcome.cshtml:38
+msgid "Members' Directory"
+msgstr "Répertoire des Membres"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Views\Home\_DirectoriesWelcome.cshtml:39
+msgid "Nice Restaurants"
+msgstr "Restaurants chic et branchés"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Views\Home\_DirectoriesWelcome.cshtml:40
+msgid "Saloons, Hair Cuts, Spas, Pedicures"
+msgstr "Salons, coiffures, spas, ongleries"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Views\Home\_PopularDirectories.cshtml:5
+msgctxt "Country"
+msgid "Guinea"
+msgstr "Guinée"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Views\Home\_PopularDirectories.cshtml:6
+msgctxt "Country"
+msgid "Cote d'Ivoire"
+msgstr "Côte d'Ivoire"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Views\Home\_PopularDirectories.cshtml:7
+msgctxt "Country"
+msgid "Mali"
+msgstr "Mali"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Views\Home\_PopularDirectories.cshtml:16
+msgid "New articles"
+msgstr "Nouveaux articles"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Views\Scripts\ng-service.cshtml:49
+msgctxt "Financing"
+msgid "Own funds"
+msgstr "Fonds propres"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Views\Scripts\ng-service.cshtml:50
+msgctxt "Financing"
+msgid "Bank credit"
+msgstr "Crédit bancaire"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Views\Scripts\ng-service.cshtml:51
+msgctxt "Financing"
+msgid "External partners"
+msgstr "Partenaires extérieurs"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Views\Scripts\ng-service.cshtml:52
+msgctxt "Financing"
+msgid "Other (indicate)"
+msgstr "Autre (à préciser)"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Views\Scripts\ng-service.cshtml:54
+msgctxt "Gender"
+msgid "Mister"
+msgstr "Monsieur"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Views\Scripts\ng-service.cshtml:55
+msgctxt "Date Mask"
+msgid "99/99/9999"
+msgstr "99/99/9999"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Views\Scripts\ng-service.cshtml:56
+msgctxt "Date Placeholder"
+msgid "dd/mm/yyyy"
+msgstr "jj/mm/aaaa"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Views\Scripts\ng-service.cshtml:126
+msgid "Your demand has been taken into account. You will soon receive an e-mail with instructions to follow."
+msgstr "Votre demande a été prise en compte. Vous recevrez sous peu un courriel avec les instructions à suivre."
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Views\Scripts\ng-service.cshtml:171
+msgid "Congratulations and thank you for submitting this form! You will very soon receive a notification on the outcome of this procedure."
+msgstr "Félicitations et merci beaucoup d'avoir rempli ce formulaire ! Vous recevrez très prochainement une notification sur la suite du traitement de ce dossier."
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Views\Scripts\ng-service.cshtml:191
+msgid "Your demand has been successfully saved. We will examine it and come back to you as soon as possible."
+msgstr "Votre demande a été enregistrée avec succès. Nous allons l'examiner et vous revenir le plus tôt que possible."
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Views\Shared\_CorporateJobsListing.cshtml:14
+msgctxt "Job Offer Scope"
+msgid "National"
+msgstr "National"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Views\Shared\_CorporateJobsListing.cshtml:15
+msgctxt "Job"
+msgid "Apply"
+msgstr "Postuler"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Views\Shared\_CorporateJobsListing.cshtml:16
+msgctxt "Job"
+msgid "Already applied"
+msgstr "Déjà postulé"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Views\Home\_SectionOurCompany2.cshtml:2
+msgid "djoola.com is a web site, a social-professional platform for promoting and linking people that you can use to sell, buy, rent, invest, find a job, create a resume, a web site or a blog, send e-mails, find your (old) classmates, etc."
+msgstr "Djoola.com est un site web, une plateforme socio-professionnelle de promotion et de mise en relation qui permet de vendre, acheter, louer, investir, trouver un boulot, créer un CV, site web ou blog, envoyer des emails, retrouver ses (anciens) camarades de classe, etc."
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Views\Home\_SectionOurCompany2.cshtml:3
+msgid "A human's core values are determined by first noting to which degree and direction they have freed themselves of the word \"Me\"."
+msgstr "On détermine la vraie valeur d'un homme, en notant, en premier lieu, à quel degré et dans quel sens il est arrivé à se libérer du Moi."
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Views\Home\_SectionOurCompany2.cshtml:4
+msgid "<small>Albert Einstein in <cite title=\"Source Title\">How I see the world (1934-1958)</cite></small>"
+msgstr "<small>Albert Einstein dans <cite title=\"Source Title\">Comment je vois le monde (1934-1958)</cite></small>"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Views\Home\_SectionOurCompany2.cshtml:5
+msgid "We don't develop only web sites. Your mobile applications for smartphones such as Windows Phone, Android and iPhone will be at your reach as soon as you choose to trust us."
+msgstr "Nous ne dï¿½veloppons pas que des sites web. Vos applications mobiles pour smartphones tels que Windows Phone, Android et iPhone seront ï¿½ votre portï¿½e de mains dï¿½s lors que vous aurez choisi de nous faire confiance."
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Views\Home\_SectionOurCompany2.cshtml:6
+msgid "Use djoola.com even if you don't have an active Internet connection thanks to our SMS applications. Click <a href=\"/shop/service\">here</a> to learn more."
+msgstr "Utilisez djoola.com même lorsque vous n'avez pas accès à l'internet grâce à nos applications sms. Pour en savoir plus, cliquez <a href=\"/shop/service\">ici</a>."
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Views\Home\_SectionOurCompany2.cshtml:7
+msgid "We develop the best web sites and applications at the best price. You will own technologies that take both advantage of our platform and our great experience in this domain."
+msgstr "Nous développons les meilleurs sites et applications web aux meilleurs prix. Vous disposerez alors de technologies web qui bénéficient à la fois de la flexibilité de notre plateforme ainsi que de votre vaste savoir-faire dans ce domnaine."
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Views\Home\_SectionOurCompany2.cshtml:41
+msgid "Web Design"
+msgstr "Conception Web"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Views\Home\_SectionOurCompany2.cshtml:57
+msgid "Software Development"
+msgstr "Développement Logiciels"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Views\Home\_SectionOurCompany2.cshtml:75
+msgid "Mobile Services"
+msgstr "Services Mobiles"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Views\Home\index.cshtml:35
+msgid "View all job offers"
+msgstr "Voir toutes les offres d'emploi"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Views\Home\_SectionOurCompany2.cshtml:5
+msgid "We do not only develop web sites. Your mobile applications for smartphones such as Windows Phone, Android and iPhone will be at your reach as soon as you choose to trust us."
+msgstr "Nous ne développons pas que des sites web. Vos applications mobiles pour smartphones tels que Windows Phone, Android et iPhone seront à votre portée de mains dès lors que vous aurez choisi de nous faire confiance."
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Companies\Details.cshtml:32
+#, csharp-format
+msgid "Company registered in {0} under the number {1}."
+msgstr "Entreprise enregistrée ({0}) sous le numéro {1}."
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Companies\Details.cshtml:36
+#, csharp-format
+msgid "Company registered in {0}."
+msgstr "Entreprise enregistrée ({0})."
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Companies\Details.cshtml:44
+msgid "Profile"
+msgstr "Profil"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Companies\Details.cshtml:45
+msgid "Contact"
+msgstr "Contact"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Companies\Details.cshtml:139
+#, csharp-format
+msgid "Social capital: {0}"
+msgstr "Capital social : {0}"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Companies\Details.cshtml:153 C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Companies\_WelcomeEmail.cshtml:12 C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Jobs\Details.cshtml:59
+msgctxt "Medium Date"
+msgid "d MMM yyyy"
+msgstr "d MMM yyyy"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Companies\Edit.cshtml:4
+msgid "Edit"
+msgstr "Editer"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Companies\Edit.cshtml:387
+msgid "Back to List"
+msgstr "Retour à la Liste"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Companies\_ContactEmailAdmin.cshtml:12
+msgid "Hello !"
+msgstr "Bonjour !"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Companies\_ContactEmailAdmin.cshtml:13
+#, csharp-format
+msgid "A contact form addressed to <a href=\"{0}/corporate/companies/details/{1}\">{2} ({3})</a> has just been submitted on djoola.com"
+msgstr "Un formulaire de contact addressé à <a href=\"{0}/corporate/companies/details/{1}\">{2} ({3})</a> vient d'être soumis sur djoola.com"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Companies\_ContactEmailAdmin.cshtml:15 C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Companies\_WelcomeEmailAdmin.cshtml:37
+msgid "Registration Date:"
+msgstr "Date d'enregistrement :"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Companies\_ContactEmailAdmin.cshtml:17 C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Companies\_WelcomeEmailAdmin.cshtml:12 C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Jobs\_NewJobsEmail.cshtml:32
+msgctxt "Date"
+msgid "dd/MM/yyyy"
+msgstr "dd/MM/yyyy"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Companies\_ContactEmailAdmin.cshtml:32
+msgid "Requester's Details"
+msgstr "Détails du Réquérant"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Companies\_ContactEmailAdmin.cshtml:34
+msgid "Subject:"
+msgstr "Objet :"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Companies\_ContactEmailAdmin.cshtml:46
+msgid "Information about the target company"
+msgstr "Informations sur l'entreprise visée"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Companies\_ContactSmsAdmin.cshtml:6
+#, csharp-format
+msgid "Message for company #{0}"
+msgstr "Message pour l'entreprise n° {0}"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Companies\_Devis.cshtml:38
+msgid "Djoola Logo"
+msgstr "Logo Djoola"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Companies\_Devis.cshtml:39
+#, csharp-format
+msgid "The current quote's total amount is: <br/><strong>{0}</strong> Guinean Francs ({1} GNF)."
+msgstr "Le présent devis est arrêté à la somme de : <br/><strong>{0}</strong> Francs Guinéens ({1} GNF)."
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Companies\_Devis.cshtml:40 C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Companies\_Devis.cshtml:64
+msgctxt "Medium Date"
+msgid "d MMMM yyyy"
+msgstr "d MMMM yyyy"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Companies\_Devis.cshtml:41
+msgid "The current offer is valid for 30 days starting at its date of issuance."
+msgstr "Le présent devis est valide pour 30 jours à partir de sa date d'émission."
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Companies\_Devis.cshtml:42
+#, csharp-format
+msgid "(Expires on {0}.)"
+msgstr "(Expire le {0}.)"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Companies\_Devis.cshtml:43
+msgid "The Manager"
+msgstr "Le Gérant"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Companies\_Devis.cshtml:44
+#, csharp-format
+msgid "DJOOLA.COM is a web site belonging to KARFAMSOFT CORPORATION, COMPANY NUMBER RCCM/GC-KAL/010.782B/2006<br/>HEAD QUARTER: CAMAYENNE, RUE DI 011 DIXINN CONAKRY REPUBLIC OF GUINEA<br/>TEL.: {0}<br/>E-MAIL: admin@djoola.com | WEB SITE: https://www.djoola.com"
+msgstr "DJOOLA.COM est une site web appartenant à KARFAMSOFT CORPORATION, ENTREPRISE NUMÉRO RCCM/GC-KAL/010.782B/2006<br/>SIÈGE SOCIAL: CAMAYENNE, RUE DI 011 DIXINN CONAKRY REPUBLIQUE DE GUINÉE<br/>TÉL.: {0}<br/>E-MAIL: admin@djoola.com | SITE WEB : https://www.djoola.com"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Companies\_Devis.cshtml:54
+#, csharp-format
+msgctxt "Invoice"
+msgid "QUOTE #{0}"
+msgstr "DEVIS N&deg;{0}"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Companies\_Devis.cshtml:61
+msgid "FOR:"
+msgstr "POUR :"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Companies\_Devis.cshtml:63
+msgid "DATE:"
+msgstr "DATE :"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Companies\_Devis.cshtml:67
+msgid "CUSTOMER:"
+msgstr "CLIENT :"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Companies\_Devis.cshtml:72
+msgid "REF.:"
+msgstr "RÉF. :"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Companies\_Devis.cshtml:76
+msgid "TEL.:"
+msgstr "TÉL. :"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Companies\_Devis.cshtml:78
+msgid "CURRENCY:"
+msgstr "DEVISE :"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Controllers\CompaniesController.cs:1051
+msgid "Guinean Francs"
+msgstr "Francs Guinéens"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Companies\_Devis.cshtml:88
+msgid "ITEM LABEL"
+msgstr "LIBELLÉ"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Companies\_Devis.cshtml:89
+msgid "PRICE"
+msgstr "PRIX"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Companies\_Devis.cshtml:90
+msgid "QTY"
+msgstr "QTÉ"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Companies\_Devis.cshtml:91
+msgid "AMOUNT"
+msgstr "MONTANT"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Companies\_Devis.cshtml:107
+msgid "TOTAL AMOUNT"
+msgstr "TOTAL TTC"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Companies\_Devis.cshtml:108
+#, csharp-format
+msgid "{0} GNF"
+msgstr "{0} GNF"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Companies\_Devis.cshtml:127
+msgid "Down Payments"
+msgstr "Paiements"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Companies\_Devis.cshtml:133
+msgid "Any service not mentioned in the current proposal requires a separate complementary quote."
+msgstr "Toute prestation non mentionnée dans la présente offre fera l'objet d'un devis complémentaire."
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Companies\_Devis.cshtml:147
+msgid "THANK YOU FOR TRUSTING US"
+msgstr "MERCI POUR VOTRE CONFIANCE"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Companies\_NewCompaniesTweet.cshtml:18
+#, csharp-format
+msgid "{0}New Company {1}/go/t/c/{2}"
+msgstr "{0}Nouvelle Entreprise {1}/go/t/c/{2}"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Companies\_NewCompaniesTweet.cshtml:23
+#, csharp-format
+msgid "{0} new company registered on Djoola "
+msgid_plural "{0} new companies registered on Djoola "
+msgstr[0] "{0} nouvelle entreprise enregistrée sur Djoola"
+msgstr[1] "{0} nouvelles entreprises enregistrées sur Djoola"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Companies\_WelcomeEmail.cshtml:9
+#, csharp-format
+msgid "Congratulations! Your company <strong>{0}</strong> has been registered. You will find the details on https://www.djoola.com/{2}/corporate/companies/details/{1}. For a better visibility, we highly recommend to complete your company's details at this address: https://www.djoola.com/pme?lang={2}."
+msgstr "Félicitations ! Votre entreprise <strong>{0}</strong> a été enregistrée. Vous trouverez les détails sur https://www.djoola.com/{2}/corporate/companies/details/{1}. Pour une meilleure visibilité, nous vous conseillons vivement de compléter les détails sur votre entreprise à cette adresse : http://www.djoola.com/pme?lang={2}."
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Companies\_WelcomeEmail.cshtml:10
+#, csharp-format
+msgid "Please visit https://www.djoola.com/c/{0} or call {1} for advice."
+msgstr "Visitez https://www.djoola.com/c/{0} ou appelez au {1} pour conseils."
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Companies\_WelcomeEmail.cshtml:17
+#, csharp-format
+msgid "Welcome {0}"
+msgstr "Bienvenue {0}"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Companies\_WelcomeEmailAdmin.cshtml:9
+msgid "New companies have just been registered on djoola.com"
+msgstr "De nouvelles entreprises viennent d'être enregistrées sur djoola.com"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Companies\_WelcomeEmailAdmin.cshtml:14 C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Jobs\_NewJobsEmail.cshtml:15
+#, csharp-format
+msgid "Hello {0}"
+msgstr "Bonjour {0}"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Companies\_WelcomeEmailAdmin.cshtml:22 C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Jobs\_NewJobsEmail.cshtml:23
+msgctxt "Ordinal"
+msgid "#"
+msgstr "N°"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Companies\_WelcomeEmailAdmin.cshtml:23
+msgid "COMPANY"
+msgstr "ENTREPRISE"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Companies\_WelcomeEmailAdmin.cshtml:36
+msgid "ID:"
+msgstr "ID :"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Companies\_WelcomeEmailAdmin.cshtml:38
+msgid "Manager:"
+msgstr "Gérant.e :"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Companies\_WelcomeEmailAdmin.cshtml:39
+msgid "Contact:"
+msgstr "Contact :"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Companies\_WelcomeEmailAdmin.cshtml:40
+msgid "Social Capital:"
+msgstr "Capital social :"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Companies\_WelcomeSms.cshtml:12
+#, csharp-format
+msgid "In Guinea, with thousands of legal companies, how to set yourself apart and win?"
+msgid_plural "In Guinea, with {0} legal companies, how to set yourself apart and win the competition?"
+msgstr[0] "En Guinée, avec des milliers d'entreprises légales, comment se démarquer et gagner ?"
+msgstr[1] "En Guinée, avec {0} entreprises légales, comment se démarquer et gagner la compétition ?"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Companies\_WelcomeSms.cshtml:12
+msgid "Contact us at info@djoola.com for more."
+msgstr "Ecrivez-nous à info@djoola.com pour les détails."
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Companies\_WelcomeSms.cshtml:39
+#, csharp-format
+msgid "{0} legal company"
+msgid_plural "{0} legal companies"
+msgstr[0] "{0} entreprise légale"
+msgstr[1] "{0} entreprises légales"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Companies\_WelcomeSmsAdmin.cshtml:6
+#, csharp-format
+msgid "Hello! {0} new company has been registered on djoola.com."
+msgid_plural "Hello! {0} new companies have been registered on djoola.com."
+msgstr[0] "Bonjour ! {0} nouvelle entreprise a été enregistrée sur djoola.com."
+msgstr[1] "Bonjour ! {0} nouvelles entreprises ont été enregistrées sur djoola.com."
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Companies\_WelcomeSmsAdmin.cshtml:6
+msgid "See details in the e-mail."
+msgstr "Voir les détails dans le courriel."
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Jobs\Confirm.cshtml:18
+#, csharp-format
+msgid "You've also just applied for the job <strong><a href=\"{0}\">{1}</a></strong>. We wish you good look in your search."
+msgstr "Vous venez de postuler pour l'emploi <strong><a href=\"{0}\">{1}</a></strong>. Nous vous souhaitons bonne chance dans votre recherche."
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Jobs\Confirm.cshtml:25
+msgid "Your job application details"
+msgstr "Détails de votre candidature"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Controllers\JobsController.cs:592
+msgctxt "Full Date Time"
+msgid "dddd, dd/MM/yyyy @ HH:mm"
+msgstr "dddd, dd/MM/yyyy @ HH:mm"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Jobs\Details.cshtml:69
+msgid "You've already applied for this."
+msgstr "Vous avez déjà postulé pour ceci."
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Jobs\Details.cshtml:73
+#, csharp-format
+msgid "You've already applied for this on {0}."
+msgstr "Vous avez déjà postulé pour ceci le {0}."
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Jobs\Details.cshtml:84
+msgid "Congratulations! You've just applied for this. Good look!"
+msgstr "Félicitations ! Vous venez juste de postuler pour ceci. Bonne chance !"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Jobs\Details.cshtml:111
+msgctxt "Job"
+msgid "Application"
+msgstr "Candidature"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Jobs\Details.cshtml:130
+msgid "Available attachments"
+msgstr "Pièces détachées disponibles"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Jobs\Details.cshtml:147
+msgid "New attachments"
+msgstr "Nouvelles pièces attachées"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Jobs\Details.cshtml:157
+msgctxt "Job"
+msgid "Submit my application"
+msgstr "Soumettre ma candidature"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Jobs\Details.cshtml:336
+msgid "Resend e-mail"
+msgstr "Renvoyer le courriel"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Jobs\Region.cshtml:10
+#, csharp-format
+msgid "Jobs : {0}"
+msgstr "Emplois : {0}"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Jobs\Region.cshtml:14
+msgid "Regional Jobs"
+msgstr "Emplois Régionaux"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Jobs\Search.cshtml:17
+msgid "Save this search"
+msgstr "Sauver cette recherche"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Jobs\Search.cshtml:19
+msgid "Show me:"
+msgstr "Me montrer :"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Jobs\Search.cshtml:21
+msgctxt "Search"
+msgid "Closest jobs first"
+msgstr "Emplois environnants en premier"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Jobs\Search.cshtml:22
+msgctxt "Search"
+msgid "Newest jobs first"
+msgstr "Emplois récents en premier"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Jobs\Search.cshtml:23
+msgctxt "Search"
+msgid "Relevant jobs first"
+msgstr "Emplois pertinents en premier"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Jobs\Search.cshtml:36
+msgid "Pay"
+msgstr "Payer"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Jobs\Search.cshtml:71
+msgid "See all Jobs from this Company"
+msgstr "Voir toutes offres d'emploi de cette entreprise"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Jobs\Search.cshtml:76
+#, csharp-format
+msgid "More Jobs from this Company (<span class=\"showmorecount\">{0}</span>)"
+msgstr "Plus d'offres d'emploi de cette entreprise (<span class=\"showmorecount\">{0}</span>)"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Jobs\Search.cshtml:124
+msgid "N/A"
+msgstr "N/A"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Jobs\Tenders.cshtml:4
+msgid "Jobs and Tenders Directory"
+msgstr "Répertoire des Offres d'Emploi et Appels d'Offres"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Jobs\_NewJobsEmail.cshtml:13
+#, csharp-format
+msgid "{0} new job has just been saved on djoola.com."
+msgid_plural "{0} new jobs have just been saved on djoola.com."
+msgstr[0] "{0} nouvelle offre d'emploi vient d'être enregistrée sur djoola.com."
+msgstr[1] "{0} nouvelles offres d'emploi viennent d'être enregistrïées sur djoola.com."
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Jobs\_NewJobsEmail.cshtml:24
+msgid "TITLE"
+msgstr "TITRE"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Jobs\_NewJobsEmail.cshtml:30
+msgid "Job Offer"
+msgstr "Offre d'Emploi"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Jobs\_NewJobsEmail.cshtml:30
+msgid "Tender"
+msgstr "Appel d'Offre"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Jobs\_NewJobsEmail.cshtml:39
+msgid "Type :"
+msgstr "Type :"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Jobs\_NewJobsEmail.cshtml:40
+msgid "Publication Date :"
+msgstr "Date de publication:"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Jobs\_NewJobsTweet.cshtml:15
+#, csharp-format
+msgid "New job: {0}"
+msgstr "Nouveau job : {0}"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Jobs\_NewJobsTweet.cshtml:19
+#, csharp-format
+msgid "New tender: {0}"
+msgstr "Nouvel appel d'offre : {0}"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Jobs\_NewJobsTweet.cshtml:37
+#, csharp-format
+msgid "{0} job and "
+msgid_plural "{0} jobs and "
+msgstr[0] "{0} job et"
+msgstr[1] "{0} jobs et"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Jobs\_NewJobsTweet.cshtml:41
+#, csharp-format
+msgid "{0} job "
+msgid_plural "{0} jobs "
+msgstr[0] "{0} job"
+msgstr[1] "{0} jobs"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Views\Jobs\_NewJobsTweet.cshtml:46
+#, csharp-format
+msgid "{0} tender "
+msgid_plural "{0} tenders "
+msgstr[0] "{0} appel d'offre"
+msgstr[1] "{0} appels d'offre"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Shop\Views\Service\Index.cshtml:7 C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Shop\Views\Service\Index.cshtml:20
+msgid "Services"
+msgstr "Services"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Shop\Views\Service\Index.cshtml:18
+msgid "Home"
+msgstr "Accueil"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Shop\Views\Service\Index.cshtml:19
+msgid "Shop"
+msgstr "Boutique"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Shop\Views\Service\Index.cshtml:33
+msgid "service Name"
+msgstr "Nom du Service"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Shop\Views\Service\Index.cshtml:35
+msgid "Cost"
+msgstr "Coût"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Shop\Views\Service\Index.cshtml:36
+msgid "Recurrence"
+msgstr "Récurrence"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Controllers\CompaniesController.cs:171
+#, csharp-format
+msgid "Candidate company updates: {0}. Affected updates: {1}."
+msgstr "Mises à jour d'entreprise proposées : {0}. Mises à jour affectées : {1}"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Controllers\CompaniesController.cs:177
+msgid "No changes were made to the database."
+msgstr "Aucune modification n'a été effectuée dans la base de données."
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Controllers\CompaniesController.cs:187
+msgid "No companies to update."
+msgstr "Aucune entreprise à mettre à jour."
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Controllers\CompaniesController.cs:370
+msgid "No items in the list to dispatch."
+msgstr "Aucun article dans la liste à diffuser."
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Controllers\CompaniesController.cs:378
+msgid "Notifications are turned off for new companies."
+msgstr "Les notifications pour les nouvelles entreprises sont désactivées."
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Controllers\CompaniesController.cs:389
+#, csharp-format
+msgid "Cannot create new instance of {0} in static method {1}."
+msgstr "Impossible de créer une nouvelle instance de {0} dans la méthode statique {1}."
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Controllers\CompaniesController.cs:435
+#, csharp-format
+msgid "Cannot create welcome message for company '{0}'."
+msgstr "Impossible de créer le message de bienvenue pour l'entreprise '{0}'."
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Controllers\CompaniesController.cs:457
+msgid "New Companies"
+msgstr "Nouvelles Entreprises"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Controllers\CompaniesController.cs:464
+msgid "Admin SMS message is blank."
+msgstr "Le message SMS admin est vide."
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Controllers\CompaniesController.cs:481
+#, csharp-format
+msgid "{0} new company"
+msgid_plural "{0} new companies"
+msgstr[0] "{0} nouvelle entreprise"
+msgstr[1] "{0} nouvelles entreprises"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Controllers\CompaniesController.cs:516
+msgid "Twitter notifications are turned off."
+msgstr "Les notifications Twitter sont désactivées."
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Controllers\CompaniesController.cs:642
+msgid "Cannot create an instance of the Web SMS service."
+msgstr "Impossible de créer une instance du service web SMS."
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Controllers\CompaniesController.cs:662
+msgid "Tweet was not published. See the inner exception for details."
+msgstr "Le tweet n'a pas été publié. Voir les exceptions intïérieures pour les détails."
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Controllers\CompaniesController.cs:668
+#, csharp-format
+msgid "Tweet was not published because the request is local. Rendered message is: {0}"
+msgstr "Le tweet n'a pas été publié parceque la requête est locale. Le message traité est : {0}"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Controllers\CompaniesController.cs:705
+msgid "No company notification message has been processed."
+msgstr "Aucun message de notification d'entreprise n'a été traité."
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Controllers\CompaniesController.cs:863
+msgid "No SMS provider configured!"
+msgstr "Aucun fournisseur SMS configuré !"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Controllers\CompaniesController.cs:984
+msgid "At least one manager should be specified!"
+msgstr "Au moins un.e gérant.e doit être spécifié.e !"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Controllers\CompaniesController.cs:992
+msgid "Only one chairperson should be specified!"
+msgstr "Un.e seul.e président.e de séance doit être spécifié.e !"
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Controllers\CompaniesController.cs:1007
+#, csharp-format
+msgid "A company named {0} already exists in the selected country."
+msgstr "Une entreprise dénommée {0} existe déjà dans le pays choisi."
+
+#: C:\Users\hp\Documents\Visual Studio 2017\Projects\Djoola-Solution\Areas\Corporate\Controllers\JobsController.cs:594
+#, csharp-format
+msgid "You've already applied for this job on {0}"
+msgstr "Vous avez déjà postulé pour cet emploi le {0}"

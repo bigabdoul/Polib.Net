@@ -11,11 +11,11 @@ namespace Polib.NetCore.Web.Controllers
 {
     public class AppController : Controller
     {
-        readonly IConfiguration _configuration;
+        private readonly IConfiguration _configuration;
+
+        private readonly TranslationSettings _translationSettings;
 
         public IConfigurationSection AppSettings { get; }
-
-        TranslationSettings _translationSettings;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="AppController"/> class using the specified parameter.

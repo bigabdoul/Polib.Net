@@ -18,7 +18,7 @@ namespace Polib.NetCore.Web
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration, IHostingEnvironment env)
+        public Startup(IConfiguration configuration, IWebHostEnvironment env)
         {
             Configuration = configuration;
             HostingEnvironment = env;
@@ -26,7 +26,7 @@ namespace Polib.NetCore.Web
 
         public IConfiguration Configuration { get; }
 
-        public IHostingEnvironment HostingEnvironment { get; }
+        public IWebHostEnvironment HostingEnvironment { get; }
 
         public TranslationSettings TranslationSettings { get; private set; }
 
@@ -48,7 +48,7 @@ namespace Polib.NetCore.Web
                 options.Cookie.HttpOnly = true;
             });
 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            //services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Latest);
 
             services
                 .AddScoped<ICatalog, Catalog>()
@@ -62,9 +62,9 @@ namespace Polib.NetCore.Web
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, IOptions<TranslationSettings> translationOptions)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IOptions<TranslationSettings> translationOptions)
         {
-            if (env.IsDevelopment())
+            if (string.Equals(env.EnvironmentName, "development", StringComparison.OrdinalIgnoreCase))
             {
                 app.UseDeveloperExceptionPage();
             }
@@ -79,12 +79,12 @@ namespace Polib.NetCore.Web
             app.UseCookiePolicy();
             app.UseSession();
 
-            app.UseMvc(routes =>
-            {
-                routes.MapRoute(
-                    name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
-            });
+            //app.UseMvc(routes =>
+            //{
+            //    routes.MapRoute(
+            //        name: "default",
+            //        template: "{controller=Home}/{action=Index}/{id?}");
+            //});
 
             TranslationSettings = translationOptions.Value;
             SetupTranslationManager();
@@ -110,19 +110,21 @@ namespace Polib.NetCore.Web
 
             // preload translations, don't wait for the first translation to occur
             mgr.LoadTranslationsAsync(culture).ConfigureAwait(false);
-            mgr.FileWatcher.TimerPeriodInSeconds = HostingEnvironment.IsDevelopment() ? 10 : 600;
+            mgr.FileWatcher.TimerPeriodInSeconds = IsDevelopment() ? 10 : 600;
             mgr.FileWatcher.MonitorFileChanges = true;
         }
 
         private void SetPoFilesDirectory()
         {
             // set the directory path containing the .po translation files
-            var path = HostingEnvironment.IsDevelopment() 
+            var path = IsDevelopment() 
                 ? Path.Combine(HostingEnvironment.ContentRootPath, "wwwroot") 
                 : string.Empty;
 
             TranslationManager.Instance.PoFilesDirectory = Path.Combine(path, "languages");
         }
+
+        private bool IsDevelopment() => string.Equals(HostingEnvironment.EnvironmentName, "development", StringComparison.OrdinalIgnoreCase);
 
         #endregion
     }

@@ -7,6 +7,7 @@
 @if (Model == null)
 {
     <h1>@_.T("No such catalog!")</h1>
+    <p class="text-danger">@ViewBag.Message</p>
     <p>@_.T("The catalog you are requesting hasn't been found. Make sure to refresh the page at the translations home page.")</p>
     <p>
         <a asp-action="index">
@@ -56,6 +57,7 @@
     <form ng-submit="update()" novalidate>
         @Html.AntiForgeryToken()
         <div class="i18n-footer">
+
             <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="translation-collapse-heading-one">
                     <h4 class="panel-title">
@@ -107,10 +109,24 @@
                 </div>
             </div>
 
-            <p>
-                <button type="submit" class="btn btn-primary" ng-disabled="!current">@_.T("Save")</button>
-            </p>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="translation-collapse-heading-references">
+                    <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#translation-collapse" href="#translation-collapse-references" aria-expanded="true" aria-controls="translation-collapse-references">@_.T("References")</a>
+                    </h4>
+                </div>
+                <div id="translation-collapse-references" class="panel-collapse collapse" role="tabpanel" aria-labelledby="translation-collapse-heading-references">
+                    <div class="panel-body" style="padding:0;">
+                        <textarea class="form-control" style="font-size:90%; cursor: text; border: none;" rows="4" disabled>{{currentRefs}}</textarea>
+                    </div>
+                </div>
+            </div>
         </div>
+
+        <p>
+            <button type="submit" class="btn btn-xs btn-primary" ng-disabled="!current">@_.T("Save")</button>
+            <small ng-show="changeResult" ng-class="changeClass" style="padding: 5px;">{{changeResult}}</small>
+        </p>
     </form>
 </div>
 

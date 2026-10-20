@@ -249,6 +249,7 @@ namespace Polib.Net
                     tobeUpdated.ExtractedComments = entry.ExtractedComments;
                     tobeUpdated.TranslatorComments = entry.TranslatorComments;
 
+                    merge_lists(entry.Translations, tobeUpdated.Translations);
                     merge_lists(entry.Flags, tobeUpdated.Flags);
                     merge_lists(entry.References, tobeUpdated.References);
                 }

@@ -45,7 +45,7 @@ namespace Polib.Net.IO
                 IncludeSubdirectories = true,
             };
 
-            FileWatcher.Changed += OnFileSystemChange;
+            //FileWatcher.Changed += OnFileSystemChange;
             FileWatcher.Created += OnFileSystemChange;
             FileWatcher.Deleted += OnFileSystemChange;
             FileWatcher.Error += (s, e) => { }; // ignore errors

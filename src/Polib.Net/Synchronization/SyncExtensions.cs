@@ -62,6 +62,7 @@ namespace Polib.Net.Synchronization
                 var tempname = new PoFileWriter(catalog) { WordWrapReferences = wrapReferences }.SaveChanges();
 
                 var catalogName = catalog.FileName;
+                Stream targetStream = null;
 
                 if (File.Exists(catalogName))
                 {
@@ -71,11 +72,20 @@ namespace Polib.Net.Synchronization
                     }
                     else
                     {
-                        File.Delete(catalogName);
+                        //File.Delete(catalogName);
+                        targetStream = File.OpenWrite(catalogName);
                     }
                 }
 
-                File.Copy(tempname, catalogName);
+                if (targetStream != null)
+                {
+                    CopyContent(tempname, targetStream);
+                }
+                else
+                {
+                    File.Copy(tempname, catalogName);
+                }
+                
                 return true;
             }
             catch //(Exception ex)
@@ -87,6 +97,27 @@ namespace Polib.Net.Synchronization
         }
 
         #region private helpers
+
+        private static void CopyContent(string sourceFile, Stream targetStream)
+        {
+            using (targetStream)
+            {
+                using (var src = File.OpenRead(sourceFile))
+                {
+                    var srcLen = src.Length;
+                    const int BUFLEN = 1024;
+                    byte[] buffer = new byte[BUFLEN];
+                    int bytesRead;
+
+                    while ((bytesRead = src.Read(buffer, 0, BUFLEN)) > 0)
+                    {
+                        targetStream.Write(buffer, 0, bytesRead);
+                    }
+
+                    targetStream.SetLength(srcLen);
+                }
+            }
+        }
 
         /// <summary>
         /// Compares <paramref name="unchanged"/> to <paramref name="maybeChanged"/>, and 

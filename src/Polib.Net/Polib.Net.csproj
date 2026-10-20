@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard1.4</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <Description>A simple .NET standard library for reading .po translation files.</Description>
     <Authors>Bigabdoul</Authors>
     <Company>Karfamsoft Corporation</Company>
@@ -11,10 +11,7 @@
     <RepositoryType>Github</RepositoryType>
     <AssemblyName>Polib.Net</AssemblyName>
     <RootNamespace>Polib.Net</RootNamespace>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>C:\Users\hp\Documents\Visual Studio 2017\Projects\Polib.Net\src\Polib.Net.xml</DocumentationFile>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>

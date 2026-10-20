@@ -13,6 +13,10 @@
             this.updateCatalog = function (catalog) {
                 return $http.post('/translations/updatecatalog', catalog);
             };
+
+            this.createCatalog = function (catalog) {
+                return $http.post('/translations/create', catalog);
+            };
         }])
         .controller('CatalogController', ['$scope', 'CatalogService', function ($scope, CatalogService) {
             console.log('Angular translation catalog controller set up correctly.');
@@ -22,6 +26,7 @@
 
             /** me.catalog = {
                     id: '',
+                    headers: [''],
                     pluralCount: 0,
                     items: {
                         uniqueKey: '',
@@ -77,6 +82,16 @@
 
             me.show = function (t) {
                 me.current = t;
+                let strRefs = '';
+                const refs = t && t.references || [];
+                for (let i = 0; i < refs.length; i++) {
+                    /* one reference by line, like 
+                     /home/dev/file1.cshtml:45
+                     /home/dev/file2.cshtml:196
+                    */
+                    strRefs += ' ' + refs[i].replace(/(:\d+)$/, '$1\n');
+                }
+                me.currentRefs = strRefs.trimRight();
             };
 
             me.selected = function (t) {
@@ -93,8 +108,23 @@
                 me.catalog.__RequestVerificationToken = __RequestVerificationToken;
                 CatalogService.updateCatalog(me.catalog)
                     .success(function (result) {
-                        console.log(result);
+                        if (result.success) {
+                            me.changeClass = '';
+                            me.changeResult = '';
+                        } else {
+                            me.changeClass = 'alert-warning';
+                            me.changeResult = result.message;
+                        }
                 });
+            };
+
+            me.create = function () {
+                if (!me.current) return;
+                me.catalog.__RequestVerificationToken = __RequestVerificationToken;
+                CatalogService.createCatalog(me.catalog)
+                    .success(function (result) {
+                        console.log(result);
+                    });
             };
 
             me.hasTranslation = function (t) {

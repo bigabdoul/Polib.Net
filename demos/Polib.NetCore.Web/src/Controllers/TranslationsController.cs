@@ -25,7 +25,7 @@ namespace Polib.NetCore.Web.Controllers
             if (!FindCatalog(id, out var catalog))
             {
                 ViewBag.Message = T("Catalog id '{0}' not found!", id);
-                return NotFound();
+                //return NotFound();
             }
 
             ViewBag.NewEntries = newentries;
@@ -67,10 +67,15 @@ namespace Polib.NetCore.Web.Controllers
                 if (model.Items.MergeChanges(array))
                 {
                     bool success = catalog.SaveChanges(BackupOriginalCatalog, WordWrapCommentReferences);
-                    return Json(success);
+                    var message = success ? string.Empty : T("Could not save catalog changes back to file.");
+                    return Json(new { success, message });
+                }
+                else
+                {
+                    return Json(new { success = false, message = T("No change has been detected.") });
                 }
             }
-            return Json(false);
+            return Json(new { success = false, message = T("Could not find the catalog with specified catalog.") });
         }
 
         [HttpPost]
@@ -88,14 +93,10 @@ namespace Polib.NetCore.Web.Controllers
                     {
                         foreach (var file in files)
                         {
-                            using (var fstream = file.OpenReadStream())
-                            {
-                                using (var tr = new StreamReader(fstream, System.Text.Encoding.UTF8))
-                                {
-                                    var catalog = PoFileReader.Read(tr, Domain, enforceCultureInfo: false);
-                                    count += current.MergeWith(catalog);
-                                }
-                            }
+                            using var fstream = file.OpenReadStream();
+                            using var tr = new StreamReader(fstream, System.Text.Encoding.UTF8);
+                            var catalog = PoFileReader.Read(tr, Domain, enforceCultureInfo: false);
+                            count += current.MergeWith(catalog);
                         }
                     }
 
@@ -121,6 +122,28 @@ namespace Polib.NetCore.Web.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        /// <summary>
+        /// Renders and returns the Create view.
+        /// </summary>
+        /// <returns></returns>
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Create(UpdatedCatalog model)
+        {
+            if (ModelState.IsValid)
+            {
+
+            }
+
+            return View(model);
+        }
+
+
         #region helpers
 
         bool FindCatalog(string fileId, out ICatalog catalog)
@@ -129,12 +152,11 @@ namespace Polib.NetCore.Web.Controllers
             return true == Manager?.Catalogs?.FindById(fileId, out catalog);
         }
 
-        ICatalog ToUpdatable(ICatalog catalog)
+        static ICatalog ToUpdatable(ICatalog catalog)
         {
             if (null == catalog) catalog = new Catalog();
             var row = 1;
-
-            return new UpdatedCatalog
+            var cat = new UpdatedCatalog
             {
                 Id = catalog.FileId,
                 PluralCount = catalog.PluralCount,
@@ -151,6 +173,15 @@ namespace Polib.NetCore.Web.Controllers
                     TranslatorComments = t.TranslatorComments,
                 }).ToArray(),
             };
+
+            var headers = cat.CreateHeaders();
+
+            foreach (var hdr in catalog.Headers)
+            {
+                headers.Add(hdr.Key, hdr.Value);
+            }
+
+            return cat;
         }
         
         #endregion

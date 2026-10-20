@@ -10,6 +10,8 @@ namespace Polib.Net.Synchronization
     /// </summary>
     public class UpdatedCatalog : IUpdatedCatalog
     {
+        IDictionary<string, string> _headers;
+
         /// <summary>
         /// Initializes a new instance of the <see cref="UpdatedCatalog"/> class.
         /// </summary>
@@ -73,10 +75,10 @@ namespace Polib.Net.Synchronization
         public virtual IDictionary<string, ITranslation> Entries => null;
 
         /// <summary>
-        /// Returns null.
+        /// Returns a dictionary. Can be null if the method <see cref="CreateHeaders"/> has not been previously called.
         /// </summary>
         /// <remarks>Don't throw exceptions; might cause problems during serializations.</remarks>
-        public virtual IDictionary<string, string> Headers => null;
+        public virtual IDictionary<string, string> Headers => _headers;
 
         /* Methods are not supposed to be invoked during serializations, 
          so it's safe to throw exceptions since these methods are not implemented.*/
@@ -102,6 +104,18 @@ namespace Polib.Net.Synchronization
         /// <returns></returns>
         public virtual bool GetHeader(string name, out string value) => throw new NotImplementedException();
 
+        /// <summary>
+        /// Initializes the <see cref="Headers"/> dictionary.
+        /// </summary>
+        public virtual IDictionary<string, string> CreateHeaders()
+        {
+            if (_headers == null)
+            {
+                _headers = new Dictionary<string, string>();
+            }
+            return _headers;
+        }
+        
         #endregion
     }
 }

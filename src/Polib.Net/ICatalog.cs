@@ -16,7 +16,7 @@ namespace Polib.Net
         string HeaderComments { get; set; }
 
         /// <summary>
-        /// Gets the headers of this reader.
+        /// Gets the headers of this catalog.
         /// </summary>
         IDictionary<string, string> Headers { get; }
 

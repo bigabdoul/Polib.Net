@@ -1,0 +1,78 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
+for details on configuring this project to bundle and minify static web assets. */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Customizations */
+
+/* i18n for translations */
+
+.i18n-container {
+    font-family: 'Segoe UI';
+    font-size: 80%;
+    max-height: 250px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.i18n-footer, .i18n-footer a {
+    font-size: 90%;
+}
+
+    .i18n-footer .panel {
+        margin-bottom: 1px;
+        border-radius: 0;
+    }
+
+    .i18n-footer h4 a {
+        font-size: 75%;
+    }
+
+.i18n-context {
+    padding: 3px;
+}
+
+.i18n-row {
+    cursor: default;
+}
+
+.i18n-singular label, .i18n-plural label {
+    font-weight: 600;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+
+    .i18n-container {
+        overflow-x: auto;
+    }
+}
